@@ -5,9 +5,18 @@ import LoginForm from '../components/login-form'
 
 function Login() {
   return (
-    <div className='container'>
-      <LoginHeader />
-      <LoginForm />
+    <div>
+      <div className="row">
+        <LoginHeader />
+
+        <div className="col-lg-6 bg-dark vh-100">
+          
+        </div>
+
+        <div className="col-lg-6 bg-light vh-100">
+          <LoginForm />
+        </div>
+      </div>
     </div>
   )
 }

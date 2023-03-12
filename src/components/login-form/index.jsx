@@ -81,6 +81,7 @@ export default class LoginForm extends Component {
           </label>
 
           <input type="submit" value="SIGN-UP" className="px-5 mt-3" />
+          <p className='mt-2'>Already have an account? <a href="#">Login</a></p>
         </form>
       </div>
     );
