@@ -1,0 +1,11 @@
+.emo-box {
+    border: 1px solid rgb(255, 255, 255, 0.7);
+    background-color: rgb(255, 255, 255, 0.7);
+    max-width: 140px;
+    height: 130px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
