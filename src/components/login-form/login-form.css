@@ -1,0 +1,26 @@
+.form-container{
+  background-color: #361779;
+  padding: 2rem;
+  position: absolute;
+  border-radius: 1rem;
+}
+
+input{
+  background-color: #532F9F;
+  border-radius: .5rem;
+  height: 41px;
+  padding-left: 1rem;
+  color: white;
+}
+
+input[type="email"] {
+  width: 100%;
+}
+
+input[type="checkbox"]+a {
+  text-decoration: none;
+}
+
+input[type="checkbox"] {
+  border-radius: 10px;
+}
