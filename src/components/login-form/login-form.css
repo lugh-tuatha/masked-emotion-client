@@ -1,0 +1,8 @@
+.form-container img{
+  width: 7rem;
+  border-radius: 5rem;
+}
+
+input[type="password"] {
+  width: 100%;
+}

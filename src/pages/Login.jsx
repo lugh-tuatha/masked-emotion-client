@@ -2,7 +2,7 @@ import React from 'react'
 import './pages.css'
 
 import LoginHeader from '../components/login-header'
-import LoginForm from '../components/signup-form'
+import SignupForm from '../components/signup-form'
 
 function Login() {
   return (
@@ -18,7 +18,7 @@ function Login() {
           <div className='p-5 mt-5'>
             <p className='mb-0'>Welcome to EmoWall</p>
             <h2 className='w-75 fw-bold mb-5'>Share Your Emotions Anonymously and Find Support in Our Safe and Caring Community</h2>
-            <LoginForm />
+            <SignupForm />
           </div>
         </div>
       </div>
