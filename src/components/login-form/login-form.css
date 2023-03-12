@@ -1,6 +1,17 @@
 .form-container img{
-  width: 7rem;
+  width: 10rem;
   border-radius: 5rem;
+}
+
+.login-container {
+  width: 27rem;
+}
+
+.login-parent{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type="password"] {
@@ -17,6 +28,6 @@ input[type="password"] {
   left: .75rem;
 }
 
-input{
+.input-container input {
   padding-left: 3.25rem;
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import '../signup-form/signup-form.css'
 import './login-form.css'
 
 import * as AiIcons from "react-icons/ai";
@@ -11,8 +10,8 @@ import { Link } from "react-router-dom";
 
 function LoginForm() {
   return (
-    <>
-      <div className="form-container text-center">
+    <div className='login-parent'>
+      <div className="form-container text-center login-container">
         <h2>LOGIN</h2>
         <img src="https://th.bing.com/th/id/OIG.NUVCQ0M1MzM3NzM3ODc0?pcl=1b1a19&pid=ImgGn" />
         <form className="text-white">
@@ -37,7 +36,7 @@ function LoginForm() {
           <p className='mt-3'>No account yet? <Link to="/signup">Create an account</Link></p>
         </form>
       </div>
-    </>
+    </div>
   )
 }
 

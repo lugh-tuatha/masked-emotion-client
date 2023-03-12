@@ -44,3 +44,11 @@ input::placeholder{
 ul li{
   list-style-type: none;
 }
+
+/*-------------
+Reusable css
+-------------*/
+/* width */
+.w-60 {
+  width: 60%;
+}
