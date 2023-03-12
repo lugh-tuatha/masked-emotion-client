@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './signup-form.css';
 
-import LoginForm from '../login-form';
+import { Link } from "react-router-dom";
 
-export default class Login extends Component {
+
+export default class Signup extends Component {
   constructor(props) {
     super(props)
     this.state={
@@ -84,7 +85,7 @@ export default class Login extends Component {
             </label>
 
             <input type="submit" value="SIGN-UP" className="px-5 mt-3" />
-            <p className='mt-3'>Already have an account? <a href="#">Login</a></p>
+            <p className='mt-3'>Already have an account? <Link to="/login">Login</Link></p>
           </form>
         </div> 
       </>

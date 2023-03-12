@@ -9,14 +9,19 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Login from './pages/Login';
+import Signup from './pages/Signup';
 import About from './pages/About';
 import Release from './pages/Release';
+import Login from './pages/Login';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
   },
   {
     path: "/login",

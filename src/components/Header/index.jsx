@@ -13,7 +13,7 @@ function Header() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/release">Release</Link></li>
-          <button className='btn btn-primary'><Link to="/login">Sign-up</Link></button>
+          <Link to="/signup"><button className='btn btn-primary'>Sign-up</button></Link>
         </ul>
       </nav>
     </div>

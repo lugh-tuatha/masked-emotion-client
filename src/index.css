@@ -37,6 +37,10 @@ input{
   outline: none;
 }
 
+input::placeholder{
+  color: white;
+}
+
 ul li{
   list-style-type: none;
 }
