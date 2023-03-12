@@ -2,12 +2,12 @@
   background-color: #464646;
   padding: 2rem;
   position: absolute;
-  border-radius: 1rem;
+  border-radius: .5rem;
 }
 
 input{
   background-color: #8E8E8E;
-  border-radius: .5rem;
+  border-radius: .25rem;
   height: 41px;
   padding-left: 1rem;
   color: white;
@@ -30,5 +30,6 @@ form p{
 }
 
 form a{
-  color: white;
+  text-decoration: underline;
 }
+

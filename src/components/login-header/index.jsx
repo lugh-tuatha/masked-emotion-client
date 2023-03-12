@@ -7,7 +7,7 @@ function LoginHeader() {
   return (
     <div className='login-header'>
       <nav className='mx-auto'>
-        <h1 className='bg-black'>LOGO</h1>
+        <h1>LOGO</h1>
         <p><Link to="/">Go back to home</Link></p>
       </nav>
     </div>

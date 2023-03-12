@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './login-form.css';
+import './signup-form.css';
 
 export default class LoginForm extends Component {
   constructor(props) {
@@ -81,7 +81,7 @@ export default class LoginForm extends Component {
           </label>
 
           <input type="submit" value="SIGN-UP" className="px-5 mt-3" />
-          <p className='mt-2'>Already have an account? <a href="#">Login</a></p>
+          <p className='mt-3'>Already have an account? <a href="#">Login</a></p>
         </form>
       </div>
     );
