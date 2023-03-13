@@ -13,6 +13,7 @@ import Signup from './pages/Signup';
 import About from './pages/About';
 import Release from './pages/Release';
 import Login from './pages/Login';
+import UserDetails from './components/user-details';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/release",
     element: <Release />,
+  },
+  {
+    path: "/userDetails",
+    element: <UserDetails />,
   },
 ]);
 
