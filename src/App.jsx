@@ -9,7 +9,7 @@ function App() {
     <div className="container">
       <Header />
 
-      <section>
+      <section className='home-container'>
         <p>EmoWall Confessions</p>
         <h2><b>A Safe Space to Share Your Emotions Anonymously</b></h2>
         <p>Unburden your heart in a safe and supportive space. Share your emotions anonymously, without fear of judgement.</p>
