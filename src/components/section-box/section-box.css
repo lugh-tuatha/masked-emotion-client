@@ -1,6 +1,3 @@
-.emo-sec {
-    margin: 10px;
-}
 
 .emo-box {
     border: 1px solid rgb(255, 255, 255, 0.7);
@@ -10,7 +7,8 @@
     text-align: center;
     padding: 30px;
     border-radius: 10px;
-    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
