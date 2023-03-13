@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div>
-      <nav>
+      
+      <nav className='home-nav'>
         <img src="https://th.bing.com/th/id/OIG._vSorB44nuyRxXMEXWuJ?pcl=1b1a19&pid=ImgGn" alt="brand logo" />
 
         <ul className='d-flex gap-5 align-items-center'>
@@ -16,6 +17,7 @@ function Header() {
           <Link to="/signup"><button className='btn btn-primary'>Sign-up</button></Link>
         </ul>
       </nav>
+
     </div>
   )
 }

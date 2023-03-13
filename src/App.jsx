@@ -1,50 +1,37 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
 
-import Header from './components/Header'
-import SectionBox from './components/section-box'
+import Header from './components/Header';
+import SectionBox from './components/section-box';
 
 function App() {
+  const sectionBoxes = Array.from({ length: 12 }).map((_, index) => (
+    <div key={index} className="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
+      <SectionBox />
+    </div>
+  ));
+
   return (
-    <div className="container">
+    <div className='container'>
       <Header />
 
-      <section className='home-container'>
-        <p>EmoWall Confessions</p>
-        <h2><b>A Safe Space to Share Your Emotions Anonymously</b></h2>
-        <p>Unburden your heart in a safe and supportive space. Share your emotions anonymously, without fear of judgement.</p>
-        <p>Join our community of honest individuals who are discovering that they are not alone in their feelings</p>
+      <main className="main-content">
+        <section className="home-section px-5">
+          <p>EmoWall Confessions</p>
+          <h2 className='fw-bold'>A Safe Space to Share Your Emotions Anonymously</h2>
+          <p>Unburden your heart in a safe and supportive space. Share your emotions anonymously, without fear of judgment. Join our community of honest individuals who are discovering that they are not alone in their feelings.</p>
 
-        <div className="emo-gal">
-          <p>Tell us what's been weighning on your mind?</p>
-          <div className="row">
-            <div className="col-lg-4">
-              <SectionBox />
-              <SectionBox />
-              <SectionBox />
-              <SectionBox />
-            </div>
-            <div className="col-lg-4">
-              <SectionBox />
-              <SectionBox />
-              <SectionBox />
-              <SectionBox />
-            </div>
-            <div className="col-lg-4">
-              <SectionBox />
-              <SectionBox />
-              <SectionBox />
-              <SectionBox />
+          <div className="emo-gallery mt-5">
+            <p className='my-4'>Tell us what's been weighing on your mind?</p>
+            <div className="row">{sectionBoxes}</div>
+            <div className="emo-share-btn">
+              <button>Share Your Emotions</button>
             </div>
           </div>
-          <div className="btn">
-            <button>Share Your Emotions</button>
-          </div>
-        </div>
-      </section>
-
+        </section>
+      </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
