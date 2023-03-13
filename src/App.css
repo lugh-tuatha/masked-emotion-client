@@ -10,14 +10,6 @@ section{
   margin-top: 70px;
 }
 
-.home-container button{
-  padding: 20px;
-  border: 1px solid white;
-  color: white;
-  background-color: darkgray;
-  transition: 0.3s;
-  border-radius: 10px;
-}
 
 .home-container button:hover{
   color: black;

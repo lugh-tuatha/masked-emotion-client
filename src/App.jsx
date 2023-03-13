@@ -18,27 +18,21 @@ function App() {
         <div className="emo-gal">
           <p>Tell us what's been weighning on your mind?</p>
           <div className="row">
-            <div className="col-lg-2">
+            <div className="col-lg-4">
+              <SectionBox />
+              <SectionBox />
               <SectionBox />
               <SectionBox />
             </div>
-            <div className="col-lg-2">
+            <div className="col-lg-4">
+              <SectionBox />
+              <SectionBox />
               <SectionBox />
               <SectionBox />
             </div>
-            <div className="col-lg-2">
+            <div className="col-lg-4">
               <SectionBox />
               <SectionBox />
-            </div>
-            <div className="col-lg-2">
-              <SectionBox />
-              <SectionBox />
-            </div>
-            <div className="col-lg-2">
-              <SectionBox />
-              <SectionBox />
-            </div>
-            <div className="col-lg-2">
               <SectionBox />
               <SectionBox />
             </div>
