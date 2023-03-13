@@ -1,39 +1,23 @@
-section {
-    margin-top: 10%;
+section{
+  margin-top: 10%;
 }
 
-.container {
-    text-align: center;
+.home-container{
+  text-align: center;
 }
 
-.container .emo-gal  {
-    margin-top: 70px;
+.home-container .emo-gal {
+  margin-top: 70px;
 }
 
-.col-lg-4 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-around;
+
+.home-container button:hover{
+  color: black;
+  background-color: aliceblue;
+  box-shadow: 10px;
+  border-radius: 10px;
 }
 
-button {
-    padding: 20px;
-    border: 1px solid white;
-    color: white;
-    background-color: darkgray;
-    transition: 0.3s;
-    border-radius: 10px;
-}
-
-button:hover {
-    color: black;
-    background-color: aliceblue;
-    box-shadow: 10px;
-    border-radius: 10px;
-}
-
-.btn {
-    margin-top: 20px;
+.home-container .btn{
+  margin-top: 20px;
 }
