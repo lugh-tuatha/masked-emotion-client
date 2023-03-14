@@ -11,7 +11,7 @@ export default class LoginForm extends Component {
   constructor(props){
     super(props)
     this.state={
-      email:"",
+      phone:"",
       password:""
     };
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -19,8 +19,8 @@ export default class LoginForm extends Component {
 
   handleSubmit(e){
     e.preventDefault();
-    const { email, password } = this.state;
-    console.log(email, password);
+    const { phone, password } = this.state;
+    console.log(phone, password);
 
     fetch("http://localhost:5000/login-user",{
       method: "POST",
@@ -31,7 +31,7 @@ export default class LoginForm extends Component {
         "Access-Control-Allow-Origin":"*",
       },
       body:JSON.stringify({
-        email,
+        phone,
         password,
       }),
     }).then((res) => res.json())
@@ -57,12 +57,12 @@ export default class LoginForm extends Component {
 
           <form className="text-white" onSubmit={this.handleSubmit}>
             <div className='mt-4 input-container'>
-              <input type="email" className="mb-4" placeholder='EMAIL ADDRESS' onChange={(e) => this.setState({  email: e.target.value })}/>
+              <input type="text" className="mb-4 login-input" placeholder='PHONE NUMBER' onChange={(e) => this.setState({  phone: e.target.value })}/>
               <AiIcons.AiOutlineMail size={28} className='input-icon'/>
             </div>
 
             <div className='input-container'>
-              <input type="password" className="mb-4" placeholder='PASSWORD' onChange={(e) => this.setState({  password: e.target.value })}/>
+              <input type="password" className="mb-4 login-input" placeholder='PASSWORD' onChange={(e) => this.setState({  password: e.target.value })}/>
               <BiIcons.BiKey size={28} className='input-icon'/>
             </div>
             
@@ -70,8 +70,8 @@ export default class LoginForm extends Component {
 
             <p className='mb-2'>Or login with</p>
             <div>
-              <BsIcons.BsFacebook size={28}/>
-              <AiIcons.AiOutlineGoogle size={32}/>
+              <BsIcons.BsFacebook size={28} style={{ color: 'black' }} className="mx-1"/>
+              <AiIcons.AiOutlineGoogle size={32} style={{ color: 'black' }} className="mx-1"/>
             </div>
 
             <p className='mt-3'>No account yet? <Link to="/signup">Create an account</Link></p>

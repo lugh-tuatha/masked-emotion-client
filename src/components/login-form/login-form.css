@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-input[type="password"] {
+input.login-input{
   width: 100%;
 }
 
@@ -26,8 +26,13 @@ input[type="password"] {
   position: absolute;
   top: 10%;
   left: .75rem;
+  color: black;
 }
 
 .input-container input {
   padding-left: 3.25rem;
+}
+
+input::placeholder{
+  color: black;
 }

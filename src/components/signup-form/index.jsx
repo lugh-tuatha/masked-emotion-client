@@ -10,7 +10,7 @@ export default class Signup extends Component {
     this.state={
       fname: "",
       lname: "",
-      email: "",
+      phone: "",
       password: "",
       cpassword: ""
     };
@@ -19,8 +19,8 @@ export default class Signup extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const{ fname, lname, email, password, cpassword } = this.state;
-    console.log(fname, lname, email, password, cpassword)
+    const{ fname, lname, phone, password, cpassword } = this.state;
+    console.log(fname, lname, phone, password, cpassword)
 
     fetch("http://localhost:5000/register",{
       method: "POST",
@@ -33,7 +33,7 @@ export default class Signup extends Component {
       body:JSON.stringify({
         fname,
         lname,
-        email,
+        phone,
         password,
         cpassword
       }),
@@ -61,8 +61,8 @@ export default class Signup extends Component {
               </div>
             </div>
 
-            <label>EMAIL ADDRESS</label> <br />
-            <input type="email" className="mb-4" onChange={(e) => this.setState({ email: e.target.value })}/>
+            <label>PHONE NUMBER</label> <br />
+            <input type="text" className="mb-4 phone-number" onChange={(e) => this.setState({ phone: e.target.value })}/>
 
             <div className="d-flex gap-4">
               <div>
