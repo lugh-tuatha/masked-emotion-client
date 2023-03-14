@@ -41,7 +41,9 @@ export default class LoginForm extends Component {
         if(data.status=="ok"){
           alert("login successful")
           window.localStorage.setItem("token", data.data);
-          window.location.href = "./userDetails"
+          window.localStorage.setItem("loggedIn", true);
+
+          window.location.href = "/"
         }
       })
   }
