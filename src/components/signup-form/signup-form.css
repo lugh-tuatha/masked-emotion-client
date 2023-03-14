@@ -27,7 +27,7 @@
 }
 
 .form-container input[type="submit"] {
-  background-color: #FF5B93;
+  background-color: var(--primary);
 }
 
 .form-container input.phone-number{
@@ -40,15 +40,15 @@
 
 .form-container form a{
   text-decoration: underline;
-  color: #44B6C5;
+  color: var(--secondary);
 }
 
 .form-container form a:hover{
-  color: #44B6C5;
+  color: var(--secondary);
 }
 
 .verify-btn{
-  background-color: red;
+  background-color: var(--primary);
   width: 100%;
   padding: 8;
   color: white;

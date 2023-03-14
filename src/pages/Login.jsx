@@ -22,7 +22,7 @@ function Login() {
           </div>
         </div>
 
-        <div className="col-lg-4 vh-100">
+        <div className="col-lg-4 vh-100 signin-container">
           <div className='p-5 mt-5'>
             <LoginForm />
           </div>
