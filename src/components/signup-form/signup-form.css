@@ -46,3 +46,10 @@
 .form-container form a:hover{
   color: #44B6C5;
 }
+
+.verify-btn{
+  background-color: red;
+  width: 100%;
+  padding: 8;
+  color: white;
+}

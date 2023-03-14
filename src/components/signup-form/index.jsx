@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import './signup-form.css';
+import app from '../../firebase_config';
+import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 
 import { Link } from "react-router-dom";
 
-
+const auth = getAuth(app);
 export default class Signup extends Component {
   constructor(props) {
     super(props)
@@ -12,35 +14,102 @@ export default class Signup extends Component {
       lname: "",
       phone: "",
       password: "",
-      cpassword: ""
+      cpassword: "",
+      verifyButton: false,
+      verifyOtp: false,
+      otp: "",
+      verified: false,
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onSignInSubmit = this.onSignInSubmit.bind(this)
+    this.verifyCode = this.verifyCode.bind(this);
+  }
+
+  onCapthcVerify(){
+    window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
+      'size': 'invisible',
+      'callback': (response) => {
+        this.onSignInSubmit();
+        // reCAPTCHA solved, allow signInWithPhoneNumber.
+        // ...
+      },
+    }, auth);
+  }verfyOtp
+  onSignInSubmit(){
+    this.onCapthcVerify()
+    const phoneNumber = "+63" + this.state.phone;
+    const appVerifier = window.recaptchaVerifier;
+
+    signInWithPhoneNumber(auth, phoneNumber, appVerifier)
+    .then((confirmationResult) => {
+      // SMS sent. Prompt user to type the code from the message, then sign the
+      // user in with confirmationResult.confirm(code).
+      window.confirmationResult = confirmationResult;
+      alert("otp sended")
+      this.setState({ verifyOtp: true })
+      // ...
+    }).catch((error) => {
+      // Error; SMS not sent
+      // ...
+    });
+  }
+
+  verifyCode(){
+    window.confirmationResult.confirm(this.state.otp).then((result) => {
+      // User signed in successfully.
+      const user = result.user;
+      console.log(user);
+      alert("Veification success")
+      this.setState( {
+        verified: true,
+        verifyOtp: false
+
+      })
+    }).catch((error) => {
+      alert("Invalid Otp")
+      // User couldn't sign in (bad verification code?)
+      // ...
+    });
+  }
+
+  changeMobile(e) {
+    this.setState({ phone: e.target.value }, () => {
+      if (this.state.phone.length === 10) {
+        this.setState({
+          verifyButton: true,
+        });
+      }
+    });
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    const{ fname, lname, phone, password, cpassword } = this.state;
-    console.log(fname, lname, phone, password, cpassword)
+    if(this.state.verified){
+      const{ fname, lname, phone, password, cpassword } = this.state;
+      console.log(fname, lname, phone, password, cpassword)
 
-    fetch("http://localhost:5000/register",{
-      method: "POST",
-      crossDomain: true,
-      headers:{
-        "Content-Type":"application/json",
-        Accept:"application/json",
-        "Access-Control-Allow-Origin":"*",
-      },
-      body:JSON.stringify({
-        fname,
-        lname,
-        phone,
-        password,
-        cpassword
-      }),
-    }).then((res) => res.json())
-      .then((data) => {
-        console.log(data, "userRegister")
-      })
+      fetch("http://localhost:5000/register",{
+        method: "POST",
+        crossDomain: true,
+        headers:{
+          "Content-Type":"application/json",
+          Accept:"application/json",
+          "Access-Control-Allow-Origin":"*",
+        },
+        body:JSON.stringify({
+          fname,
+          lname,
+          phone,
+          password,
+          cpassword
+        }),
+      }).then((res) => res.json())
+        .then((data) => {
+          console.log(data, "userRegister")
+        })
+      } else{
+        alert("Please Verify Mobile")
+      }
   }
   render() {
     return (
@@ -48,6 +117,7 @@ export default class Signup extends Component {
         <div className="form-container">
           <h2>LOGO</h2>
           <form onSubmit={this.handleSubmit}>
+            <div id="recaptcha-container"></div>
             <div className="d-flex gap-4 mt-3 mb-4">
               <div>
                 <label>FIRSTNAME</label>
@@ -62,7 +132,17 @@ export default class Signup extends Component {
             </div>
 
             <label>PHONE NUMBER</label> <br />
-            <input type="text" className="mb-4 phone-number" onChange={(e) => this.setState({ phone: e.target.value })}/>
+            <input type="number" className="mb-4 phone-number" onChange={(e) => this.changeMobile(e)}/>
+            {this.state.verifyButton ? <input type="button" value={this.state.verified ? "Verified" : "Verify"} onClick={this.onSignInSubmit} className='verify-btn'/> : null}
+            
+
+            {this.state.verifyOtp ? 
+            <div> 
+              <label>OTP</label> <br />
+              <input type="text" className="mb-4 phone-number" onChange={(e) => this.setState({ otp: e.target.value })}/>
+              <input type="button" value="OTP" onClick={this.verifyCode} className='verify-btn'/>
+            </div> : null }
+
 
             <div className="d-flex gap-4">
               <div>
