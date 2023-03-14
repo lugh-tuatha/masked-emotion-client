@@ -1,4 +1,3 @@
-
 main.main-content{
   display: flex;
   align-items: center;
@@ -11,7 +10,6 @@ main.main-content p{
 
 .home-section {
   text-align: center;
-
 }
 
 .emo-share-btn button {
@@ -26,6 +24,6 @@ main.main-content p{
 .emo-share-btn button:hover {
   color: black;
   background-color: aliceblue;
-  box-shadow: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }

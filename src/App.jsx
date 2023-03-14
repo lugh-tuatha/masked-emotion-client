@@ -4,10 +4,12 @@ import './App.css';
 import Header from './components/Header';
 import SectionBox from './components/section-box';
 
+import sectionBoxData from './json/sectionBoxes.json'
+
 function App() {
-  const sectionBoxes = Array.from({ length: 12 }).map((_, index) => (
+  const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
     <div key={index} className="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-      <SectionBox />
+      <SectionBox title={sectionBox.title} description={sectionBox.description} />
     </div>
   ));
 

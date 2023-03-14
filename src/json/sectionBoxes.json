@@ -1,0 +1,52 @@
+{
+  "sectionBoxes": [
+    {
+      "title": "ICON",
+      "description": "LOVE"
+    },
+    {
+      "title": "ICON",
+      "description": "SADNESS"
+    },
+    {
+      "title": "ICON",
+      "description": "ANGER"
+    },
+    {
+      "title": "ICON",
+      "description": "HAPPINESS"
+    },
+    {
+      "title": "ICON",
+      "description": "REGRET"
+    },
+    {
+      "title": "ICON",
+      "description": "ANXIETY"
+    },
+    {
+      "title": "ICON",
+      "description": "HOPE"
+    },
+    {
+      "title": "ICON",
+      "description": "CONFUSION"
+    },
+    {
+      "title": "ICON",
+      "description": "GUILT"
+    },
+    {
+      "title": "ICON",
+      "description": "GRATITUDE"
+    },
+    {
+      "title": "ICON",
+      "description": "FEAR"
+    },
+    {
+      "title": "ICON",
+      "description": "DREAM"
+    }
+  ]
+}
