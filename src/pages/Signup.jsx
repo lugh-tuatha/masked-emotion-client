@@ -10,16 +10,16 @@ function Signup() {
       <div className="row">
         <LoginHeader />
 
-        <div className="col-lg-7 vh-100 login-hero-container">
-          
+        <div className="col-lg-8 vh-100 login-hero-container d-flex justify-content-center align-items-center">
+          <div>
+            <p>Welcome to EmoWall</p>
+            <h2 className='fw-bold'>Share Your Emotions Anonymously and Find Support in Our Safe and Caring Community</h2>
+          </div>
+
         </div>
 
-        <div className="col-lg-5 vh-100 signup-container">
-          <div className='p-5 mt-5'>
-            <p className='mb-0'>Welcome to EmoWall</p>
-            <h2 className='w-75 fw-bold mb-5'>Share Your Emotions Anonymously and Find Support in Our Safe and Caring Community</h2>
-            <SignupForm />
-          </div>
+        <div className="col-lg-4 vh-100 signup-container d-flex justify-content-center align-items-center">
+          <SignupForm />
         </div>
       </div>
     </div>

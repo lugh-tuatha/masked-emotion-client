@@ -47,8 +47,8 @@ export default class Signup extends Component {
       <>
         <div className="form-container">
           <h2>LOGO</h2>
-          <form className="text-white" onSubmit={this.handleSubmit}>
-            <div className="d-flex gap-4 mb-4">
+          <form onSubmit={this.handleSubmit}>
+            <div className="d-flex gap-4 mt-3 mb-4">
               <div>
                 <label>FIRSTNAME</label>
                 <br />

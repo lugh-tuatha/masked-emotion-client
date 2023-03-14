@@ -3,9 +3,16 @@
 }
 
 .signup-container {
-  background-color: #747474;
+  background-color: #EFFDFF;
 }
 
+.sign-up-container {
+  height: 90vh;
+}
+
+img.signupHero{
+  width: 100%;
+}
 
 
 .login-hero img{
