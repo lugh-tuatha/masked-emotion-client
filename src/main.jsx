@@ -19,7 +19,14 @@ import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'
 import Anger from './pages/sections/Anger'
 import Happiness from './pages/sections/Happiness'
-
+import Regret from './pages/sections/Regret'
+import Anxiety from './pages/sections/Anxiety'
+import Hope from './pages/sections/Hope'
+import Confusion from './pages/sections/Confusion'
+import Guilt from './pages/sections/Guilt'
+import Gratitude from './pages/sections/Gratitude'
+import Fear from './pages/sections/Fear'
+import Dream from './pages/sections/Dream'
 
 import UserDetails from './components/user-details';
 
@@ -53,6 +60,7 @@ const router = createBrowserRouter([
     element: <Reset />,
   },
 
+  // section routes 
   {
     path: "/love",
     element: <Love />,
@@ -68,6 +76,38 @@ const router = createBrowserRouter([
   {
     path: "/happiness",
     element: <Happiness />,
+  },
+  {
+    path: "/regret",
+    element: <Regret />,
+  },
+  {
+    path: "/anxiety",
+    element: <Anxiety />,
+  },
+  {
+    path: "/hope",
+    element: <Hope />,
+  },
+  {
+    path: "/confusion",
+    element: <Confusion />,
+  },
+  {
+    path: "/guilt",
+    element: <Guilt />,
+  },
+  {
+    path: "/gratitude",
+    element: <Gratitude />,
+  },
+  {
+    path: "/fear",
+    element: <Fear />,
+  },
+  {
+    path: "/dream",
+    element: <Dream />,
   },
 ]);
 

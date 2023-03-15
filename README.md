@@ -1,6 +1,6 @@
 # EmoWall
 
-## Our website is a safe and private place where people can share their deepest feelings and thoughts anonymously. We have different sections like love, sadness, anger and more, where users can express themselves and find comfort. Our platform also lets people support each other by liking and commenting on their confessions, making them feel like they're not alone.
+Our website is a safe and private place where people can share their deepest feelings and thoughts anonymously. We have different sections like love, sadness, anger and more, where users can express themselves and find comfort. Our platform also lets people support each other by liking and commenting on their confessions, making them feel like they're not alone.
 
 ## Built With
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)<br>

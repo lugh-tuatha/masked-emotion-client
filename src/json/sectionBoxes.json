@@ -22,35 +22,43 @@
     },
     {
       "title": "ICON",
-      "description": "REGRET"
+      "description": "REGRET",
+      "link": "/regret"
     },
     {
       "title": "ICON",
-      "description": "ANXIETY"
+      "description": "ANXIETY",
+      "link": "/anxiety"
     },
     {
       "title": "ICON",
-      "description": "HOPE"
+      "description": "HOPE",
+      "link": "/hope"
     },
     {
       "title": "ICON",
-      "description": "CONFUSION"
+      "description": "CONFUSION",
+      "link": "/confusion"
     },
     {
       "title": "ICON",
-      "description": "GUILT"
+      "description": "GUILT",
+      "link": "/guilt"
     },
     {
       "title": "ICON",
-      "description": "GRATITUDE"
+      "description": "GRATITUDE",
+      "link": "/gratitude"
     },
     {
       "title": "ICON",
-      "description": "FEAR"
+      "description": "FEAR",
+      "link": "/fear"
     },
     {
       "title": "ICON",
-      "description": "DREAM"
+      "description": "DREAM",
+      "link": "/dream"
     }
   ]
 }
