@@ -1,8 +1,9 @@
 import React from 'react'
+import './button.css'
 
 function Button(props) {
   return (
-    <button className='bg-primary text-white font-medium px-4 py-2 rounded'>{props.children}</button>
+    <button className=''>{props.children}</button>
   )
 }
 

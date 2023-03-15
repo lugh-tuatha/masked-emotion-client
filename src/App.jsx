@@ -3,6 +3,7 @@ import './App.css';
 
 import Header from './components/Header';
 import SectionBox from './components/section-box';
+import Button from './components/button';
 
 import sectionBoxData from './json/sectionBoxes.json'
 
@@ -27,7 +28,7 @@ function App() {
             <p className='my-4'>Tell us what's been weighing on your mind?</p>
             <div className="row">{sectionBoxes}</div>
             <div className="emo-share-btn">
-              <button>Share Your Emotions</button>
+              <Button>Ace</Button>
             </div>
           </div>
         </section>
