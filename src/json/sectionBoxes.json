@@ -2,19 +2,23 @@
   "sectionBoxes": [
     {
       "title": "ICON",
-      "description": "LOVE"
+      "description": "LOVE",
+      "link": "/love"
     },
     {
       "title": "ICON",
-      "description": "SADNESS"
+      "description": "SADNESS",
+      "link": "/sadness"
     },
     {
       "title": "ICON",
-      "description": "ANGER"
+      "description": "ANGER",
+      "link": "/anger"
     },
     {
       "title": "ICON",
-      "description": "HAPPINESS"
+      "description": "HAPPINESS",
+      "link": "/happiness"
     },
     {
       "title": "ICON",

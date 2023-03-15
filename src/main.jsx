@@ -15,6 +15,12 @@ import Release from './pages/Release';
 import Login from './pages/Login';
 import Reset from './pages/Reset';
 
+import Love from './pages/sections/Love'
+import Sadness from './pages/sections/Sadness'
+import Anger from './pages/sections/Anger'
+import Happiness from './pages/sections/Happiness'
+
+
 import UserDetails from './components/user-details';
 
 const router = createBrowserRouter([
@@ -45,6 +51,23 @@ const router = createBrowserRouter([
   {
     path: "/reset",
     element: <Reset />,
+  },
+
+  {
+    path: "/love",
+    element: <Love />,
+  },
+  {
+    path: "/sadness",
+    element: <Sadness />,
+  },
+  {
+    path: "/anger",
+    element: <Anger />,
+  },
+  {
+    path: "/happiness",
+    element: <Happiness />,
   },
 ]);
 
