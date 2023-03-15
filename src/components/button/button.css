@@ -3,7 +3,7 @@ button {
     background: #d87093;
     border-radius: 10px;
     padding: 10px 15px 10px 15px;
-    box-shadow: 10px 10px 5px rgb(216, 112, 147,0.8);
+    box-shadow: 10px -8px 4px rgb(216, 112, 147,0.8);
     transition: 0.3s ease;
 }
 
@@ -11,3 +11,4 @@ button:hover {
     background: #d87093;
     box-shadow: 0 0;
 }
+/* cha */
