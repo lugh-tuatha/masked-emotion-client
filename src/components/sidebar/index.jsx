@@ -14,6 +14,7 @@ const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
 return (
     <nav className='sidenav'>
         <ul>
+            <h1>Explore Emotions</h1>
             {sectionBoxes}
         </ul>
     </nav>
