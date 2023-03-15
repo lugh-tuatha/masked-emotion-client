@@ -4,7 +4,7 @@ import './sidebar.css'
 function Sidebar() {
   return (
     <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 side">
                 <nav className='sidenav'>
                     <ul>
                     <li><a href="#">Love</a></li>
