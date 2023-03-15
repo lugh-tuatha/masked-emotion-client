@@ -27,6 +27,10 @@ img.signupHero{
   font-size: 2.75rem;
 }
 
+.login-hero-container img{
+  width: 35rem;
+}
+
 .signin-container{
   background-color: var(--light-bg);
 }

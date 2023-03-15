@@ -62,11 +62,12 @@ export default class LoginForm extends Component {
             </div>
 
             <div className='input-container'>
-              <input type="password" className="mb-4 login-input" placeholder='PASSWORD' onChange={(e) => this.setState({  password: e.target.value })}/>
+              <input type="password" className="login-input" placeholder='PASSWORD' onChange={(e) => this.setState({  password: e.target.value })}/>
               <BiIcons.BiKey size={28} className='input-icon'/>
             </div>
+            <p className='mb-4 mt-1 text-end'><Link to="/reset">Forgot password?</Link></p>
             
-            <input type="submit" value="SIGN-UP" className="px-5 mb-3" />
+            <input type="submit" value="LOG IN" className="px-5 mb-3" />
 
             <p className='mb-2'>Or login with</p>
             <div>

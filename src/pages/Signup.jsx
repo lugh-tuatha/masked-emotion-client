@@ -4,6 +4,9 @@ import './pages.css'
 import LoginHeader from '../components/login-header'
 import SignupForm from '../components/signup-form'
 
+import signupHero from '../assets/img/hero-img/signup-hero.png'
+
+
 function Signup() {
   return (
     <div>
@@ -14,6 +17,8 @@ function Signup() {
           <div>
             <p>Welcome to EmoWall</p>
             <h2 className='fw-bold'>Share Your Emotions Anonymously and Find Support in Our Safe and Caring Community</h2>
+
+            <img src={signupHero} alt="sign up hero"/>
           </div>
 
         </div>
