@@ -33,7 +33,7 @@
     font-family: arial;
     text-decoration: none;
     text-transform: capitalize;
-    color: black;
+    color: rgb(255, 254, 254);
     padding: 10px;
     height: 70px;
     transition: .3s ease;
