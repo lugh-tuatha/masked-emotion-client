@@ -28,7 +28,7 @@ function App() {
             <p className='my-4'>Tell us what's been weighing on your mind?</p>
             <div className="row">{sectionBoxes}</div>
             <div className="emo-share-btn">
-              <Button>Ace</Button>
+              <Button>Share your Emotions</Button>
             </div>
           </div>
         </section>
