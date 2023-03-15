@@ -22,7 +22,7 @@ function Sidebar() {
                     </ul>
                 </nav>
             </div>
-            <div className="col-lg-9">
+            <div className="col-lg-9 sidecontent">
                 <h1>Love</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad eius dolorem alias. Animi blanditiis quaerat nam sequi. Dolores aperiam molestias at nihil tempora maxime veritatis laboriosam sapiente facere architecto!</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat blanditiis, fugit voluptas exercitationem ipsam qui deserunt alias harum ducimus quasi placeat quas adipisci error voluptatem cum at laborum eligendi nemo.</p>

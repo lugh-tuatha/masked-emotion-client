@@ -39,3 +39,15 @@
     color: white;
     } 
 
+    .sidecontent {
+        padding: 50px;
+    }
+
+    .sidecontent h1 {
+        margin-bottom: 15px;
+    }
+
+    .sidecontent p {
+        display: flex;
+        justify-content: flex-start;
+    }
