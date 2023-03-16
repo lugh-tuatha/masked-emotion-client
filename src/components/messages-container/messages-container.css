@@ -41,6 +41,7 @@
     font-size: 12px;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .btn2:hover{
