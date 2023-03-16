@@ -9,11 +9,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Signup from './pages/Signup';
+import Signup from './pages/auth/Signup';
 import About from './pages/About';
 import Release from './pages/Release';
-import Login from './pages/Login';
-import Reset from './pages/Reset';
+import Login from './pages/auth/Login';
+import Reset from './pages/auth/Reset';
 
 import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'

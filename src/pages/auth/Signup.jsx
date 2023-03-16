@@ -1,10 +1,10 @@
 import React from 'react'
-import './pages.css'
+import './auth.css'
 
-import LoginHeader from '../components/login-header'
-import SignupForm from '../components/signup-form'
+import LoginHeader from '../../components/login-header'
+import SignupForm from '../../components/signup-form'
 
-import signupHero from '../assets/img/hero-img/signup-hero.png'
+import signupHero from '../../assets/img/hero-img/signup-hero.png'
 
 
 function Signup() {

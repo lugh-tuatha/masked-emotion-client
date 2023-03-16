@@ -1,8 +1,8 @@
 import React from 'react'
-import './pages.css'
+import './auth.css'
 
-import LoginForm from '../components/login-form'
-import LoginHeader from '../components/login-header'
+import LoginForm from '../../components/login-form'
+import LoginHeader from '../../components/login-header'
 
 function Login() {
   return (
