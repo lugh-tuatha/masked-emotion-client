@@ -12,7 +12,7 @@ function Signup() {
       <div className="row">
         <LoginHeader />
 
-        <div className="col-lg-8 vh-100 login-hero-container d-flex justify-content-center align-items-center">
+        <div className="col-lg-8 vh-100 auth-hero-container d-flex justify-content-center align-items-center">
           <div>
             <p>Welcome to EmoWall</p>
             <h2 className='fw-bold'>Share Your Emotions Anonymously and Find Support in Our Safe and Caring Community</h2>
@@ -22,7 +22,7 @@ function Signup() {
 
         </div>
 
-        <div className="col-lg-4 vh-100 signup-container d-flex justify-content-center align-items-center">
+        <div className="col-lg-4 vh-100 auth-container d-flex justify-content-center align-items-center">
           <SignupForm />
         </div>
       </div>

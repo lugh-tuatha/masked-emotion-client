@@ -1,12 +1,12 @@
-.login-hero-container {
+.auth-hero-container {
   background-color: black;
 }
 
-.signup-container {
+.auth-container {
   background-color: var(--light-bg);
 }
 
-.sign-up-container {
+.auth-up-container {
   height: 90vh;
 }
 
@@ -27,10 +27,6 @@ img.signupHero {
   font-size: 2.75rem;
 }
 
-.login-hero-container img {
+.auth-hero-container img {
   width: 35rem;
-}
-
-.signin-container {
-  background-color: var(--light-bg);
 }
