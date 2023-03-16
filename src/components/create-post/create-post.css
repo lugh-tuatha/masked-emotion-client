@@ -103,3 +103,21 @@
     height: 250px;
 
 }
+
+.modalFtr {
+    justify-content: center;
+}
+.modalBtn{
+    border: 1px rgb(128, 128, 128, 0.5);
+    background: rgb(128, 128, 128, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.modalBtn:hover {
+    background: transparent;
+    box-shadow: 0 5px 8px 3px;
+    cursor: pointer;
+}

@@ -37,10 +37,10 @@ function CreatePost() {
                   <input type="text" placeholder='LOVED SOMEONE? SHARE IT TO US ANONYMOUSLY.' id='modaltxt'/>
                 </div>
               </Modal.Body>
-              <Modal.Footer>
-                  <Button onClick={handleClose}>
+              <Modal.Footer className='modalFtr'>
+                  <div className='modalBtn' onClick={handleClose}>
                    <Ai.AiFillCheckCircle/> POST
-                  </Button>
+                  </div>
               </Modal.Footer>
             </Modal>           
           </div>
