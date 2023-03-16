@@ -33,7 +33,7 @@ function CreatePost() {
                   <input type="text" placeholder='INPUT CODENAME HERE' id='cdenme' />
                 </div>
                 <div className="modalMssg">
-                  <input type="text" placeholder='TITLE'/>
+                  <input type="text" placeholder='TITLE :'/>
                   <input type="text" placeholder='LOVED SOMEONE? SHARE IT TO US ANONYMOUSLY.' id='modaltxt'/>
                 </div>
               </Modal.Body>
