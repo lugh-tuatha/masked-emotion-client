@@ -39,7 +39,7 @@ function CreatePost() {
               </Modal.Body>
               <Modal.Footer>
                   <Button onClick={handleClose}>
-                    POST
+                   <Ai.AiFillCheckCircle/> POST
                   </Button>
               </Modal.Footer>
             </Modal>           
