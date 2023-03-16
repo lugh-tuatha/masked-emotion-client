@@ -1,13 +1,12 @@
 import React from 'react'
 import './messages-container.css'
 
+import * as Ai from "react-icons/ai";
+
 function MessagesContainer() {
   return (
     <div>
-      <div className="boxMssage">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In facilis sunt eum ipsum? Minus aperiam sunt, doloribus distinctio blanditiis asperiores necessitatibus </p>
-        <p id='name'>-Your Name</p>
-      </div>
+      <Ai.AiOutlineHeart />
     </div>
   )
 }

@@ -5,10 +5,16 @@ import { Link } from 'react-router-dom';
 import sectionBoxData from '../../json/sectionBoxes'
 
 import * as Ai from "react-icons/ai";
-
+import * as Fa from "react-icons/fa";
+import * as Bs from "react-icons/bs";
+import * as Tb from "react-icons/tb";
 
 const icons = [
   <Ai.AiFillHeart size={20}/>,
+  <Fa.FaHeartBroken size={20} />,
+  <Bs.BsFire size={20} />,
+  <Tb.TbConfetti size={20} />,
+  <Bs.BsFire size={20} />,
 ];
 
 function Sidebar() {
