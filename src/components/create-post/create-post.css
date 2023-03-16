@@ -26,6 +26,12 @@
     background: rgb(128, 128, 128, 0.8);
 }
 
+.btn:hover {
+    color: black;
+    border: 1px solid gray;
+    background: transparent;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
