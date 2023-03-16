@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './create-post.css'
 import * as Ai from "react-icons/ai";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 function CreatePost() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
       <div className="Content">
@@ -16,11 +22,33 @@ function CreatePost() {
                   <a href="#">Happiness</a>
                 </div>
               </div>
-            <div className='btn'><Ai.AiOutlinePlus /> CREATE POST</div>
+            <div className='btn' onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div>
+            <Modal show={show} onHide={handleClose}>
+              <Modal.Header closeButton className='hdng'> 
+                <Modal.Title >CREATING A POST</Modal.Title>
+              </Modal.Header>
+              <Modal.Body className='modalBody'>
+              <div className="btn"><Ai.AiFillHeart /> LOVE</div>
+              <input type="text" placeholder='INPUT CODENAME HERE' id='cdenme' />
+              </Modal.Body>
+              <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                  <Button variant="primary" onClick={handleClose}>
+                    Save Changes
+                  </Button>
+              </Modal.Footer>
+            </Modal>           
           </div>
       </div>
     </div>
   )
 }
+
+
+
+
+
 
 export default CreatePost

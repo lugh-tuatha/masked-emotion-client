@@ -21,7 +21,7 @@
 }
 
 .btn {
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
     margin-right: 15px;
     background: rgb(128, 128, 128, 0.5);
@@ -56,4 +56,21 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.hdng {
+    padding-left: 120px;
+}
+
+.modalBody {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#cdenme{
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(128, 128, 128, 0.5);
 }
