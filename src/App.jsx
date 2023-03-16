@@ -5,7 +5,7 @@ import Header from './components/Header';
 import SectionBox from './components/section-box';
 import Button from './components/button';
 
-import sectionBoxData from './json/sectionBoxes.json'
+import sectionBoxData from './json/sectionBoxes'
 
 function App() {
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
