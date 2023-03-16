@@ -6,7 +6,6 @@ import SignupForm from '../../components/signup-form'
 
 import signupHero from '../../assets/img/hero-img/signup-hero.png'
 
-
 function Signup() {
   return (
     <div>
