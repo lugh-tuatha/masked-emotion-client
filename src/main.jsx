@@ -13,7 +13,6 @@ import Signup from './pages/auth/Signup';
 import About from './pages/About';
 import Release from './pages/Release';
 import Login from './pages/auth/Login';
-import Reset from './pages/auth/Reset';
 
 import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'
@@ -54,10 +53,6 @@ const router = createBrowserRouter([
   {
     path: "/userDetails",
     element: <UserDetails />,
-  },
-  {
-    path: "/reset",
-    element: <Reset />,
   },
 
   // section routes 
