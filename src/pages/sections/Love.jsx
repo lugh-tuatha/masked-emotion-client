@@ -5,6 +5,7 @@ import './sections.css'
 import Header from '../../components/header'
 import Sidebar from '../../components/sidebar'
 import MessagesContainer from '../../components/messages-container'
+import CreatePost from '../../components/create-post'
 
 
 function Love() {
@@ -20,6 +21,7 @@ function Love() {
           <h1>Love</h1>
 
           <div>
+            <CreatePost />
             <MessagesContainer />
           </div>
 
