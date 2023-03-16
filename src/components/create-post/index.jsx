@@ -28,15 +28,17 @@ function CreatePost() {
                 <Modal.Title >CREATING A POST</Modal.Title>
               </Modal.Header>
               <Modal.Body className='modalBody'>
-              <div className="btn"><Ai.AiFillHeart /> LOVE</div>
-              <input type="text" placeholder='INPUT CODENAME HERE' id='cdenme' />
+                <div className="modalbtn1">
+                  <div className="btn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
+                  <input type="text" placeholder='INPUT CODENAME HERE' id='cdenme' />
+                </div>
+                <div className="modalMssg">
+                  <input type="text" placeholder='TITLE' />
+                </div>
               </Modal.Body>
               <Modal.Footer>
-                  <Button variant="secondary" onClick={handleClose}>
-                    Close
-                  </Button>
-                  <Button variant="primary" onClick={handleClose}>
-                    Save Changes
+                  <Button onClick={handleClose}>
+                    POST
                   </Button>
               </Modal.Footer>
             </Modal>           
