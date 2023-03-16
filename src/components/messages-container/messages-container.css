@@ -1,0 +1,41 @@
+.mssgeBox {
+    border: 1px solid gray;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.ttle {
+    display: flex;
+    background: #474747;
+    border-radius: 9px;
+    padding: 9px;
+    color: white;
+    justify-content: space-between;
+}
+
+.ttle h6{
+    padding-left: 20px;
+}
+
+.mssgeBox p {
+    padding: 25px;
+}
+
+.btnMssge {
+    background-color: white;
+    margin-top: 10px;
+    border: 1px solid gray;
+    max-width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid gray;
+    background: rgb(128, 128, 128, 0.2);
+    margin-right: 10px;
+    font-size: 12px;
+
+}
