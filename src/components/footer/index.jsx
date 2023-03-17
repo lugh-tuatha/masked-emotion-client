@@ -31,6 +31,11 @@ function Footer() {
           <h4>WANT TO HIRE US?</h4>
           <p>The Developers</p>
           <h4>FOLLOW US ON SOCIAL MEDIA</h4>
+          <div className="icn">
+                <a link=''><Bs.BsFacebook/></a>
+                <a link=''><Bs.BsInstagram/></a>
+                <a link=''><Bs.BsTwitter/></a>
+              </div>
         </div>
         <div className="footer-content2">
           <h4>HOW WE CAN HELP YOU?</h4>
