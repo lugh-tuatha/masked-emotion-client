@@ -38,3 +38,17 @@ padding-bottom: 90px;
 .hmbtn button {
   margin-right: 20px;
 }
+
+.scl {
+  margin-top: 50px;
+}
+
+.icn {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.icn a {
+  margin: 10px;
+}

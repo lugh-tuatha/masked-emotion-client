@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './App.css';
 
+import * as Bs from "react-icons/bs";
+
 import Header from './components/Header';
 import SectionBox from './components/section-box';
 import Button from './components/button';
@@ -39,6 +41,14 @@ function App() {
             <h5>Share Your Feelings, Connect with Others</h5>
             <p>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
             <p className='mt-3'>Join the Community of Thousands Sharing their Emotions Anonymously </p>
+            <div className="scl">
+              <p>FOLLOW US ON SOCIAL MEDIA</p>
+              <div className="icn">
+                <a link=''><Bs.BsFacebook/></a>
+                <a link=''><Bs.BsInstagram/></a>
+                <a link=''><Bs.BsTwitter/></a>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-lg-6">
