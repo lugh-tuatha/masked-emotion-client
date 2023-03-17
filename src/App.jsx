@@ -79,7 +79,7 @@ function App() {
             </div>
         </div>
         <div className="col-lg-1"></div>
-        <div className="col-lg-4">
+        <div className="col-lg-4 nws">
           <Newsletter />
         </div>
       </div>
