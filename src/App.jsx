@@ -20,6 +20,15 @@ function App() {
   return (
     <div className='container'>
       <Header />
+      <div className="col-lg-7 hme">
+        <p>Welcome to our community</p>
+        <h3>Share Your Voice, Anonymously and Without Judgement</h3>
+        <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
+        <div className="hmbtn">
+          <p>Join the community</p>
+          <button>SIGN UP</button><span><button>LOGIN</button></span>
+        </div>
+      </div>
       <HeroBox />
       <History />
       <Newsletter />

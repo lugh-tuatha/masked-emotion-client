@@ -11,3 +11,25 @@ main.main-content p{
 .home-section {
   text-align: center;
 }
+
+.hme {
+  margin-top: 150px;
+  margin-bottom: 80px;
+  font-size: larger;
+}
+
+.hme p {
+  color: gray;
+}
+
+.hmbtn {
+  margin-top: 30px;
+}
+
+.hmbtn p {
+  padding-bottom: 15px;
+}
+
+.hmbtn button {
+  margin-right: 20px;
+}
