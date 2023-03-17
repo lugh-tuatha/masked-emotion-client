@@ -19,13 +19,24 @@ export default class Signup extends Component {
       verifyOtp: false,
       otp: "",
       verified: false,
+      userType: "",
+      secretKey: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onSignInSubmit = this.onSignInSubmit.bind(this)
     this.verifyCode = this.verifyCode.bind(this);
   }
 
-  onCapthcaVerify(){
+  setUserType = (userType) => {
+    this.setState({ userType });
+  }
+
+  setSecretKey = (secretKey) => {
+    this.setState({ secretKey });
+  }
+
+
+  onCaptchaVerify(){
     window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
       'size': 'invisible',
       'callback': (response) => {
@@ -34,9 +45,10 @@ export default class Signup extends Component {
         // ...
       },
     }, auth);
-  }verfyOtp
+  }
+  // verifyOtp
   onSignInSubmit(){
-    this.onCapthcaVerify()
+    this.onCaptchaVerify()
     const phoneNumber = "+63" + this.state.phone;
     const appVerifier = window.recaptchaVerifier;
 
@@ -83,56 +95,65 @@ export default class Signup extends Component {
   }
 
   handleSubmit(e) {
-    e.preventDefault();
-    if(this.state.verified){
-      const{ fname, lname, phone, password, cpassword } = this.state;
-      console.log(fname, lname, phone, password, cpassword)
+    if(this.state.userType === "Admin" && this.state.secretKey !== "loveujai"){
+      e.preventDefault();
+      alert("Invalid Admin")
+    }else {
+      e.preventDefault();
+      
+      if(this.state.verified){
+        const{ fname, lname, phone, password, cpassword } = this.state;
+        console.log(fname, lname, phone, password, cpassword)
 
-      fetch("http://localhost:5000/register",{
-        method: "POST",
-        crossDomain: true,
-        headers:{
-          "Content-Type":"application/json",
-          Accept:"application/json",
-          "Access-Control-Allow-Origin":"*",
-        },
-        body:JSON.stringify({
-          fname,
-          lname,
-          phone,
-          password,
-          cpassword
-        }),
-      }).then((res) => res.json())
-        .then((data) => {
-          console.log(data, "userRegister")
-        })
-      } else{
-        alert("Please Verify Mobile")
-      }
+        fetch("http://localhost:5000/register",{
+          method: "POST",
+          crossDomain: true,
+          headers:{
+            "Content-Type":"application/json",
+            Accept:"application/json",
+            "Access-Control-Allow-Origin":"*",
+          },
+          body:JSON.stringify({
+            fname,
+            lname,
+            phone,
+            password,
+            cpassword,
+            userType: this.state.userType
+          }),
+        }).then((res) => res.json())
+          .then((data) => {
+            console.log(data, "userRegister")
+          })
+        } else{
+          alert("Please Verify Mobile")
+        }
+    }
   }
   
   render() {
-    // const [userType, setUserType] = useState("");
     return (
       <>
         <div className="form-container">
           <h2>LOGO</h2>
           <form onSubmit={this.handleSubmit}>
 
-            <div>
-              <input type="radio" name='UserType' value="User" onChange={(e) => setFname(e.target.value )}/>User
-
-              <input type="radio" name='UserType' value="Admin" onChange={(e) => setFname(e.target.value )}/>Admin
-            </div>
-
             <div id="recaptcha-container"></div>
 
             <div>
+              <input type="radio" name='UserType' value="User" onChange={(e) => this.setUserType(e.target.value )}/>User
+
+              <input type="radio" name='UserType' value="Admin" onChange={(e) => this.setUserType(e.target.value )}/>Admin
+            </div>
+
+            {this.state.userType == "Admin" ? (
+            <div>
               <label>SECRET KEY</label>
               <br />
-              <input type="text" onChange={(e) => this.setState({ fname: e.target.value })} className="w-100"/>
+              <input type="text" onChange={(e) => this.setSecretKey(e.target.value )} className="w-100"/>
             </div>
+            ) : null}
+            
             <div className="d-flex gap-4 mt-3 mb-4">
               <div>
                 <label>FIRSTNAME</label>
