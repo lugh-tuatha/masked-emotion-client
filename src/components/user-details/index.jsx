@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
+
 import App from '../../App'
+import Dashboard from '../../pages/Dashboard'
 
 export default class UserDetails extends Component {
   constructor(props){
@@ -40,7 +42,7 @@ export default class UserDetails extends Component {
   render() {
     const {  admin } = this.state;
     return (
-      admin ? <h1>Welcome Admin</h1> : <App />
+      admin ? <Dashboard /> : <App />
     )
   }
 }
