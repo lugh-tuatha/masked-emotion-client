@@ -13,9 +13,9 @@ main.main-content p{
 }
 
 .hme {
-  margin-top: 150px;
-  margin-bottom: 80px;
-  font-size: larger;
+font-size: larger;
+padding-top: 90px;
+padding-bottom: 90px;
 }
 
 .hme p {
@@ -23,10 +23,11 @@ main.main-content p{
 }
 
 .hmbtn {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .hmbtn p {
+  padding-top: 80px;
   padding-bottom: 15px;
 }
 
