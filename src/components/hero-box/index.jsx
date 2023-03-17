@@ -13,8 +13,8 @@ function heroBox() {
     <div className='col-lg-6'>
       <div className="hero-gal">
         <div className="hero-box">
-          <h3>10K</h3>
-          <p>Over 10,000 Active Users</p>
+          <h3 className='counter'>10K</h3>
+          <p >Over 10,000 Active Users</p>
         </div>
         <div className="hero-box">
           <img src={Computer} alt="" />
