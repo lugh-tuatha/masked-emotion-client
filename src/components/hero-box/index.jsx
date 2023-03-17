@@ -8,9 +8,7 @@ import Arrow from '../../assets/icons/arrow.svg'
 
 function heroBox() {
   return (
-    <div className="row">
-    <div className="col-lg-6"></div>
-    <div className='col-lg-6'>
+    <div>
       <div className="hero-gal">
         <div className="hero-box">
           <h3 className='counter'>10K</h3>
@@ -38,9 +36,8 @@ function heroBox() {
         </div>
       </div>
       <div className="cpost">
-        <button id='btn3'>Create a post</button>
+        <button >Create a post</button>
       </div>
-    </div>
     </div>
   )
 }
