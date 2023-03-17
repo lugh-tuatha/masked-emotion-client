@@ -1,12 +1,15 @@
 import { useState } from 'react';
 import './App.css';
 
+import * as Bs from "react-icons/bs";
+
 import Header from './components/Header';
 import SectionBox from './components/section-box';
 import Button from './components/button';
 import HeroBox from './components/hero-box';
 import History from './components/history';
 import Newsletter from './components/newsletter';
+import Mission from '../src/assets/svg/mission.svg';
 
 import sectionBoxData from './json/sectionBoxes'
 
@@ -20,9 +23,67 @@ function App() {
   return (
     <div className='container'>
       <Header />
-      <HeroBox />
-      <History />
-      <Newsletter />
+      <div className="row">
+        <div className="col-lg-7 hme">
+          <p>Welcome to our community</p>
+          <h3>Share Your Voice, Anonymously and Without Judgement</h3>
+          <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
+          <div className="hmbtn">
+            <p>Join the community</p>
+            <button>SIGN UP</button><span><button>LOGIN</button></span>
+          </div>
+        </div>
+        <div className="col-lg-5"></div>
+      </div>
+      <div className="row pt-5 pb-5">
+        <div className="col-lg-6">
+          <div>
+            <h3>Embrace Your Emotions</h3>
+            <h5>Share Your Feelings, Connect with Others</h5>
+            <p>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
+            <p className='mt-3'>Join the Community of Thousands Sharing their Emotions Anonymously </p>
+            <div className="scl">
+              <p>FOLLOW US ON SOCIAL MEDIA</p>
+              <div className="icn">
+                <a link=''><Bs.BsFacebook/></a>
+                <a link=''><Bs.BsInstagram/></a>
+                <a link=''><Bs.BsTwitter/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-6">
+          <HeroBox />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-lg-6">
+          <img src={Mission} alt="" id='mssn'/>
+        </div>
+        <div className="col-lg-6">
+        <History />
+        </div>
+      </div>
+      <div className="row nwsltt">
+        <div className="col-lg-6 nwslttr1">
+          <h5>Stay Connected with EmoWall Newsletter</h5>
+          <h3>Be the first to know about our latest anonymous posts and updates</h3>
+          <p>Sign up for our newsletter and never miss a thing! Get exclusive access to our latest anonymous posts, updates on our website, and other special offers. </p>
+          <div className="scl">
+              <p>FOLLOW US ON SOCIAL MEDIA</p>
+              <div className="icn">
+                <a link=''><Bs.BsFacebook/></a>
+                <a link=''><Bs.BsInstagram/></a>
+                <a link=''><Bs.BsTwitter/></a>
+              </div>
+            </div>
+        </div>
+        <div className="col-lg-1"></div>
+        <div className="col-lg-4 nws">
+          <Newsletter />
+        </div>
+      </div>
+
 
       {/* <main className="main-content">
         <section className="home-section px-5">

@@ -4,9 +4,7 @@ import * as Fa from "react-icons/fa";
 
 function History() {
   return (
-    <div className='row mt-5'>
-      <div className="col-lg-6"></div>
-      <div className="col-lg-6 hstrySction">
+      <div className="hstrySction">
         <div className="hstryTxt">
           <h5>Share, Express, Connect</h5>
           <h3><b>Empower Your Emotions with EmoWall</b></h3>
@@ -39,8 +37,6 @@ function History() {
             </div>
         </div>
       </div>
-
-    </div>
   )
 }
 
