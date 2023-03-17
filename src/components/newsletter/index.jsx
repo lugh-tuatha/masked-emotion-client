@@ -13,8 +13,8 @@ function Newsletter() {
           </div>
           <div className="frm">
           <form>
-            <input type="text" placeholder='FULLNAME'/>
-            <input type="email" placeholder='EMAIL ADDRESS'/>
+            <input type="text" placeholder='FULLNAME' required='required'/>
+            <input type="email" placeholder='EMAIL ADDRESS' required='required'/>
           </form>
           </div>
         </div>

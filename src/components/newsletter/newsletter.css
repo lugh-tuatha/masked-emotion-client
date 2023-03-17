@@ -2,11 +2,12 @@
     margin-top: 20px;
     background: rgb(128, 128, 128, 0.5);
     border-radius: 10px;
-    padding: 25px;
+    padding: 35px;
 }
 
 .Cntnt1 p{
     width: 250px;
+    color: gray;
 }
 
 .frm {
