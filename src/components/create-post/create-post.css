@@ -5,8 +5,9 @@
     text-align: center;
     width: 60%;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     padding: 30px;
+    box-shadow: 0 5px 15px 5px;
 }
 
 .Content h6 {
@@ -20,7 +21,7 @@
 }
 
 .btn {
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
     margin-right: 15px;
     background: rgb(128, 128, 128, 0.5);
@@ -55,4 +56,68 @@
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.hdng {
+    padding-left: 120px;
+}
+
+.modalbtn1 {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.modalBody input::placeholder{
+    color: white;
+}
+
+#cdenme{
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(128, 128, 128, 0.5);
+}
+
+#modalHrt{
+    width: 100px;
+}
+
+.modalMssg {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.modalMssg input{
+    border: 1px rgb(128, 128, 128, 0.5);
+    background: rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-top: 10px;
+    width: 85%;
+    padding: 5px;
+    
+}
+#modaltxt {
+    height: 250px;
+
+}
+
+.modalFtr {
+    justify-content: center;
+}
+.modalBtn{
+    border: 1px rgb(128, 128, 128, 0.5);
+    background: rgb(128, 128, 128, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.modalBtn:hover {
+    background: transparent;
+    box-shadow: 0 5px 8px 3px;
+    cursor: pointer;
 }
