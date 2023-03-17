@@ -1,7 +1,9 @@
 .hstrySction {
     background: rgb(128, 128, 128, 0.5);
+    width: 100%;
     padding: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 85px;
+    
 }
 
 .hstryTxt {

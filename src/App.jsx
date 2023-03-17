@@ -9,6 +9,7 @@ import Button from './components/button';
 import HeroBox from './components/hero-box';
 import History from './components/history';
 import Newsletter from './components/newsletter';
+import Mission from '../src/assets/svg/mission.svg';
 
 import sectionBoxData from './json/sectionBoxes'
 
@@ -34,9 +35,9 @@ function App() {
         </div>
         <div className="col-lg-5"></div>
       </div>
-      <div className="row">
+      <div className="row pt-5 pb-5">
         <div className="col-lg-6">
-          <div className="hmecntnt">
+          <div>
             <h3>Embrace Your Emotions</h3>
             <h5>Share Your Feelings, Connect with Others</h5>
             <p>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
@@ -55,7 +56,14 @@ function App() {
           <HeroBox />
         </div>
       </div>
-      <History />
+      <div className="row">
+        <div className="col-lg-6">
+          <img src={Mission} alt="" id='mssn'/>
+        </div>
+        <div className="col-lg-6">
+        <History />
+        </div>
+      </div>
       <Newsletter />
 
       {/* <main className="main-content">
