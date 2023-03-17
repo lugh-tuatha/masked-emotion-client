@@ -8,6 +8,8 @@ import Arrow from '../../assets/icons/arrow.svg'
 
 function heroBox() {
   return (
+    <div className="row">
+    <div className="col-lg-6"></div>
     <div className='col-lg-6'>
       <div className="hero-gal">
         <div className="hero-box">
@@ -38,6 +40,7 @@ function heroBox() {
       <div className="cpost">
         <button id='btn3'>Create a post</button>
       </div>
+    </div>
     </div>
   )
 }
