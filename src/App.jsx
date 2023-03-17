@@ -6,6 +6,7 @@ import SectionBox from './components/section-box';
 import Button from './components/button';
 import HeroBox from './components/hero-box';
 import History from './components/history';
+import Newsletter from './components/newsletter';
 
 import sectionBoxData from './json/sectionBoxes'
 
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <HeroBox />
       <History />
+      <Newsletter />
 
       {/* <main className="main-content">
         <section className="home-section px-5">

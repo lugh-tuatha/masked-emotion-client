@@ -3,7 +3,9 @@ import './newsletter.css'
 
 function Newsletter() {
   return (
-    <div>Newsletter</div>
+    <div>
+
+    </div>
   )
 }
 
