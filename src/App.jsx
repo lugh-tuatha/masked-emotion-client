@@ -87,7 +87,7 @@ function App() {
       </div>
 
       <div className='row footer mx-auto'>
-        <div className="col">
+        <div className="col-lg-12">
           <Footer />
         </div>
       </div>

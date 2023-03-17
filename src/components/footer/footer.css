@@ -1,0 +1,22 @@
+
+.footer1 {
+    text-align: center;
+    background: #020423 ;
+    color: white;
+    padding: 20px;
+}
+
+.footer1 p {
+    color: white;
+    padding: 20px;
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.addressIcon span{
+ padding-left: 10px;
+}
