@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
+import App from '../../App'
 
 export default class UserDetails extends Component {
   constructor(props){
     super(props)
     this.state={
       userData: "",
+      admin: false,
     }
+  }
+
+  setAdmin = (admin) => {
+    this.setState({ admin });
   }
 
   componentDidMount(){
@@ -24,15 +30,17 @@ export default class UserDetails extends Component {
       .then((data) => {
         console.log(data, "userData")
         this.setState({ userData: data.data })
+        if(data.data.userType === "Admin"){
+          this.setAdmin(true);
+        }
+
       })
   }
 
   render() {
+    const {  admin } = this.state;
     return (
-      <div>
-        Name <h1>{this.state.userData.fname}</h1>
-        Email <h1>{this.state.userData.email}</h1>
-      </div>
+      admin ? <h1>Welcome Admin</h1> : <App />
     )
   }
 }

@@ -43,7 +43,7 @@ export default class LoginForm extends Component {
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
 
-          window.location.href = "/"
+          window.location.href = "../UserDetails"
         }
       })
   }
