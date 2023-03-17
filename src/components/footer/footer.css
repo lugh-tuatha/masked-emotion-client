@@ -3,7 +3,7 @@
     text-align: center;
     background: #020423 ;
     color: white;
-    padding: 20px;
+    padding: 35px;
 }
 
 .footer1 p {
@@ -24,6 +24,10 @@
 .footer2 {
     background: #0C011A;
     color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 35px;
 }
 
 .footer2 p, a {
@@ -32,4 +36,37 @@
 
 .footer a:hover{
     color: palevioletred;
+}
+
+
+.footer-content h4{
+padding-top: 10px;
+padding-bottom: 25px;
+padding-right: 15px;
+}
+.frmIcn1 {
+    display: flex;
+    color: white;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.frmIcn1 input {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #0C011A;
+    border-bottom: 1px solid gray;
+}
+
+.frmIcn1 ::placeholder {
+    color: white;
+}
+.prfl {
+    margin-top: 25px;
+}
+
+.frmbtn {
+    padding: 25px;
 }

@@ -3,6 +3,7 @@ import './footer.css'
 
 import * as Go from 'react-icons/go'
 import * as Ai from 'react-icons/ai'
+import * as Bs from "react-icons/bs";
 
 function Footer() {
   return (
@@ -33,8 +34,18 @@ function Footer() {
         </div>
         <div className="footer-content2">
           <h4>HOW WE CAN HELP YOU?</h4>
-          <form >
-            
+          <form className='foootertxt'>
+          <div className="frmIcn1">
+              <Bs.BsPersonCircle className='prfl'/>
+            <input type="text" placeholder='FULLNAME' required='required'/>
+            </div>
+            <div className="frmIcn1">
+            <Ai.AiFillMail className='prfl'/>
+            <input type="email" placeholder='EMAIL ADDRESS' required='required'/>
+            </div>
+            <div className="frmbtn">
+              <button>SEND</button>
+            </div>
           </form>
         </div>
       </div>
