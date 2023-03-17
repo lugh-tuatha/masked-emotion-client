@@ -1,0 +1,41 @@
+.hstrySction {
+    background: rgb(128, 128, 128, 0.5);
+    padding-bottom: 25px;
+    padding-left: 10px;
+}
+
+.hstryTxt {
+    margin-top: 44px;
+    margin-left: 44px;
+}
+
+.hstryTxt h5 {
+    color: gray;
+}
+
+.hstryCntnt {
+    margin-left: 44px;
+}
+
+.hstryIcon {
+    display: flex;
+    letter-spacing: 3px;
+    padding-top: 25px;
+}
+
+.hstryIcon p {
+    padding-left: 10px;
+}
+
+#nmber {
+    color: gray;
+    padding-right: 10px;
+}
+
+.Cntnt {
+    padding-left: 50px;
+    padding-top: 10px;
+    border-left: 1px solid;
+    margin-left: 8px;
+
+}
