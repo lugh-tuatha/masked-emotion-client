@@ -21,6 +21,23 @@ function Footer() {
           </div>
         </div>
       </div>
+      <div className="col-lg-8 footer2">
+        <div className="footer-content">
+          <h4>QUICK LINKS</h4>
+          <p><a href="http://">HOME</a></p>
+          <p><a href="http://">ABOUT US</a></p>
+          <p><a href="http://">RELEASE</a></p>
+          <h4>WANT TO HIRE US?</h4>
+          <p>The Developers</p>
+          <h4>FOLLOW US ON SOCIAL MEDIA</h4>
+        </div>
+        <div className="footer-content2">
+          <h4>HOW WE CAN HELP YOU?</h4>
+          <form >
+            
+          </form>
+        </div>
+      </div>
     </div>
   )
 }

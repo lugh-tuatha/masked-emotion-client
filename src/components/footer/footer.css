@@ -20,3 +20,16 @@
 .addressIcon span{
  padding-left: 10px;
 }
+
+.footer2 {
+    background: #0C011A;
+    color: white;
+}
+
+.footer2 p, a {
+    color: white;
+}
+
+.footer a:hover{
+    color: palevioletred;
+}
