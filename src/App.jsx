@@ -64,8 +64,8 @@ function App() {
         <History />
         </div>
       </div>
-      <div className="row">
-        <div className="col-lg-8 nwslttr1">
+      <div className="row nwsltt">
+        <div className="col-lg-6 nwslttr1">
           <h5>Stay Connected with EmoWall Newsletter</h5>
           <h3>Be the first to know about our latest anonymous posts and updates</h3>
           <p>Sign up for our newsletter and never miss a thing! Get exclusive access to our latest anonymous posts, updates on our website, and other special offers. </p>
@@ -78,6 +78,7 @@ function App() {
               </div>
             </div>
         </div>
+        <div className="col-lg-1"></div>
         <div className="col-lg-4">
           <Newsletter />
         </div>
