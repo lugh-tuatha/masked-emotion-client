@@ -9,9 +9,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Signup from './pages/auth/Signup';
 import About from './pages/About';
 import Release from './pages/Release';
+import Developers from './pages/Developers'
+import Signup from './pages/auth/Signup';
 import Login from './pages/auth/Login';
 
 import Love from './pages/sections/Love'
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/userDetails",
     element: <UserDetails />,
+  },
+  {
+    path: "/developers",
+    element: <Developers />,
   },
 
   // section routes 

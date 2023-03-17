@@ -1,8 +1,13 @@
 import React from 'react'
+import './pages.css'
+
+import Devs from '../components/devs'
 
 function Developers() {
   return (
-    <div>Developers</div>
+    <div>
+      <Devs />
+    </div>
   )
 }
 
