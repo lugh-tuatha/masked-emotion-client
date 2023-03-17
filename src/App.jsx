@@ -9,6 +9,8 @@ import Button from './components/button';
 import HeroBox from './components/hero-box';
 import History from './components/history';
 import Newsletter from './components/newsletter';
+import Footer from './components/footer';
+
 import Mission from '../src/assets/svg/mission.svg';
 
 import sectionBoxData from './json/sectionBoxes'
@@ -81,6 +83,12 @@ function App() {
         <div className="col-lg-1"></div>
         <div className="col-lg-4 nws">
           <Newsletter />
+        </div>
+      </div>
+
+      <div className='row footer mx-auto'>
+        <div className="col">
+          <Footer />
         </div>
       </div>
 
