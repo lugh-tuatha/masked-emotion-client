@@ -1,6 +1,11 @@
 .footer {
     flex-wrap: wrap;
 }
+
+.footer .row {
+ width: 100%;
+}
+
 .footer1 {
     text-align: center;
     background: #020423 ;
