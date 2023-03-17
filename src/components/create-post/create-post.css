@@ -30,7 +30,8 @@
 .btn:hover {
     color: black;
     border: 1px solid gray;
-    background: transparent;
+    background: whitesmoke;
+    border-bottom: 0 5px 5px 5px;
 }
 
 .dropdown-content {

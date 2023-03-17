@@ -22,14 +22,14 @@ function CreatePost() {
                   <a href="#">Happiness</a>
                 </div>
               </div>
-            <div className='btn' onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div>
+            <div className='modalBtn' onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div>
             <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton className='hdng'> 
                 <Modal.Title >CREATING A POST</Modal.Title>
               </Modal.Header>
               <Modal.Body className='modalBody'>
                 <div className="modalbtn1">
-                  <div className="btn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
+                  <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
                   <input type="text" placeholder='INPUT CODENAME HERE' id='cdenme' />
                 </div>
                 <div className="modalMssg">
