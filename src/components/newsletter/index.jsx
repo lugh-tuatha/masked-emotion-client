@@ -3,8 +3,22 @@ import './newsletter.css'
 
 function Newsletter() {
   return (
-    <div>
-
+    <div className='row'>
+      <div className="col-lg-6"></div>
+      <div className="col-lg-6">
+        <div className="nwslttr">
+          <div className="Cntnt1">
+            <h3>Join Our Newsletter</h3>
+            <p>Stay Up-to-Date with EmoWall News and Updates</p>
+          </div>
+          <div className="frm">
+          <form>
+            <input type="text" placeholder='FULLNAME'/>
+            <input type="email" placeholder='EMAIL ADDRESS'/>
+          </form>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
