@@ -1,5 +1,6 @@
 .footer {
     flex-wrap: wrap;
+    background-color: black;
 }
 
 .footer .row {
@@ -40,6 +41,10 @@
 }
 
 .footer2 p, a {
+    color: white;
+}
+
+.footer2 a {
     color: white;
 }
 
