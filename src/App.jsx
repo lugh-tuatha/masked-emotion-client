@@ -21,21 +21,21 @@ function App() {
   ));
 
   return (
-    <div className='container'>
+    <div className='App'>
       <Header />
-      <div className="row">
+      <div className="row mx-auto">
         <div className="col-lg-7 hme">
           <p>Welcome to our community</p>
           <h3>Share Your Voice, Anonymously and Without Judgement</h3>
           <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
           <div className="hmbtn">
             <p>Join the community</p>
-            <button>SIGN UP</button><span><button>LOGIN</button></span>
+            <Button>SIGN UP</Button><span><Button>LOGIN</Button></span>
           </div>
         </div>
         <div className="col-lg-5"></div>
       </div>
-      <div className="row pt-5 pb-5">
+      <div className="row pt-5 pb-5 mx-auto">
         <div className="col-lg-6">
           <div>
             <h3>Embrace Your Emotions</h3>
@@ -56,15 +56,15 @@ function App() {
           <HeroBox />
         </div>
       </div>
-      <div className="row">
+      <div className="row mx-auto">
         <div className="col-lg-6">
-          <img src={Mission} alt="" id='mssn'/>
+          <img src={Mission} alt="" id='mssn' className='w-100 h-100'/>
         </div>
         <div className="col-lg-6">
         <History />
         </div>
       </div>
-      <div className="row nwsltt">
+      <div className="row nwsltt mx-auto">
         <div className="col-lg-6 nwslttr1">
           <h5>Stay Connected with EmoWall Newsletter</h5>
           <h3>Be the first to know about our latest anonymous posts and updates</h3>
