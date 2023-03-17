@@ -1,4 +1,6 @@
-
+.footer {
+    flex-wrap: wrap;
+}
 .footer1 {
     text-align: center;
     background: #020423 ;
@@ -13,6 +15,7 @@
 
 .address{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: start;
 }
@@ -25,6 +28,7 @@
     background: #0C011A;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
     padding-top: 35px;
