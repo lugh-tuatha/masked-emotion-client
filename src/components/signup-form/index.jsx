@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './signup-form.css';
 import app from '../../firebase_config';
 import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
@@ -25,7 +25,7 @@ export default class Signup extends Component {
     this.verifyCode = this.verifyCode.bind(this);
   }
 
-  onCapthcVerify(){
+  onCapthcaVerify(){
     window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
       'size': 'invisible',
       'callback': (response) => {
@@ -36,7 +36,7 @@ export default class Signup extends Component {
     }, auth);
   }verfyOtp
   onSignInSubmit(){
-    this.onCapthcVerify()
+    this.onCapthcaVerify()
     const phoneNumber = "+63" + this.state.phone;
     const appVerifier = window.recaptchaVerifier;
 
@@ -111,13 +111,28 @@ export default class Signup extends Component {
         alert("Please Verify Mobile")
       }
   }
+  
   render() {
+    // const [userType, setUserType] = useState("");
     return (
       <>
         <div className="form-container">
           <h2>LOGO</h2>
           <form onSubmit={this.handleSubmit}>
+
+            <div>
+              <input type="radio" name='UserType' value="User" onChange={(e) => setFname(e.target.value )}/>User
+
+              <input type="radio" name='UserType' value="Admin" onChange={(e) => setFname(e.target.value )}/>Admin
+            </div>
+
             <div id="recaptcha-container"></div>
+
+            <div>
+              <label>SECRET KEY</label>
+              <br />
+              <input type="text" onChange={(e) => this.setState({ fname: e.target.value })} className="w-100"/>
+            </div>
             <div className="d-flex gap-4 mt-3 mb-4">
               <div>
                 <label>FIRSTNAME</label>

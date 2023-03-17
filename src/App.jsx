@@ -18,7 +18,7 @@ function App() {
     <div className='container'>
       <Header />
 
-      <main className="main-content">
+      {/* <main className="main-content">
         <section className="home-section px-5">
           <p>EmoWall Confessions</p>
           <h2 className='fw-bold'>A Safe Space to Share Your Emotions Anonymously</h2>
@@ -32,7 +32,10 @@ function App() {
             </div>
           </div>
         </section>
-      </main>
+      </main> */}
+
+
+      
     </div>
   );
 }
