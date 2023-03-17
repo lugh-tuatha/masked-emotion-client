@@ -18,6 +18,10 @@ padding-top: 90px;
 padding-bottom: 90px;
 }
 
+.hme h3 {
+  padding-bottom: 20px;
+}
+
 .hme p {
   color: gray;
 }

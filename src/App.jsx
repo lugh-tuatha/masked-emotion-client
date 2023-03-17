@@ -32,8 +32,19 @@ function App() {
         </div>
         <div className="col-lg-5"></div>
       </div>
-
-      <HeroBox />
+      <div className="row">
+        <div className="col-lg-6">
+          <div className="hmecntnt">
+            <h3>Embrace Your Emotions</h3>
+            <h5>Share Your Feelings, Connect with Others</h5>
+            <p>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
+            <p className='mt-3'>Join the Community of Thousands Sharing their Emotions Anonymously </p>
+          </div>
+        </div>
+        <div className="col-lg-6">
+          <HeroBox />
+        </div>
+      </div>
       <History />
       <Newsletter />
 
