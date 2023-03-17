@@ -1,5 +1,7 @@
 import React from 'react'
 import './newsletter.css'
+import * as Bs from "react-icons/bs";
+import * as Ai from "react-icons/ai";
 
 function Newsletter() {
   return (
@@ -13,8 +15,14 @@ function Newsletter() {
           </div>
           <div className="frm">
           <form>
+            <div className="frmIcn">
+              <Bs.BsPersonCircle className='prfl'/>
             <input type="text" placeholder='FULLNAME' required='required'/>
+            </div>
+            <div className="frmIcn">
+            <Ai.AiFillMail className='prfl'/>
             <input type="email" placeholder='EMAIL ADDRESS' required='required'/>
+            </div>
           </form>
           </div>
         </div>
