@@ -5,9 +5,6 @@ import * as Ai from "react-icons/ai";
 
 function Newsletter() {
   return (
-    <div className='row'>
-      <div className="col-lg-6"></div>
-      <div className="col-lg-6">
         <div className="nwslttr">
           <div className="Cntnt1">
             <h3>Join Our Newsletter</h3>
@@ -29,8 +26,6 @@ function Newsletter() {
           </form>
           </div>
         </div>
-      </div>
-    </div>
   )
 }
 

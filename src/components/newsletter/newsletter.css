@@ -26,6 +26,10 @@
 .frmIcn {
     display: flex;
 }
+
+.frmIcn ::placeholder {
+    color: white;
+}
 .prfl {
     margin-top: 25px;
 }
