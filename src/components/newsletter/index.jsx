@@ -23,6 +23,9 @@ function Newsletter() {
             <Ai.AiFillMail className='prfl'/>
             <input type="email" placeholder='EMAIL ADDRESS' required='required'/>
             </div>
+            <div className="frmbtn">
+              <button>SUBSCRIBED</button>
+            </div>
           </form>
           </div>
         </div>

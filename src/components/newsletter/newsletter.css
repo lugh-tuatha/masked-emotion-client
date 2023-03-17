@@ -2,7 +2,8 @@
     margin-top: 20px;
     background: rgb(128, 128, 128, 0.5);
     border-radius: 10px;
-    padding: 35px;
+    padding: 55px;
+    height: 400px;
 }
 
 .Cntnt1 p{
@@ -27,4 +28,8 @@
 }
 .prfl {
     margin-top: 25px;
+}
+
+.frmbtn {
+    padding: 25px;
 }
