@@ -134,7 +134,7 @@ export default class Signup extends Component {
   render() {
     return (
       <>
-        <div className="form-container">
+        <div className="form-container signup-form-container">
           <h2>LOGO</h2>
           <form onSubmit={this.handleSubmit}>
 
@@ -154,16 +154,16 @@ export default class Signup extends Component {
             </div>
             ) : null}
             
-            <div className="d-flex gap-4 mt-3 mb-4">
+            <div className="d-md-flex gap-4 mt-3 mb-4">
               <div>
                 <label>FIRSTNAME</label>
                 <br />
-                <input type="text" onChange={(e) => this.setState({ fname: e.target.value })}/>
+                <input type="text" onChange={(e) => this.setState({ fname: e.target.value })} className="w-100 mb-4 mb-md-0"/>
               </div>
               <div>
                 <label>LASTNAME</label>
                 <br />
-                <input type="text" onChange={(e) => this.setState({ lname: e.target.value })}/>
+                <input type="text" onChange={(e) => this.setState({ lname: e.target.value })} className="w-100"/>
               </div>
             </div>
 
@@ -180,16 +180,16 @@ export default class Signup extends Component {
             </div> : null }
 
 
-            <div className="d-flex gap-4">
+            <div className="d-md-flex gap-4">
               <div>
                 <label>PASSWORD</label>
                 <br />
-                <input type="password" onChange={(e) => this.setState({ password: e.target.value })}/>
+                <input type="password" onChange={(e) => this.setState({ password: e.target.value })} className="w-100 mb-4 mb-md-0"/>
               </div>
               <div>
                 <label>CONFIRM PASSWORD</label>
                 <br />
-                <input type="password" onChange={(e) => this.setState({ cpassword: e.target.value })}/>
+                <input type="password" onChange={(e) => this.setState({ cpassword: e.target.value })} className="w-100"/>
               </div>
             </div>
 

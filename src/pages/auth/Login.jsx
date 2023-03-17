@@ -10,7 +10,7 @@ function Login() {
       <div className="row">
         <LoginHeader />
 
-        <div className="col-lg-8 vh-100 auth-hero-container login-hero d-flex align-items-center">
+        <div className="col-lg-6 vh-100 auth-hero-container login-hero d-flex align-items-center">
           <div className='w-60 mx-auto'>
             <p>Welcome back to EmoWall</p>
             <h2 className='fw-bold'>Your Safe Space to Confess and Connect</h2>
@@ -22,7 +22,7 @@ function Login() {
           </div>
         </div>
 
-        <div className="col-lg-4 vh-100 auth-container">
+        <div className="col-lg-6 vh-100 auth-container">
           <div className='p-5 mt-5'>
             <LoginForm />
           </div>

@@ -31,7 +31,6 @@ a:hover{
 ul,
 p{
   margin-bottom: 0;
-  color: var(--text-color);
 }
 
 nav{
@@ -59,9 +58,6 @@ ul li{
 button{
   border: 0;
   border-radius: .35rem;
-}
-
-.row{
 }
 
 /*-------------

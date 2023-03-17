@@ -1,3 +1,6 @@
+/*-------------
+Reusable css
+-------------*/
 .auth-hero-container {
   background-color: black;
 }
@@ -10,11 +13,28 @@
   height: 90vh;
 }
 
-img.signupHero {
+/*-------------
+Sign up css
+-------------*/
+.welcome-msg{
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+.welcome-msg img{
+  width: 100%;
+  max-width: 35rem;
+}
+
+img.sign-up-hero {
   width: 100%;
 }
 
 
+/*-------------
+Log in css
+-------------*/
 .login-hero img {
   width: 23rem;
 }
@@ -27,6 +47,6 @@ img.signupHero {
   font-size: 2.75rem;
 }
 
-.auth-hero-container img {
-  width: 35rem;
-}
+/*------------------
+Auth responsiveness
+------------------*/
