@@ -10,19 +10,19 @@ function Login() {
       <div className="row">
         <LoginHeader />
 
-        <div className="col-lg-6 vh-100 auth-hero-container login-hero d-flex align-items-center">
-          <div className='w-60 mx-auto'>
+        <div className="col-lg-7 vh-100 auth-hero-container login-hero d-flex align-items-center">
+          <div className='w-60 mx-auto text-white login-hero-text'>
             <p>Welcome back to EmoWall</p>
             <h2 className='fw-bold'>Your Safe Space to Confess and Connect</h2>
-            <p className='mb-5'>Welcome back to the anonymous confession site, EmoWall! We're here to listen and support you</p>
+            <p className='mb-4'>Welcome back to the anonymous confession site, EmoWall! We're here to listen and support you</p>
 
-            <img src="https://th.bing.com/th/id/OIG.gnkV7CfXSykaXE8Hsy68?pcl=1b1a19&pid=ImgGn" className='img-fluid mb-5 mt-5'/>
+            <img src="https://th.bing.com/th/id/OIG.gnkV7CfXSykaXE8Hsy68?pcl=1b1a19&pid=ImgGn" className='img-fluid'/>
 
-            <p className='mt-5'>Follow us on Social Media</p>
+            <p className='mt-4'>Follow us on Social Media</p>
           </div>
         </div>
 
-        <div className="col-lg-6 vh-100 auth-container">
+        <div className="col-lg-5 vh-100 auth-container">
           <div className='p-5 mt-5'>
             <LoginForm />
           </div>

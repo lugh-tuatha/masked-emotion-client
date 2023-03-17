@@ -66,9 +66,9 @@ export default class LoginForm extends Component {
               <BiIcons.BiKey size={28} className='input-icon'/>
             </div>
             
-            <input type="submit" value="LOG IN" className="px-5 my-2 " />
+            <input type="submit" value="LOG IN" className="px-5 mb-2 mt-3" />
 
-            <p className='mb-2'>Or login with</p>
+            <p className='m-2'>Or login with</p>
             <div>
               <BsIcons.BsFacebook size={28} style={{ color: 'black' }} className="mx-1"/>
               <AiIcons.AiOutlineGoogle size={32} style={{ color: 'black' }} className="mx-1"/>

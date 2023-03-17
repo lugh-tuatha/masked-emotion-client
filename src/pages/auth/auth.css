@@ -50,3 +50,22 @@ Log in css
 /*------------------
 Auth responsiveness
 ------------------*/
+@media screen and (max-width: 1180px) {
+  .login-hero h2 {
+    font-size: 2.25rem;
+  }
+
+  .login-hero .login-hero-text {
+    width: 81%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .login-hero h2{
+    font-size: 2rem;
+  }
+
+  .login-hero .login-hero-text{
+    width: 90%;
+  }
+}
