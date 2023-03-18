@@ -1,5 +1,5 @@
 .nwslttr {
-    background: rgb(128, 128, 128, 0.8);
+    background: black;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -9,7 +9,7 @@
 }
 
 .Cntnt1 p{
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .frm {
@@ -33,6 +33,7 @@
 }
 .prfl {
     margin-top: 25px;
+    color: white;
 }
 
 .frmbtn {
