@@ -1,14 +1,22 @@
-import React from 'react'
-import './sections.css'
+import React, { useEffect, useState } from 'react';
+import './sections.css';
 
-
-import Header from '../../components/header'
-import Sidebar from '../../components/sidebar'
-import MessagesContainer from '../../components/messages-container'
-import CreatePost from '../../components/create-post'
-
+import Header from '../../components/header';
+import Sidebar from '../../components/sidebar';
+import MessagesContainer from '../../components/messages-container';
+import CreatePost from '../../components/create-post';
 
 function Love() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/post').then(response => {
+      response.json().then(posts => {
+        setPosts(posts);
+      });
+    });
+  }, []);
+
   return (
     <div>
       <Header />
@@ -21,14 +29,16 @@ function Love() {
           <h1>Love</h1>
 
           <div>
+            {posts.length > 0 && posts.map(post => {
+              return <MessagesContainer {...post} />;
+            })}
             <CreatePost />
-            <MessagesContainer />
           </div>
 
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Love
+export default Love;

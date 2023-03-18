@@ -2,15 +2,29 @@ import React, { Component } from 'react'
 import './header.css'
 
 import { Link } from "react-router-dom";
+import { FaBars } from 'react-icons/fa';
 
 import Button from '../button';
 
 import logo from '../../assets/icons/logo.png'
 
 export default class UserDetails extends Component {
-  logOut=()=>{
+  constructor(props) {
+    super(props)
+    this.state={
+      navbar: false,
+    }
+  }
+
+  setNavbar = (navbar) => {
+    this.setState({ navbar });
+  }
+  
+  showNavbar = () => this.setNavbar(!this.state.navbar)
+
+  logOut = () => {
     window.localStorage.clear();
-    window.location.href="./login"
+    window.location.href="./login";
   }
 
   render() {
@@ -21,7 +35,6 @@ export default class UserDetails extends Component {
 
     return (
       <div>
-        
         <nav className='home-nav'>
           <img src={logo} alt="brand logo" />
 
@@ -29,10 +42,13 @@ export default class UserDetails extends Component {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/release">Release</Link></li>
-            <Link to={isLoggedIn == "true" ? "/login" : "/signup"}  onClick={onClickHandler}><Button>{linkText}</Button></Link>
+            <li>
+              <Link to={isLoggedIn === "true" ? "/login" : "/signup"} onClick={onClickHandler}>
+                <Button>{linkText}</Button>
+              </Link>
+            </li>
           </ul>
         </nav>
-
       </div>
     )
   }

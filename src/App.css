@@ -3,16 +3,6 @@
   width: 90%;
 }
 
-main.main-content{
-  display: flex;
-  align-items: center;
-  height: 90vh;
-}
-
-main.main-content p{
-  font-size: 1.10rem;
-}
-
 .home-section {
   text-align: center;
 }
