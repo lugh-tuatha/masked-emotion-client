@@ -1,13 +1,14 @@
 .hstrySction {
     background: rgb(128, 128, 128, 0.5);
     width: 100%;
-    padding: 25px;
-    padding-bottom: 85px;
+    height: 100%;
+    padding: 45px;
+    font-size: clamp(0.625rem, -0.1563rem + 2.5vw, 1.25rem);
 }
 
 .hstryTxt {
-    margin-top: 44px;
-    margin-left: 44px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 .hstryTxt h5 {
@@ -15,7 +16,7 @@
 }
 
 .hstryCntnt {
-    margin-left: 44px;
+    margin-left: 40px;
 }
 
 .hstryIcon {
