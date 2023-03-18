@@ -10,7 +10,6 @@ function heroBox() {
   return (
     <div>
       <div className="hero-gal">
-        <div className="d-flex">
           <div className="hero-box">
             <h3 className='counter'>10K</h3>
             <p >Over 10,000 Active Users</p>
@@ -23,9 +22,6 @@ function heroBox() {
             <img src={Fruits} alt="" />
             <p>Discover different perspective</p>
           </div>
-        </div>
-
-        <div className="d-flex">
           <div className="hero-box">
             <img src={Chat} alt="" />
             <p>Engage with community</p>
@@ -38,7 +34,6 @@ function heroBox() {
             <img src={Arrow} alt="" />
             <p>Stay anonymous</p>
           </div>
-        </div>
 
       </div>
       <div className="cpost">

@@ -1,6 +1,6 @@
 .footer {
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #081F4B;
 }
 
 .footer .row {
@@ -9,7 +9,7 @@
 
 .footer1 {
     text-align: center;
-    background: #020423 ;
+    background: #081F4B;
     color: white;
     padding: 35px;
 }
@@ -31,13 +31,18 @@
 }
 
 .footer2 {
-    background: #0C011A;
+    background: #101232;
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-around;
     padding-top: 35px;
+}
+
+.foootertxt {
+    background: black;
+    border-radius: 15px;
 }
 
 .footer2 p, a {
@@ -58,6 +63,14 @@ padding-top: 10px;
 padding-bottom: 25px;
 padding-right: 15px;
 }
+
+.footer-content .icn {
+    color: palevioletred;
+}
+
+#add-icn {
+    color: palevioletred;
+}
 .frmIcn1 {
     display: flex;
     color: white;
@@ -70,7 +83,9 @@ padding-right: 15px;
     margin: 10px;
     padding: 10px;
     width: 100%;
-    background: #0C011A;
+    background: #101232;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom: 1px solid gray;
 }
 

@@ -1,18 +1,15 @@
 .nwslttr {
-    margin-top: 20px;
-    background: rgb(128, 128, 128, 0.5);
+    background: black;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
+    margin-top: 30px;
     padding: 55px;
-    height: 400px;
+    max-height: 430px;
 }
 
 .Cntnt1 p{
-    width: 250px;
-    color: gray;
-}
-
-.foootertxt {
-    background: black;
+    color: white;
 }
 
 .frm {
@@ -36,8 +33,9 @@
 }
 .prfl {
     margin-top: 25px;
+    color: white;
 }
 
 .frmbtn {
-    padding: 25px;
+    margin-bottom: 30px;
 }
