@@ -56,6 +56,33 @@
   color: white;
 }
 
+.signup-form-container .signup-tabs{
+  background-color: var(--secondary);
+  width: 10rem;
+  margin: 0 auto;
+  padding: .25rem;
+  border-radius: 2rem;
+}
+
+.signup-form-container .signup-tabs .tabs{
+  border-radius: 2rem;
+}
+
+.signup-form-container .signup-tabs .tabs input{
+  position: absolute;
+  width: 5rem;
+  opacity: 0;
+}
+
+.signup-form-container .signup-tabs .tabs label{
+  padding: .5rem;
+  font-weight: bold;
+}
+
+.signup-tabs .tabs.active{
+  background-color: var(--primary);
+}
+
 /*---------------------------
 Signup form responsiveness
 ---------------------------*/

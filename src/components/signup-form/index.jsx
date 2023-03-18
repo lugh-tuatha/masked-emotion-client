@@ -21,6 +21,7 @@ export default class Signup extends Component {
       verified: false,
       userType: "",
       secretKey: "",
+      tabsType: ''
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.onSignInSubmit = this.onSignInSubmit.bind(this)
@@ -35,6 +36,11 @@ export default class Signup extends Component {
     this.setState({ secretKey });
   }
 
+  setTabsType = (type) => {
+    this.setState({
+      tabsType: type
+    });
+  }
 
   onCaptchaVerify(){
     window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
@@ -140,10 +146,16 @@ export default class Signup extends Component {
 
             <div id="recaptcha-container"></div>
 
-            <div>
-              <input type="radio" name='UserType' value="User" onChange={(e) => this.setUserType(e.target.value )}/>User
+            <div className='d-flex gap-2 signup-tabs justify-content-center'>
+              <div className={`d-flex align-items-center tabs w-50 justify-content-center ${this.state.tabsType === 'User' ? 'active' : ''}`}>
+                <label> USER </label>
+                <input type="radio" name='UserType' value="User" checked={this.state.tabsType === 'User'} onChange={(e) => this.setState({ tabsType: 'User', userType: 'User' })} />
+              </div>
 
-              <input type="radio" name='UserType' value="Admin" onChange={(e) => this.setUserType(e.target.value )}/>Admin
+              <div className={`d-flex align-items-center tabs w-50 justify-content-center ${this.state.tabsType === 'Admin' ? 'active' : ''}`}>
+                <label> ADMIN </label>
+                <input type="radio" name='UserType' value="Admin" checked={this.state.tabsType === 'Admin'} onChange={(e) => this.setState({ tabsType: 'Admin', userType: 'Admin' })} />
+              </div>
             </div>
 
             {this.state.userType == "Admin" ? (
