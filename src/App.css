@@ -30,10 +30,11 @@ padding-bottom: 90px;
 
 .hme h3 {
   padding-bottom: 20px;
+  color: black;
 }
 
 .hme p {
-  color: gray;
+  color: black;
 }
 
 .hmbtn {
@@ -73,6 +74,10 @@ background:#D9D9D9 ;
 margin-top: 20px;
 height: 100%;
 border-radius: 20px;
+}
+
+.nwslttr1 h3 {
+  color: black;
 }
 
 .nwslttr1 {
