@@ -95,25 +95,6 @@ function App() {
           <Footer />
 
       </div>
-
-
-      {/* <main className="main-content">
-        <section className="home-section px-5">
-          <p>EmoWall Confessions</p>
-          <h2 className='fw-bold'>A Safe Space to Share Your Emotions Anonymously</h2>
-          <p>Unburden your heart in a safe and supportive space. Share your emotions anonymously, without fear of judgment. Join our community of honest individuals who are discovering that they are not alone in their feelings.</p>
-
-          <div className="emo-gallery mt-5">
-            <p className='my-4'>Tell us what's been weighing on your mind?</p>
-            <div className="row">{sectionBoxes}</div>
-            <div className="emo-share-btn">
-              <Button>Share your Emotions</Button>
-            </div>
-          </div>
-        </section>
-      </main> */}
-
-
     </div>
   );
 }
