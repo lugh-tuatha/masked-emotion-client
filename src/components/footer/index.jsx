@@ -15,11 +15,11 @@ function Footer() {
           <h6>EmoWall</h6>
           <p>Our website provides a safe and supportive community for individuals to share their feelings and connect with others who may be going through similar experiences</p>
           <div className="address">
-            <div className="addressIcon"><Go.GoLocation/><span>123 Main Street,Anytown, USA 12345</span>
+            <div className="addressIcon"><Go.GoLocation id='add-icn'/><span>123 Main Street,Anytown, USA 12345</span>
             </div>
-            <div className="addressIcon"><Go.GoMail/><span>Email: info@emowall.com</span>
+            <div className="addressIcon"><Go.GoMail id='add-icn'/><span>Email: info@emowall.com</span>
             </div>
-            <div className="addressIcon"><Ai.AiFillPhone/><span>Phone: +1 (555) 123-4567</span>
+            <div className="addressIcon"><Ai.AiFillPhone id='add-icn'/><span>Phone: +1 (555) 123-4567</span>
             </div>
           </div>
         </div>

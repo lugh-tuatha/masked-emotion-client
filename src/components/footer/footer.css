@@ -1,6 +1,6 @@
 .footer {
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #020423;
 }
 
 .footer .row {
@@ -61,6 +61,14 @@
 padding-top: 10px;
 padding-bottom: 25px;
 padding-right: 15px;
+}
+
+.footer-content .icn {
+    color: palevioletred;
+}
+
+#add-icn {
+    color: palevioletred;
 }
 .frmIcn1 {
     display: flex;
