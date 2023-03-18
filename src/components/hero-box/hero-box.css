@@ -1,7 +1,7 @@
 .hero-gal {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
@@ -9,11 +9,11 @@
     border: 1px solid gray;
     background-color: rgb(128, 128, 128,0.7);
     border-radius: 10px;
-    width: 144.32px;
-    height: 121.6px;
+    width: 147px;
+    height: 125px;
     text-align: center;
     padding: 5px;
-    margin: 15px;
+    margin: 35px;
 }
 
 .hero-box h3 {
