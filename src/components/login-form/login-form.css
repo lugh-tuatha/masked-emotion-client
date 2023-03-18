@@ -40,3 +40,8 @@ input::placeholder{
 /*---------------------------
 Login form responsiveness
 ---------------------------*/
+@media screen and (max-width: 1024px) {
+  .login-parent .form-container{
+    width: 34%;
+  }
+}

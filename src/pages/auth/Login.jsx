@@ -23,7 +23,7 @@ function Login() {
         </div>
 
         <div className="col-lg-5 vh-100 auth-container">
-          <div className='p-5 mt-5'>
+          <div className='p-5 mt-5 login-form-container'>
             <LoginForm />
           </div>
         </div>
