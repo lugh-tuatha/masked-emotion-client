@@ -12,6 +12,7 @@ import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 
 import Mission from '../src/assets/svg/mission.svg';
+import Hero1 from '../src/assets/svg/hero1.svg'
 
 import sectionBoxData from './json/sectionBoxes'
 
@@ -26,7 +27,7 @@ function App() {
     <div className='App'>
       <Header />
       <div className="row mx-auto">
-        <div className="col-lg-7 hme">
+        <div className="col-lg-6 hme">
           <p>Welcome to our community</p>
           <h3>Share Your Voice, Anonymously and Without Judgement</h3>
           <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
@@ -35,7 +36,9 @@ function App() {
             <Button>SIGN UP</Button><span><Button>LOGIN</Button></span>
           </div>
         </div>
-        <div className="col-lg-5"></div>
+        <div className="col-lg-6 home-image">
+          <img src={Hero1} alt="" />
+        </div>
       </div>
       <div className="row pt-5 pb-5 mx-auto">
         <div className="col-lg-6">

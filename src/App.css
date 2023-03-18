@@ -17,6 +17,11 @@ main.main-content p{
   text-align: center;
 }
 
+.home-image img{
+  width: 100%;
+  min-width: 350px;
+}
+
 .hme {
 font-size: larger;
 padding-top: 90px;
