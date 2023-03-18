@@ -40,6 +40,10 @@
     padding-top: 35px;
 }
 
+.foootertxt {
+    background: black;
+}
+
 .footer2 p, a {
     color: white;
 }
