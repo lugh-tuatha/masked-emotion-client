@@ -1,6 +1,6 @@
 .footer {
     flex-wrap: wrap;
-    background-color: #020423;
+    background-color: #081F4B;
 }
 
 .footer .row {
@@ -9,7 +9,7 @@
 
 .footer1 {
     text-align: center;
-    background: #020423 ;
+    background: #081F4B;
     color: white;
     padding: 35px;
 }
@@ -31,7 +31,7 @@
 }
 
 .footer2 {
-    background: #0C011A;
+    background: #101232;
     color: white;
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +42,7 @@
 
 .foootertxt {
     background: black;
+    border-radius: 15px;
 }
 
 .footer2 p, a {
@@ -82,7 +83,9 @@ padding-right: 15px;
     margin: 10px;
     padding: 10px;
     width: 100%;
-    background: #0C011A;
+    background: #101232;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom: 1px solid gray;
 }
 
