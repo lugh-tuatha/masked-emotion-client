@@ -15,6 +15,7 @@ import Mission from '../src/assets/svg/mission.svg';
 import Hero1 from '../src/assets/svg/hero1.svg'
 
 import sectionBoxData from './json/sectionBoxes'
+import Users from './components/users';
 
 function App() {
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
@@ -111,6 +112,7 @@ function App() {
           </div>
         </section>
       </main> */}
+
 
     </div>
   );
