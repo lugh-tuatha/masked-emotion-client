@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 
 import Button from '../button';
 
+import logo from '../../assets/icons/logo.png'
+
 export default class UserDetails extends Component {
   logOut=()=>{
     window.localStorage.clear();
@@ -12,7 +14,6 @@ export default class UserDetails extends Component {
   }
 
   render() {
-
     const isLoggedIn = window.localStorage.getItem("loggedIn");
 
     const linkText = isLoggedIn ? 'Log out' : 'Sign up';
@@ -22,7 +23,7 @@ export default class UserDetails extends Component {
       <div>
         
         <nav className='home-nav'>
-          <img src="https://th.bing.com/th/id/OIG._vSorB44nuyRxXMEXWuJ?pcl=1b1a19&pid=ImgGn" alt="brand logo" />
+          <img src={logo} alt="brand logo" />
 
           <ul className='d-flex gap-5 align-items-center'>
             <li><Link to="/">Home</Link></li>
