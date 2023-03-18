@@ -1,5 +1,5 @@
 .hstrySction {
-    background: rgb(128, 128, 128, 0.5);
+    background: #081F4B;
     width: 100%;
     height: 100%;
     padding: 45px;
@@ -11,18 +11,23 @@
     margin-left: 40px;
 }
 
-.hstryTxt h5 {
-    color: gray;
+.hstryTxt h5, h3 {
+    color: rgb(255, 255, 255);
 }
 
 .hstryCntnt {
     margin-left: 40px;
 }
 
+.hstryCntnt span {
+    color: black;
+}
+
 .hstryIcon {
     display: flex;
     letter-spacing: 3px;
     padding-top: 25px;
+    color: black;
 }
 
 .hstryIcon p {
@@ -37,7 +42,10 @@
 .Cntnt {
     padding-left: 50px;
     padding-top: 10px;
-    border-left: 1px solid;
+    border-left: 1px solid black;
     margin-left: 8px;
+}
 
+.Cntnt p {
+    color: white;
 }
