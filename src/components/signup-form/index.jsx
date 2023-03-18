@@ -5,6 +5,8 @@ import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth
 
 import { Link } from "react-router-dom";
 
+import Swal from 'sweetalert2'
+
 const auth = getAuth(app);
 export default class Signup extends Component {
   constructor(props) {
@@ -63,7 +65,10 @@ export default class Signup extends Component {
       // SMS sent. Prompt user to type the code from the message, then sign the
       // user in with confirmationResult.confirm(code).
       window.confirmationResult = confirmationResult;
-      alert("otp sended")
+      Swal.fire({
+        icon: 'success',
+        text: 'otp sended',
+      })
       this.setState({ verifyOtp: true })
       // ...
     }).catch((error) => {
@@ -77,7 +82,10 @@ export default class Signup extends Component {
       // User signed in successfully.
       const user = result.user;
       console.log(user);
-      alert("Veification success")
+      Swal.fire({
+        icon: 'success',
+        text: 'Veification success',
+      })
       this.setState( {
         verified: true,
         verifyOtp: false
@@ -132,7 +140,10 @@ export default class Signup extends Component {
             console.log(data, "userRegister")
           })
         } else{
-          alert("Please Verify Mobile")
+        Swal.fire({
+          icon: 'error',
+          text: 'Please Verify Mobile',
+        })
         }
     }
   }

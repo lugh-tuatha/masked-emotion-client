@@ -7,6 +7,8 @@ import * as BsIcons from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
+import Swal from 'sweetalert2'
+
 export default class LoginForm extends Component {
   constructor(props){
     super(props)
@@ -39,11 +41,35 @@ export default class LoginForm extends Component {
         console.log(data, "userRegister")
 
         if(data.status=="ok"){
-          alert("login successful")
           window.localStorage.setItem("token", data.data);
           window.localStorage.setItem("loggedIn", true);
 
+          Swal.fire({
+            icon: 'success',
+            title: 'Login Successful',
+            timer: 3000,
+            showConfirmButton: false
+          }).then(() => {
+          })
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+
+          Toast.fire({
+            icon: 'success',
+            title: 'Signed in successfully'
+          })
+          
           window.location.href = "../UserDetails"
+
         }
       })
   }

@@ -1,3 +1,8 @@
 nav.home-nav img{
-  width: 5rem;
+  width: 10rem;
+}
+
+.nav-menu.active {
+  opacity: 1;
+  transition: 100ms;
 }
