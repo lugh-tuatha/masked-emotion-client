@@ -36,6 +36,7 @@ table th {
   }
   
   .pagination a:hover:not(.active) {
-    background-color: #FF6882;
+    background-color: rgb(8, 31, 75, 0.5);
+    color: white;
     border-radius: 10px;
   }
