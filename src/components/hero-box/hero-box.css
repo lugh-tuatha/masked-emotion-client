@@ -6,8 +6,8 @@
 }
 
 .hero-box {
-    border: 1px solid gray;
-    background-color: rgb(128, 128, 128,0.7);
+    border: 1px solid #081F4B;
+    background-color:#081F4B;
     border-radius: 10px;
     width: 147px;
     height: 125px;

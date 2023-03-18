@@ -61,7 +61,7 @@ function App() {
           <HeroBox />
         </div>
       </div>
-      <div className="row mx-auto">
+      <div className="row mx-auto history-content">
         <div className="col-lg-6">
           <img src={Mission} alt="" id='mssn' className='w-100 h-100'/>
         </div>
