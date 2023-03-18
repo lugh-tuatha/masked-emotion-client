@@ -1,7 +1,7 @@
 table {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid rgb(128, 128, 128, 0.4);;
+    border: 1px solid rgb(128, 128, 128, 0.4);
     background: rgb(128, 128, 128, 0.4);
 }
 
@@ -32,10 +32,10 @@ table th {
   .pagination a.active {
     background-color: #081F4B;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
   .pagination a:hover:not(.active) {
     background-color: #FF6882;
-    border-radius: 5px;
+    border-radius: 10px;
   }

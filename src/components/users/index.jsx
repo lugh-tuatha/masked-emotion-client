@@ -24,6 +24,12 @@ function Users() {
                     <td>User</td>
                     <td><a href="#"><Ai.AiFillDelete/></a></td>
                 </tr>
+                <tr>
+                    <td>Sanji</td>
+                    <td>0928-7531-594</td>
+                    <td>User</td>
+                    <td><a href="#"><Ai.AiFillDelete/></a></td>
+                </tr>
             </table>
 
             <div className="pagination">
