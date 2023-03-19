@@ -29,7 +29,7 @@ function Love() {
           <h1>Love</h1>
           <CreatePost />
 
-          <div>
+          <div >
             {posts.length > 0 && posts.map(post => {
               return <MessagesContainer {...post} />;
             })}

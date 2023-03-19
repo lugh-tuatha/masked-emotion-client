@@ -9,7 +9,7 @@ function MessagesContainer(props) {
   const { title, summary, codename, createdAt, cover } = props;
   return (
     <div>
-      <div className="mssgeBox">
+      <div className="mssgeBox mb-3">
         <div className="ttle">
           <img src={cover}/>     
           <h6>{title}</h6>

@@ -46,7 +46,9 @@ export default class UserDetails extends Component {
     return (
       <div>
         <nav className='home-nav'>
-          <img src={logo} alt="brand logo" />
+          <Link to="/signup">
+            <img src={logo} alt="brand logo" />
+          </Link>
 
           {screenWidth < 768 ? (
             <div className='mobile-menu'>
@@ -54,10 +56,9 @@ export default class UserDetails extends Component {
               {this.state.navbar && (
                 <ul>
                   <li><Link to="/">Home</Link></li>
-                  <li><Link to="/about">About</Link></li>
                   <li><Link to="/release">Release</Link></li>
                   <li>
-                    <Link onClick={onClickHandler}>
+                    <Link to="/signup" onClick={onClickHandler}>
                       <Button>{linkText}</Button>
                     </Link>
                   </li>
@@ -67,10 +68,9 @@ export default class UserDetails extends Component {
           ) : (
             <ul className='d-flex gap-5 align-items-center'>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About</Link></li>
               <li><Link to="/release">Release</Link></li>
               <li>
-                <Link onClick={onClickHandler}>
+                <Link to="/signup" onClick={onClickHandler}>
                   <Button>{linkText}</Button>
                 </Link>
               </li>
