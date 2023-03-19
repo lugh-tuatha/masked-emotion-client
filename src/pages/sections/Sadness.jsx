@@ -3,7 +3,7 @@ import './sections.css'
 
 import Header from '../../components/header'
 import Sidebar from '../../components/sidebar'
-import MessagesContainerSad from '../../components/messages-container-sad'
+import MessagesContainerSad from '../../posts-components/sadness/messages-container-sad'
 import CreateSadPost from '../../components/create-sadpost'
 
 function Sadness() {
