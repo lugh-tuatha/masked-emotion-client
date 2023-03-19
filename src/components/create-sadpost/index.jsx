@@ -6,15 +6,15 @@ import Modal from 'react-bootstrap/Modal';
 
 import { Navigate } from 'react-router-dom';
 
-function CreatePost() {
+function CreateSadPost() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [codename, setCodename] = useState('');   
-  const [title, setTitle] = useState('');
-  const [summary, setSummary] = useState('');
+  const [codename1, setCodename1] = useState('');   
+  const [title1, setTitle1] = useState('');
+  const [summary1, setSummary1] = useState('');
   const [files, setFiles] = useState('');
   const [redirect, setRedirect] = useState(false);
 
@@ -22,13 +22,13 @@ function CreatePost() {
     ev.preventDefault();
 
     const data = new FormData();
-    data.set('title', title);
-    data.set('summary', summary);
-    data.set('codename', codename);
+    data.set('title1', title1);
+    data.set('summary1', summary1);
+    data.set('codename1', codename1);
     data.set('file', files[0]);
     console.log(files)
     
-    const response = await fetch('http://localhost:5000/post', {
+    const response = await fetch('http://localhost:5000/sadpost', {
       method: 'POST',
       body: data,
     });
@@ -66,12 +66,12 @@ function CreatePost() {
               <form onSubmit={createNewPost}>
                 <div className="d-flex justify-content-between mb-3">
                   <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
-                  <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename} onChange={ev => setCodename(ev.target.value)}/>
+                  <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename1} onChange={ev => setCodename1(ev.target.value)}/>
                 </div>
                 
                 <div className="modalMssg">
-                  <input type="title" placeholder='TITLE :' value={title} onChange={ev => setTitle(ev.target.value)} className="mb-3"/>
-                  <input type="summary" placeholder='SUMMARY' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3"/>
+                  <input type="title" placeholder='TITLE :' value={title1} onChange={ev => setTitle1(ev.target.value)} className="mb-3"/>
+                  <input type="summary" placeholder='SUMMARY' value={summary1} onChange={ev => setSummary1(ev.target.value)} className="mb-3"/>
                   <input type="file" onChange={ev => setFiles(ev.target.files)} className='mb-3'/>
                 </div>                                                              
 
@@ -87,4 +87,4 @@ function CreatePost() {
   )
 }
 
-export default CreatePost
+export default CreateSadPost

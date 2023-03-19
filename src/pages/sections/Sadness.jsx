@@ -3,14 +3,14 @@ import './sections.css'
 
 import Header from '../../components/header'
 import Sidebar from '../../components/sidebar'
-import MessagesContainer from '../../components/messages-container'
-
+import MessagesContainerSad from '../../components/messages-container-sad'
+import CreateSadPost from '../../components/create-sadpost'
 
 function Sadness() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/post').then(response => {
+    fetch('http://localhost:5000/sadpost').then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
@@ -28,10 +28,12 @@ function Sadness() {
         <div className="col-lg-9 p-0">
           <h1>Sadness</h1>
 
+          <CreateSadPost />
+
           <div>
             <div>
               {posts.length > 0 && posts.map(post => {
-                return <MessagesContainer {...post} />;
+                return <MessagesContainerSad {...post} />;
               })}
             </div>
           </div>

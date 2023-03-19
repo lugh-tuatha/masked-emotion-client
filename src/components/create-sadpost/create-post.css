@@ -1,0 +1,108 @@
+.Content {
+    border: 1px solid rgb(128, 128, 128, 0.8);
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 30px;
+    box-shadow: 0 5px 15px 5px;
+}
+
+.Content h6 {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.button1 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 15px;
+    background: rgb(128, 128, 128, 0.5);
+}
+
+.btn:hover {
+    color: black;
+    border: 1px solid gray;
+    background: whitesmoke;
+    border-bottom: 0 5px 5px 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hdng {
+    padding-left: 120px;
+}
+
+.modalBody input::placeholder{
+    color: white;
+}
+
+#cdenme{
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(128, 128, 128, 0.5);
+}
+
+#modalHrt{
+    width: 100px;
+}
+
+.modalMssg input{
+    border: 1px rgb(128, 128, 128, 0.5);
+    background: rgb(128, 128, 128, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    padding: .5rem;
+}
+#modaltxt {
+    height: 250px;
+
+}
+
+.modalFtr {
+    justify-content: center;
+}
+.modalBtn{
+    border: 1px rgb(128, 128, 128, 0.5);
+    background: rgb(128, 128, 128, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+.modalBtn:hover {
+    background: transparent;
+    box-shadow: 0 5px 8px 3px;
+    cursor: pointer;
+}
