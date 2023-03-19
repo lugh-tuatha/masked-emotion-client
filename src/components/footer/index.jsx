@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className="footer px-0">
       <div className='row'>
         <div className="col-lg-4 footer1">
           <h4>Who ARE WE?</h4>

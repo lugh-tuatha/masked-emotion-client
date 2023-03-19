@@ -30,6 +30,7 @@
 
 .form-container input[type="submit"] {
   background-color: var(--primary);
+  color: #fff;
 }
 
 .form-container input.phone-number{

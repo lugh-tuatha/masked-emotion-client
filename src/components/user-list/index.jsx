@@ -68,10 +68,7 @@ function UserList({ userData }) {
         </thead>
 
         <tbody>
-            <td>Luffy</td>
-            <td>0942-5632-451</td>
-            <td>Admin</td>
-        </tbody>  
+        </tbody>    
       </table>
 
       <div class="pagination">

@@ -63,7 +63,7 @@ function App() {
         </div>
       </div>
       <div className="row mx-auto history-content">
-        <div className="col-lg-6">
+        <div className="col-lg-6 px-0">
           <img src={Mission} alt="" id='mssn' className='w-100 h-100'/>
         </div>
         <div className="col-lg-6">
@@ -90,7 +90,7 @@ function App() {
         </div>
       </div>
 
-      <div className='row footer mx-auto'>
+      <div className='row footer mx-auto '>
 
           <Footer />
 

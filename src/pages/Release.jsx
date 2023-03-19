@@ -39,7 +39,6 @@ function Release() {
           </div>
         </section>
       </main>
-      <UserList />
     </div>
   )
 }
