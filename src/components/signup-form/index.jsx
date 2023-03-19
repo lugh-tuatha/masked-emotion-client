@@ -111,7 +111,10 @@ export default class Signup extends Component {
   handleSubmit(e) {
     if(this.state.userType === "Admin" && this.state.secretKey !== "loveujai"){
       e.preventDefault();
-      alert("Invalid Admin")
+      Swal.fire({
+        icon: 'error',
+        text: 'Invalid secret key',
+      })
     }else {
       e.preventDefault();
       

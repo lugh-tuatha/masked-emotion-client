@@ -4,8 +4,6 @@ import * as Ai from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css'
 import { Navigate } from 'react-router-dom';
 
 const   modules = {
@@ -34,7 +32,6 @@ function CreatePost() {
   const [codename, setCodename] = useState('');   
   const [title, setTitle] = useState('');
   const [summary, setSummary] = useState('');
-  const [content, setContent] = useState('');
   const [files, setFiles] = useState('');
   const [redirect, setRedirect] = useState(false);
 
@@ -45,7 +42,6 @@ function CreatePost() {
     data.set('title', title);
     data.set('summary', summary);
     data.set('codename', codename);
-    data.set('content', content);
     data.set('file', files[0]);
     console.log(files)
     
@@ -95,7 +91,6 @@ function CreatePost() {
                   <input type="summary" placeholder='SUMMARY' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3"/>
                   <input type="file" onChange={ev => setFiles(ev.target.files)}/>
                 </div>                                                              
-                  <ReactQuill value={content} onChange={newValue => setContent(newValue)} modules={modules} formats={formats}/>
 
                   <input type="submit" value="post" className='modalBtn'/>
               </form>

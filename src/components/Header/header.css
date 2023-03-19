@@ -2,7 +2,77 @@ nav.home-nav img{
   width: 10rem;
 }
 
-.nav-menu.active {
-  opacity: 1;
-  transition: 100ms;
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+}
+
+.home-nav img {
+  height: 40px;
+  width: auto;
+}
+
+.home-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.home-nav li {
+  margin-right: 15px;
+}
+
+.home-nav li:last-child {
+  margin-right: 0;
+}
+
+.home-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.home-nav a:hover {
+  color: #666;
+}
+
+.home-nav .button-container {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-nav {
+    height: auto;
+    padding: 10px 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .home-nav img {
+    margin-bottom: 20px;
+  }
+
+  .home-nav .button-container {
+    margin-top: 20px;
+  }
+
+  .home-nav ul {
+    flex-direction: column;
+  }
+
+  .home-nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .home-nav li:last-child {
+    margin-bottom: 0;
+  }
 }

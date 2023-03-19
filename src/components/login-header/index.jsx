@@ -3,11 +3,15 @@ import './login-header.css'
 
 import { Link } from "react-router-dom";
 
+import logo from '../../assets/icons/logo.png'
+
 function LoginHeader() {
   return (
     <div className='login-header'>
       <nav className='mx-auto'>
-        <h1>LOGO</h1>
+        <Link>
+          <img src={logo} />
+        </Link>
         <p><Link to="/">Go back to home</Link></p>
       </nav>
     </div>
