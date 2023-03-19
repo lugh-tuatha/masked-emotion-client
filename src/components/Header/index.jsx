@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './header.css';
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FaBars } from 'react-icons/fa';
 import Button from '../button';
 import logo from '../../assets/icons/logo.png';
@@ -46,9 +46,9 @@ export default class UserDetails extends Component {
     return (
       <div>
         <nav className='home-nav'>
-          <Link to="/signup">
+          <NavLink to="/signup">
             <img src={logo} alt="brand logo" />
-          </Link>
+          </NavLink>
 
           {screenWidth < 768 ? (
             // ito yun
@@ -68,12 +68,12 @@ export default class UserDetails extends Component {
             </div>
           ) : (
             <ul className='d-flex gap-5 align-items-center'>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/release">Release</Link></li>
+              <li><NavLink to="/">Home</NavLink></li>
+              <li><NavLink to="/release">Release</NavLink></li>
               <li>
-                <Link to="/signup" onClick={onClickHandler}>
+                <NavLink to="/signup" onClick={onClickHandler}>
                   <Button>{linkText}</Button>
-                </Link>
+                </NavLink>
               </li>
             </ul>
           )}

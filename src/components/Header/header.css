@@ -52,6 +52,15 @@ nav.home-nav img{
   justify-content: end;
 }
 
+.mobile-menu ul{
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  background-color: gray;
+  opacity: .7;
+  padding: .5rem;
+}
+
 @media only screen and (max-width: 768px) {
   .home-nav {
     height: auto;

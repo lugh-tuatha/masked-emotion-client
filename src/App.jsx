@@ -28,13 +28,15 @@ function App() {
     <div className='App'>
       <Header />
       <div className="row mx-auto">
-        <div className="col-lg-6 hme">
-          <p>Welcome to our community</p>
-          <h3>Share Your Voice, Anonymously and Without Judgement</h3>
-          <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
-          <div className="hmbtn">
-            <p>Join the community</p>
-            <Button>SIGN UP</Button><span><Button>LOGIN</Button></span>
+        <div className="col-lg-6 hme d-flex align-items-center">
+          <div>
+            <p>Welcome to our community</p>
+            <h3>Share Your Voice, Anonymously and Without Judgement</h3>
+            <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
+            <div className="hmbtn">
+              <p>Join the community</p>
+              <Button>SIGN UP</Button><span><Button>LOGIN</Button></span>
+            </div>
           </div>
         </div>
         <div className="col-lg-6 home-image">
