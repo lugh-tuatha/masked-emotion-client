@@ -19,7 +19,6 @@ function Gratitude() {
           <h1>Gratitude</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>

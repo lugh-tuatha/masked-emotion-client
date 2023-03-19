@@ -5,15 +5,17 @@ import * as Ai from "react-icons/ai";
 import * as Bs from "react-icons/bs";
 import * as Md from "react-icons/md";
 
+import ReactTimeAgo from 'react-time-ago'
+
 function MessagesContainer(props) {
   const { title, summary, codename, createdAt, cover } = props;
   return (
     <div>
       <div className="mssgeBox mb-3">
         <div className="ttle">
-          <img src={cover}/>     
+          <img src={'http://localhost:5000/' + cover}/>     
           <h6>{title}</h6>
-          <h6>{createdAt}</h6>
+          <ReactTimeAgo date={(createdAt)} locale="en-US"/>
         </div>
         
         <p>{summary}</p>

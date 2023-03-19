@@ -3,8 +3,7 @@
   --slant: .5em;
 }
 
-button {
-  font-size: 35px;
+button.btn-main {
   padding: 0.4em 1.2em;
   border: none;
   cursor: pointer;
@@ -24,21 +23,21 @@ button {
   transition: color var(--t, 0.3s), background-size 0.3s;
 }
 
-button:focus-visible {
+button.btn-main:focus-visible {
   outline-offset: calc(-1*var(--border));
   outline: var(--border) solid #000c;
   clip-path: none;
   background-size: 0 0;
 }
 
-button:hover,
-button:active {
+button.btn-main:hover,
+button.btn-main:active {
   background-size: 100% 100%;
   color: #fff;
   --t: 0.2s 0.1s;
 }
 
-button:active {
+button.btn-main:active {
   --s: #0005;
   transition: none;
 }
