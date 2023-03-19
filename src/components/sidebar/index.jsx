@@ -38,7 +38,7 @@ function Sidebar() {
           <li className="my-2">{sectionBox.description}</li>
         </ul>
       </Link>
-    );
+    ); 
   });
 
   return (
