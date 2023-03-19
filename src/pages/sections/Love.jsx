@@ -30,7 +30,7 @@ function Love() {
           <CreatePost />
 
           <div>
-            {posts.length > 0 && posts.map(post => {
+            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
               return <MessagesContainer {...post} />;
             })}
           </div>

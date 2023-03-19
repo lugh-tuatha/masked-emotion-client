@@ -1,5 +1,4 @@
 import React from 'react';
-import './messages-container.css';
 
 import * as Ai from "react-icons/ai";
 import * as Bs from "react-icons/bs";

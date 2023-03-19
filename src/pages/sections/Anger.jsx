@@ -3,8 +3,8 @@ import './sections.css'
 
 import Header from '../../components/header'
 import Sidebar from '../../components/sidebar'
-import MessagesContainerAnger from '../../posts-components/anger/messages-container-anger'
-import CreateAngerPost from '../../posts-components/anger/create-angerpost'
+import MessagesContainerAnger from '../../posts-components/anger/MessagesContainerAnger'
+import CreateAngerPost from '../../posts-components/anger/CreateAngerPost'
 
 
 function Anger() {
@@ -33,7 +33,7 @@ function Anger() {
 
           <div>
             <div>
-              {posts.length > 0 && posts.map(post => {
+              {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
                 return <MessagesContainerAnger {...post} />;
               })}
             </div>

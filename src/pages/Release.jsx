@@ -7,24 +7,26 @@ import sectionBoxData from '../json/sectionBoxes.json'
 import Header from '../components/Header'
 import SectionBox from '../components/section-box'
 import Button from '../components/button'
-import UserList from '../components/user-list'
+import Footer from '../components/footer'
 
 function Release() {
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
     <div key={index} className="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-      <SectionBox title={sectionBox.title} description={sectionBox.description} />
+      <Link to={sectionBox.link}>
+        <SectionBox title={sectionBox.title} description={sectionBox.description} />
+      </Link>
     </div>
   ));
 
   return (
     <div className='all-body'>
-            <Header />
+      <Header />
       <div class="custom-shape-divider-top-1679237202">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
-    </div>
-      <main className="main-content container">
+      </div>
+      <main className="main-content container mb-5">
         <section className="home-section px-5">
           <p>EmoWall Confessions</p>
           <h2 className='fw-bold'>A Safe Space to Share Your Emotions Anonymously</h2>
@@ -39,6 +41,8 @@ function Release() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   )
 }

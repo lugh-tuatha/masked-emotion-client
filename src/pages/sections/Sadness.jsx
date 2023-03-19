@@ -3,8 +3,8 @@ import './sections.css'
 
 import Header from '../../components/header'
 import Sidebar from '../../components/sidebar'
-import MessagesContainerSad from '../../posts-components/sadness/messages-container-sad'
-import CreateSadPost from '../../posts-components/sadness/create-sadpost'
+import MessagesContainerSad from '../../posts-components/sadness/MessagesContainerSad'
+import CreateSadPost from '../../posts-components/sadness/createNewPost'
 
 function Sadness() {
   const [posts, setPosts] = useState([]);
@@ -32,7 +32,7 @@ function Sadness() {
 
           <div>
             <div>
-              {posts.length > 0 && posts.map(post => {
+              {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
                 return <MessagesContainerSad {...post} />;
               })}
             </div>
