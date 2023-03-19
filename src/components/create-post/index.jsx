@@ -89,17 +89,15 @@ function CreatePost() {
                 <div className="modalMssg">
                   <input type="title" placeholder='TITLE :' value={title} onChange={ev => setTitle(ev.target.value)} className="mb-3"/>
                   <input type="summary" placeholder='SUMMARY' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3"/>
-                  <input type="file" onChange={ev => setFiles(ev.target.files)}/>
+                  <input type="file" onChange={ev => setFiles(ev.target.files)} className='mb-3'/>
                 </div>                                                              
 
-                  <input type="submit" value="post" className='modalBtn'/>
+                  <button type="submit" value="post" className='modalBtn'><Ai.AiFillCheckCircle/> POST</button>
               </form>
 
             </Modal.Body>
-            <Modal.Footer className='modalFtr'>
 
-              <Ai.AiFillCheckCircle/> POST
-            </Modal.Footer>
+              
           </Modal>           
       </div>
     </div>

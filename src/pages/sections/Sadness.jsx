@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './sections.css'
 
 import Header from '../../components/header'
@@ -7,6 +7,16 @@ import MessagesContainer from '../../components/messages-container'
 
 
 function Sadness() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:5000/post').then(response => {
+      response.json().then(posts => {
+        setPosts(posts);
+      });
+    });
+  }, []);
+  
   return (
     <div>
       <Header />
@@ -19,6 +29,11 @@ function Sadness() {
           <h1>Sadness</h1>
 
           <div>
+            <div>
+              {posts.length > 0 && posts.map(post => {
+                return <MessagesContainer {...post} />;
+              })}
+            </div>
           </div>
 
         </div>
