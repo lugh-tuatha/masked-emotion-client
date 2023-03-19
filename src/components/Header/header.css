@@ -46,6 +46,12 @@ nav.home-nav img{
   margin-left: auto;
 }
 
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
 @media only screen and (max-width: 768px) {
   .home-nav {
     height: auto;

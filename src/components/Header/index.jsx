@@ -67,7 +67,7 @@ export default class UserDetails extends Component {
               )}
             </div>
           ) : (
-            <ul>
+            <ul className='d-flex gap-5 align-items-center'>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/release">Release</Link></li>
               <li>
