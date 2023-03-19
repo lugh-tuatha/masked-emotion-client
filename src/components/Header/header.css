@@ -49,10 +49,8 @@ nav.home-nav img{
 @media only screen and (max-width: 768px) {
   .home-nav {
     height: auto;
-    padding: 10px 20px;
-    flex-direction: column;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
   .home-nav img {

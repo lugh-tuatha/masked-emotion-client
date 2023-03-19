@@ -53,7 +53,7 @@ export default class UserDetails extends Component {
           {screenWidth < 768 ? (
             // ito yun
             <div className='mobile-menu'>
-              <FaBars size={32} onClick={this.showNavbar} />
+              <div><FaBars size={32} onClick={this.showNavbar} /></div>
               {this.state.navbar && (
                 <ul>
                   <li><Link to="/">Home</Link></li>
@@ -67,7 +67,7 @@ export default class UserDetails extends Component {
               )}
             </div>
           ) : (
-            <ul className='d-flex gap-5 align-items-center'>
+            <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/release">Release</Link></li>
               <li>
