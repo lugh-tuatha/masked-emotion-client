@@ -13,6 +13,7 @@ import Release from './pages/Release';
 import Developers from './pages/Developers'
 import Signup from './pages/auth/Signup';
 import Login from './pages/auth/Login';
+import Posts from './pages/admin/Posts'
 
 import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/developers",
     element: <Developers />,
+  },
+  {
+    path: "/posts",
+    element: <Posts />,
   },
 
   // section routes 

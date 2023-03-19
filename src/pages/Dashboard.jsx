@@ -7,8 +7,10 @@ import UserList from '../components/user-list';
 function Dashboard() {
   return (
     <div>
-      <UserList />
       <Admin_Sidebar />
+
+      <UserList />
+
     </div>
   )
 }
