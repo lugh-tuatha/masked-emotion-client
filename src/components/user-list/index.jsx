@@ -46,7 +46,7 @@ function UserList({ userData }) {
   }
 
   return (
-    <div>
+    <div className='container'>
       <table className='table'>
         <thead>
           <tr>
@@ -68,9 +68,22 @@ function UserList({ userData }) {
         </thead>
 
         <tbody>
-
-        </tbody>
+            <td>Luffy</td>
+            <td>0942-5632-451</td>
+            <td>Admin</td>
+        </tbody>  
       </table>
+
+      <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#" >2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
     </div>
   )
 }
