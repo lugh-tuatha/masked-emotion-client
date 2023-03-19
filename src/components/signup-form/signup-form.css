@@ -57,11 +57,12 @@
 }
 
 .signup-form-container .signup-tabs{
-  background-color: var(--secondary);
+  background-color: var(--primary);
   width: 10rem;
   margin: 0 auto;
   padding: .25rem;
   border-radius: 2rem;
+  color: white;
 }
 
 .signup-form-container .signup-tabs .tabs{
@@ -80,7 +81,7 @@
 }
 
 .signup-tabs .tabs.active{
-  background-color: var(--primary);
+  background-color: var(--secondary);
 }
 
 /*---------------------------

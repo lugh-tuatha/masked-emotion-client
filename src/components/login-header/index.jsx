@@ -3,7 +3,7 @@ import './login-header.css'
 
 import { Link } from "react-router-dom";
 
-import logo from '../../assets/icons/logo.png'
+import logo from '../../assets/icons/logo-white.png'
 
 function LoginHeader() {
   return (
