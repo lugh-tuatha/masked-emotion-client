@@ -6,14 +6,14 @@ import * as Bs from "react-icons/bs";
 import * as Md from "react-icons/md";
 
 function MessagesContainer(props) {
-  const { title, summary, content, codename } = props;
+  const { title, summary, content, codename, createdAt } = props;
   return (
     <div>
       <div className="mssgeBox">
         <div className="ttle">
           <h6>{title}</h6>       
           <h6>{summary}</h6>
-          <span>DATE: MM/DD/YYYY</span>
+          <span>{createdAt}</span>
         </div>
         <p>{content}</p>
       </div>
