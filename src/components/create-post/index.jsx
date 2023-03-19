@@ -3,7 +3,6 @@ import './create-post.css'
 import * as Ai from "react-icons/ai";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import App from '../../App'
 
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css'
@@ -32,10 +31,11 @@ function CreatePost() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const [codename, setCodename] = useState('');   
   const [title, setTitle] = useState('');
-  const [codename, setCodename] = useState('');
   const [summary, setSummary] = useState('');
   const [content, setContent] = useState('');
+  const [files, setFiles] = useState('');
   const [redirect, setRedirect] = useState(false);
 
   async function createNewPost(ev) {
@@ -46,6 +46,8 @@ function CreatePost() {
     data.set('summary', summary);
     data.set('codename', codename);
     data.set('content', content);
+    data.set('file', files[0]);
+    console.log(files)
     
     const response = await fetch('http://localhost:5000/post', {
       method: 'POST',
@@ -91,6 +93,7 @@ function CreatePost() {
                 <div className="modalMssg">
                   <input type="title" placeholder='TITLE :' value={title} onChange={ev => setTitle(ev.target.value)} className="mb-3"/>
                   <input type="summary" placeholder='SUMMARY' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3"/>
+                  <input type="file" onChange={ev => setFiles(ev.target.files)}/>
                 </div>                                                              
                   <ReactQuill value={content} onChange={newValue => setContent(newValue)} modules={modules} formats={formats}/>
 

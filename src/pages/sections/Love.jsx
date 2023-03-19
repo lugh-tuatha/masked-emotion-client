@@ -27,12 +27,12 @@ function Love() {
 
         <div className="col-lg-9 p-0">
           <h1>Love</h1>
+          <CreatePost />
 
           <div>
             {posts.length > 0 && posts.map(post => {
               return <MessagesContainer {...post} />;
             })}
-            <CreatePost />
           </div>
 
         </div>

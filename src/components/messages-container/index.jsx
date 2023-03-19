@@ -11,17 +11,19 @@ function MessagesContainer(props) {
     <div>
       <div className="mssgeBox">
         <div className="ttle">
-          <h6>{title}</h6>       
-          <h6>{summary}</h6>
+          <h6>{codename}</h6>       
+          <h6>{title}</h6>
           <span>{createdAt}</span>
         </div>
-        <p>{content}</p>
-      </div>
-      <div className="btnMssge">
-        <div className='btn2'><Ai.AiOutlinePlus /> Add Comment</div>
-        <div className='btn2'><Ai.AiOutlineHeart /> Care</div>
-        <div className='btn2'><Bs.BsArrow90DegRight /> SHARE</div>
-        <div className='btn2'><Md.MdOutlineReportProblem /> Report</div>
+        
+        <p>{summary}</p>
+
+        <div className="btnMssge">
+          <div className='btn2'><Ai.AiOutlinePlus /> Add Comment</div>
+          <div className='btn2'><Ai.AiOutlineHeart /> Care</div>
+          <div className='btn2'><Bs.BsArrow90DegRight /> SHARE</div>
+          <div className='btn2'><Md.MdOutlineReportProblem /> Report</div>
+        </div>
       </div>
     </div>
   );
