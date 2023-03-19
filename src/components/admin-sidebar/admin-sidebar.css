@@ -1,0 +1,21 @@
+.admin-sidebar {
+background-color: rgb(128, 128, 128, 0.5);
+display: flex;
+flex-direction: column;
+width: 25%;
+cursor: pointer;
+font-size: 25px;
+border-radius: 5px;
+height: 80vh;
+text-align: center;
+}
+
+a  {
+padding: 10px;
+}
+
+a:hover {
+    background: white;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
