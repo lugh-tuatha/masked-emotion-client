@@ -1,6 +1,7 @@
 import React from 'react'
 import './devs.css'
 
+
 import * as Bs from "react-icons/bs";
 
 function Devs() {
