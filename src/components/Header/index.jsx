@@ -51,6 +51,7 @@ export default class UserDetails extends Component {
           </Link>
 
           {screenWidth < 768 ? (
+            // ito yun
             <div className='mobile-menu'>
               <FaBars size={32} onClick={this.showNavbar} />
               {this.state.navbar && (

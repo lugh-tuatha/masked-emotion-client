@@ -8,6 +8,8 @@ import * as Bs from "react-icons/bs";
 import Logo from '../../assets/icons/logo.png'
 
 import Button from '../button';
+import { Link } from "react-router-dom";
+
 
 function Footer() {
   return (
@@ -33,7 +35,7 @@ function Footer() {
             <p><a href="http://">ABOUT US</a></p>
             <p><a href="http://">RELEASE</a></p>
             <h4>WANT TO HIRE US?</h4>
-            <p>The Developers</p>
+            <Link to="/developers"><p>The Developers</p></Link>
             <h4>FOLLOW US ON SOCIAL MEDIA</h4>
             <div className="icn">
                   <a link=''><Bs.BsFacebook/></a>
