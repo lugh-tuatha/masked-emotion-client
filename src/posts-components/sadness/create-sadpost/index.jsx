@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './create-post.css'
 import * as Ai from "react-icons/ai";
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 import { Navigate } from 'react-router-dom';

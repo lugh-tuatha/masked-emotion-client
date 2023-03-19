@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
-import './create-post.css'
 import * as Ai from "react-icons/ai";
-import Button from 'react-bootstrap/Button';
+import './create-post.css'
 import Modal from 'react-bootstrap/Modal';
 
 import { Navigate } from 'react-router-dom';
 
-function CreateSadPost() {
+function CreateAngerPost() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [codename1, setCodename1] = useState('');   
-  const [title1, setTitle1] = useState('');
-  const [summary1, setSummary1] = useState('');
+  const [codename2, setCodename2] = useState('');   
+  const [title2, setTitle2] = useState('');
+  const [summary2, setSummary2] = useState('');
   const [files, setFiles] = useState('');
   const [redirect, setRedirect] = useState(false);
 
@@ -22,13 +21,13 @@ function CreateSadPost() {
     ev.preventDefault();
 
     const data = new FormData();
-    data.set('title1', title1);
-    data.set('summary1', summary1);
-    data.set('codename1', codename1);
+    data.set('title2', title2);
+    data.set('summary2', summary2);
+    data.set('codename2', codename2);
     data.set('file', files[0]);
     console.log(files)
     
-    const response = await fetch('http://localhost:5000/sadpost', {
+    const response = await fetch('http://localhost:5000/angerpost', {
       method: 'POST',
       body: data,
     });
@@ -39,7 +38,7 @@ function CreateSadPost() {
   }
 
   if (redirect) {
-    return  <Navigate to={'/'} />
+    return  <Navigate to={'/anger'} />
   }
   return (
     <div>
@@ -66,12 +65,12 @@ function CreateSadPost() {
               <form onSubmit={createNewPost}>
                 <div className="d-flex justify-content-between mb-3">
                   <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
-                  <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename1} onChange={ev => setCodename1(ev.target.value)}/>
+                  <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename2} onChange={ev => setCodename2(ev.target.value)}/>
                 </div>
                 
                 <div className="modalMssg">
-                  <input type="title" placeholder='TITLE :' value={title1} onChange={ev => setTitle1(ev.target.value)} className="mb-3"/>
-                  <input type="summary" placeholder='SUMMARY' value={summary1} onChange={ev => setSummary1(ev.target.value)} className="mb-3"/>
+                  <input type="title" placeholder='TITLE :' value={title2} onChange={ev => setTitle2(ev.target.value)} className="mb-3"/>
+                  <input type="summary" placeholder='SUMMARY' value={summary2} onChange={ev => setSummary2(ev.target.value)} className="mb-3"/>
                   <input type="file" onChange={ev => setFiles(ev.target.files)} className='mb-3'/>
                 </div>                                                              
 
@@ -87,4 +86,4 @@ function CreateSadPost() {
   )
 }
 
-export default CreateSadPost
+export default CreateAngerPost

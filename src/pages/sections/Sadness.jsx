@@ -4,7 +4,7 @@ import './sections.css'
 import Header from '../../components/header'
 import Sidebar from '../../components/sidebar'
 import MessagesContainerSad from '../../posts-components/sadness/messages-container-sad'
-import CreateSadPost from '../../components/create-sadpost'
+import CreateSadPost from '../../posts-components/sadness/create-sadpost'
 
 function Sadness() {
   const [posts, setPosts] = useState([]);

@@ -7,19 +7,19 @@ import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
 
-function MessagesContainerSad(props) {
-  const { title1, summary1, codename1, createdAt, cover1 } = props;
+function MessagesContainerAnger(props) {
+  const { title2, summary2, codename2, createdAt, cover2 } = props;
   return (
     <div>
       <div className="mssgeBox mb-3">
         <div className="ttle">
-          <img src={'http://localhost:5000/' + cover1}/>     
-          <h6>{title1}</h6>
+          <img src={'http://localhost:5000/' + cover2}/>     
+          <h6>{title2}</h6>
           <ReactTimeAgo date={(createdAt)} locale="en-US"/>
         </div>
         
-        <p>{summary1}</p>
-        <p className='text-end codename'> - {codename1}</p>
+        <p>{summary2}</p>
+        <p className='text-end codename'> - {codename2}</p>
 
         <div className="btnMssge">
           <div className='btn2'><Ai.AiOutlinePlus /> Add Comment</div>
@@ -32,4 +32,4 @@ function MessagesContainerSad(props) {
   );
 }
 
-export default MessagesContainerSad;
+export default MessagesContainerAnger;
