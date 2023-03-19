@@ -45,7 +45,9 @@
   height: 100%;
   display: flex;
   align-items: center;
+  padding-left: .5rem;
   border-radius: 4px;
+  font-weight: 600;
 }
 
 .nav-text a:hover{

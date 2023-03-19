@@ -46,7 +46,7 @@ function UserList({ userData }) {
   }
 
   return (
-    <div className='container'>
+    <div>
       <table className='table'>
         <thead>
           <tr>

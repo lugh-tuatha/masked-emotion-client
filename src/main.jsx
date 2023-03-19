@@ -14,6 +14,7 @@ import Developers from './pages/Developers'
 import Signup from './pages/auth/Signup';
 import Login from './pages/auth/Login';
 import Posts from './pages/admin/Posts'
+import Dashboard from './pages/Dashboard';
 
 import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: "/posts",
     element: <Posts />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 
   // section routes 

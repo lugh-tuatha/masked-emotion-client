@@ -6,12 +6,16 @@ import * as Bs from "react-icons/bs";
 import UserList from '../components/user-list';
 function Dashboard() {
   return (
-    <div>
+    <>
       <Admin_Sidebar />
+      <div className="container">
 
-      <UserList />
-
-    </div>
+        <div>
+          <h2>All users</h2>
+          <UserList />
+        </div>
+      </div>
+    </>
   )
 }
 
