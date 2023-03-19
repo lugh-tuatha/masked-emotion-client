@@ -19,7 +19,6 @@ function Guilt() {
           <h1>Guilt</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>

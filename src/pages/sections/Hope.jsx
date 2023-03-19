@@ -19,7 +19,6 @@ function Hope() {
           <h1>Hope</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>

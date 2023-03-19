@@ -19,7 +19,6 @@ function Anxiety() {
           <h1>Anxiety</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>
