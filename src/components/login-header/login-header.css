@@ -18,7 +18,21 @@ input{
 
 .login-header a{
   background-color: black;
-  padding: .25rem 1rem;
   border-radius: 1rem;
   color: white;
+}
+
+.login-header a.lnk{
+  padding: .25rem 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .login-header img{
+    width: 9rem;
+  }
+
+  .login-header a.lnk{
+    background-color: white;
+    color: black;
+  }
 }

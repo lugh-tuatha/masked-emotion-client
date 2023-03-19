@@ -59,9 +59,7 @@
 
 
 .footer-content h4{
-padding-top: 10px;
-padding-bottom: 25px;
-padding-right: 15px;
+    margin: 0;
 }
 
 .footer-content .icn {

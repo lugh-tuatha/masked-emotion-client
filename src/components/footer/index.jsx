@@ -10,7 +10,6 @@ import Logo from '../../assets/icons/logo.png'
 import Button from '../button';
 import { Link } from "react-router-dom";
 
-
 function Footer() {
   return (
     <div className="footer px-0">
@@ -31,11 +30,10 @@ function Footer() {
         <div className="col-lg-8 footer2">
           <div className="footer-content">
             <h4>QUICK LINKS</h4>
-            <p><a href="http://">HOME</a></p>
-            <p><a href="http://">ABOUT US</a></p>
-            <p><a href="http://">RELEASE</a></p>
+            <p><Link to="/">HOME</Link></p>
+            <p className='mb-4'><Link to="/release">RELEASE</Link></p>
             <h4>WANT TO HIRE US?</h4>
-            <Link to="/developers"><p>The Developers</p></Link>
+            <p className='mb-4'><Link to="/developers"><p>The Developers</p></Link></p>
             <h4>FOLLOW US ON SOCIAL MEDIA</h4>
             <div className="icn">
                   <a link=''><Bs.BsFacebook/></a>

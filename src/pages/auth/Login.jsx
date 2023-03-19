@@ -4,6 +4,8 @@ import './auth.css'
 import LoginForm from '../../components/login-form'
 import LoginHeader from '../../components/login-header'
 
+import welcomeHero from '../../assets/img/hero-img/welcome-hero.png'
+
 function Login() {
   return (
     <div>
@@ -16,7 +18,7 @@ function Login() {
             <h2 className='fw-bold'>Your Safe Space to Confess and Connect</h2>
             <p className='mb-4'>Welcome back to the anonymous confession site, EmoWall! We're here to listen and support you</p>
 
-            <img src="https://th.bing.com/th/id/OIG.gnkV7CfXSykaXE8Hsy68?pcl=1b1a19&pid=ImgGn" className='img-fluid'/>
+            <img src={welcomeHero} className='img-fluid'/>
 
             <p className='mt-4'>Follow us on Social Media</p>
           </div>

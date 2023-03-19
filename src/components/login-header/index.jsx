@@ -10,9 +10,9 @@ function LoginHeader() {
     <div className='login-header'>
       <nav className='mx-auto'>
         <Link>
-          <img src={logo} />
+          <img src={logo}/>
         </Link>
-        <p><Link to="/">Go back to home</Link></p>
+        <p><Link to="/" className='lnk'>Go back to home</Link></p>
       </nav>
     </div>
 

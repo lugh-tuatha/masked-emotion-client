@@ -16,6 +16,7 @@ import Hero1 from '../src/assets/svg/hero1.svg'
 
 import sectionBoxData from './json/sectionBoxes'
 
+import { Link } from "react-router-dom";
 
 function App() {
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
@@ -35,7 +36,8 @@ function App() {
             <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
             <div className="hmbtn">
               <p>Join the community</p>
-              <Button>SIGN UP</Button><span><Button>LOGIN</Button></span>
+              <Link to="/signup"><Button >SIGN UP</Button></Link>
+              <Link to="/login"><Button >LOGIN</Button></Link>
             </div>
           </div>
         </div>
@@ -53,9 +55,9 @@ function App() {
             <div className="scl">
               <p>FOLLOW US ON SOCIAL MEDIA</p>
               <div className="icn">
-                <a link=''><Bs.BsFacebook/></a>
-                <a link=''><Bs.BsInstagram/></a>
-                <a link=''><Bs.BsTwitter/></a>
+                <Bs.BsFacebook size={30}/>
+                <Bs.BsInstagram size={30}/>
+                <Bs.BsTwitter size={30}/>
               </div>
             </div>
           </div>
@@ -87,7 +89,7 @@ function App() {
             </div>
         </div>
         <div className="col-lg-1"></div>
-        <div className="col-lg-4 nws">
+        <div className="col-lg-4 nws p-0 my-auto">
           <Newsletter />
         </div>
       </div>
