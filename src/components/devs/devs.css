@@ -2,12 +2,12 @@
 .our-team {
   padding: 30px 0 40px;
   margin-bottom: 30px;
-  background-color: rgb(0, 0, 0);
+  background: #101232;
   text-align: center;
   overflow: hidden;
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 1px 8px 8px var(--primary);
+  box-shadow: 0 10px 10px 5px;
   margin-top: 40%;
   margin-left: 10%;
   margin-right: 10%;
