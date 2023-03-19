@@ -19,7 +19,6 @@ function Confusion() {
           <h1>Confusion</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>

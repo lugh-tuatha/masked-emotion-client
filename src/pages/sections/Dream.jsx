@@ -19,7 +19,6 @@ function Dream() {
           <h1>Dream</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>

@@ -18,7 +18,6 @@ function Regret() {
           <h1>Regret</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>

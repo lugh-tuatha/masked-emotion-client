@@ -18,7 +18,6 @@ function Anger() {
           <h1>Anger</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>

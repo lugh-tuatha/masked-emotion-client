@@ -30,6 +30,10 @@ import Dream from './pages/sections/Dream'
 
 import UserDetails from './components/user-details';
 
+import TimeAgo from 'javascript-time-ago'
+import en from 'javascript-time-ago/locale/en.json'
+TimeAgo.addDefaultLocale(en)
+
 const router = createBrowserRouter([
   {
     path: "/",

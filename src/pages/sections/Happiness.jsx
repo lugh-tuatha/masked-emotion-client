@@ -19,7 +19,6 @@ function Happiness() {
           <h1>Happy</h1>
 
           <div>
-            <MessagesContainer />
           </div>
 
         </div>
