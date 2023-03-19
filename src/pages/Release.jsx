@@ -6,6 +6,7 @@ import sectionBoxData from '../json/sectionBoxes.json'
 import Header from '../components/Header'
 import SectionBox from '../components/section-box'
 import Button from '../components/button'
+import UserList from '../components/user-list'
 
 function Release() {
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
@@ -32,6 +33,8 @@ function Release() {
           </div>
         </section>
       </main>
+
+      <UserList />
     </div>
   )
 }

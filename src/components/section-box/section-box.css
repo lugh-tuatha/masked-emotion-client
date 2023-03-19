@@ -1,10 +1,11 @@
 .emo-box {
     border: 1px solid rgb(255, 255, 255, 0.7);
-    background-color: #747474;
+    background-color: var(--primary);
     margin-bottom: 2rem;
     width: 100%;
     border-radius: 10px;
     aspect-ratio: 1/1;
+    color: white;
 }
 
 

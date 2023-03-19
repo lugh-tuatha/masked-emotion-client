@@ -5,6 +5,8 @@ import Fruits from '../../assets/icons/fruits.svg'
 import Chat from '../../assets/icons/chat.svg'
 import Box from '../../assets/icons/box.svg'
 import Arrow from '../../assets/icons/arrow.svg'
+import Button from '../button'
+import { Link } from "react-router-dom";
 
 function heroBox() {
   return (
@@ -34,10 +36,9 @@ function heroBox() {
             <img src={Arrow} alt="" />
             <p>Stay anonymous</p>
           </div>
-
       </div>
       <div className="cpost">
-        <button >Create a post</button>
+        <Link to="/release"><Button >Create a post</Button></Link>
       </div>
     </div>
   )

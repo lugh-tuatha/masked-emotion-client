@@ -84,3 +84,10 @@ padding: 8%;
 .nws {
   padding-bottom: 30px;
 }
+
+/* responsiveness */
+@media screen and (max-width: 720px) {
+  .App .row {
+    width: 100%;
+  }
+}

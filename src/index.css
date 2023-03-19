@@ -71,3 +71,12 @@ Reusable css
 .w-90{
   width: 90%;
 }
+
+/*-------------
+Responsive css
+-------------*/
+@media screen and (max-width: 720px) {
+  nav{
+    max-width: 100%;
+  }
+}

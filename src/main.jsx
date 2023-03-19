@@ -9,7 +9,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import About from './pages/About';
 import Release from './pages/Release';
 import Developers from './pages/Developers'
 import Signup from './pages/auth/Signup';
@@ -46,10 +45,6 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
-  },
-  {
-    path: "/about",
-    element: <About />,
   },
   {
     path: "/release",

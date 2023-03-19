@@ -84,16 +84,14 @@ padding-right: 15px;
     padding: 10px;
     width: 100%;
     background: #101232;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom: 1px solid gray;
+    border-radius: 10px;
 }
 
 .frmIcn1 ::placeholder {
     color: white;
 }
 .prfl {
-    margin-top: 25px;
+    margin-top: 1.1rem;
 }
 
 .frmbtn {

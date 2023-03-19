@@ -1,4 +1,5 @@
 import React, { Component, useEffect, useState } from 'react'
+import './user-list.css'
 
 import * as Bs from "react-icons/bs";
 

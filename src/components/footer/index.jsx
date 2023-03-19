@@ -5,14 +5,17 @@ import * as Go from 'react-icons/go'
 import * as Ai from 'react-icons/ai'
 import * as Bs from "react-icons/bs";
 
+import Logo from '../../assets/icons/logo.png'
+
+import Button from '../button';
+
 function Footer() {
   return (
     <div className="footer">
       <div className='row'>
         <div className="col-lg-4 footer1">
           <h4>Who ARE WE?</h4>
-          <img src="https://myprofitlistbiz.com/wp-content/uploads/2014/04/myprofitlistbiz-logo-Copy.png" alt="" />
-          <h6>EmoWall</h6>
+          <img src={Logo} alt="" />
           <p>Our website provides a safe and supportive community for individuals to share their feelings and connect with others who may be going through similar experiences</p>
           <div className="address">
             <div className="addressIcon"><Go.GoLocation id='add-icn'/><span>123 Main Street,Anytown, USA 12345</span>
@@ -42,15 +45,15 @@ function Footer() {
             <h4>HOW WE CAN HELP YOU?</h4>
             <form className='foootertxt'>
             <div className="frmIcn1">
-                <Bs.BsPersonCircle className='prfl'/>
+                <Bs.BsPersonCircle className='prfl' size={30}/>
               <input type="text" placeholder='FULLNAME' required='required'/>
               </div>
               <div className="frmIcn1">
-              <Ai.AiFillMail className='prfl'/>
+              <Ai.AiFillMail className='prfl' size={30}/>
               <input type="email" placeholder='EMAIL ADDRESS' required='required'/>
               </div>
               <div className="frmbtn">
-                <button>SEND</button>
+                <Button>SEND</Button>
               </div>
             </form>
           </div>
