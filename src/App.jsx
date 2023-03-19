@@ -16,6 +16,7 @@ import Hero1 from '../src/assets/svg/hero1.svg'
 
 import sectionBoxData from './json/sectionBoxes'
 
+
 function App() {
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
     <div key={index} className="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">

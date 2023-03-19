@@ -6,17 +6,18 @@ import * as Bs from "react-icons/bs";
 import * as Md from "react-icons/md";
 
 function MessagesContainer(props) {
-  const { title, summary, content, codename, createdAt } = props;
+  const { title, summary, codename, createdAt, cover } = props;
   return (
     <div>
       <div className="mssgeBox">
         <div className="ttle">
-          <h6>{codename}</h6>       
+          <img src={cover}/>     
           <h6>{title}</h6>
-          <span>{createdAt}</span>
+          <h6>{createdAt}</h6>
         </div>
         
         <p>{summary}</p>
+        <p className='text-end codename'> - {codename}</p>
 
         <div className="btnMssge">
           <div className='btn2'><Ai.AiOutlinePlus /> Add Comment</div>

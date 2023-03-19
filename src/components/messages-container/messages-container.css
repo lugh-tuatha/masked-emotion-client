@@ -1,5 +1,5 @@
 .mssgeBox {
-  border: 1px solid rgb(128, 128, 128, 0.5);
+  border: 2px solid var(--primary);
   max-width: 500px;
   background-color: white;
   border-radius: 10px;
@@ -7,37 +7,39 @@
 
 .ttle {
   display: flex;
-  background: #474747;
-  border-radius: 9px;
-  padding: 9px;
+  background-color: var(--primary);
+  border-radius: 9px 9px 0 0;
   color: white;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 .ttle h6{
-  padding-left: 20px;
+  margin: 0;
 }
 
 .mssgeBox p {
-  padding: 25px;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.mssgeBox p.codename{
+  padding: 0 1rem 1rem 0;
 }
 
 .btnMssge {
   background-color: white;
-  margin-top: 10px;
-  border: 1px solid rgb(128, 128, 128, 0.5);
   max-width: 500px;
-  border-radius: 10px;
+  border-radius: 0 0 9px 9px;
   padding: 10px;
   text-align: center;
   justify-content: center;
   display: flex;
-  background: #474747;
+  background-color: var(--primary);
 }
 
 .btn2 {
-  border: 1px rgb(128, 128, 128, 0.5);
-  background: rgb(128, 128, 128, 0.5);
+  background-color: var(--light-bg);
   margin-right: 10px;
   font-size: 12px;
   padding: 10px;
@@ -46,6 +48,7 @@
 }
 
 .btn2:hover{
-  background: transparent;
+  background-color: var(--light-bg);
+  opacity: .8;
 }
 
