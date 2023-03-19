@@ -8,9 +8,10 @@
   position: relative;
   border-radius: 20px;
   box-shadow: 0 1px 8px 8px var(--primary);
-  margin-top: 60%;
+  margin-top: 40%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 20%;
 }
 
 .our-team .picture {
