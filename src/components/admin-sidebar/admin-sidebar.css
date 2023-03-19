@@ -10,11 +10,11 @@ height: 80vh;
 text-align: center;
 }
 
-a  {
+.admin-sidebar a  {
 padding: 10px;
 }
 
-a:hover {
+.admin-sidebar a:hover {
     background: white;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
