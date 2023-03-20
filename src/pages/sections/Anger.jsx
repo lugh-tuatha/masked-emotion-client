@@ -34,7 +34,11 @@ function Anger() {
           <div>
             <div>
               {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
-                return <MessagesContainerAnger {...post} />;
+                return (
+                  <div className="col-lg-6">
+                    <MessagesContainerAnger {...post} />
+                  </div>
+                );
               })}
             </div>
           </div>

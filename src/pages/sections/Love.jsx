@@ -29,9 +29,13 @@ function Love() {
           <h1>Love</h1>
           <CreatePost />
 
-          <div>
+          <div className="row">
             {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
-              return <MessagesContainer {...post} />;
+              return (
+                <div className="col-md-6">
+                  <MessagesContainer {...post} />
+                </div>
+              );
             })}
           </div>
 

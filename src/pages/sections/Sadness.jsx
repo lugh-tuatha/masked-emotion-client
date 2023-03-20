@@ -33,7 +33,11 @@ function Sadness() {
           <div>
             <div>
               {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
-                return <MessagesContainerSad {...post} />;
+                return(
+                  <div className="col-lg-6">
+                    <MessagesContainerSad {...post} />
+                  </div>
+                );
               })}
             </div>
           </div>
