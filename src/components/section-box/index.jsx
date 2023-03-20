@@ -4,15 +4,17 @@ import './section-box.css';
 import LoveIcon from '../../assets/section-icon/love.svg';
 import SadnessIcon from '../../assets/section-icon/sadness.svg';
 import AngerIcon from '../../assets/section-icon/anger.svg';
-import HappinessIcon from '../../assets/section-icon/happiness.svg';
-import RegretIcon from '../../assets/section-icon/regret.svg';
-import AnxietyIcon from '../../assets/section-icon/anxiety.svg';
-import HopeIcon from '../../assets/section-icon/hope.svg';
-import ConfusionIcon from '../../assets/section-icon/confusion.svg';
-import GuiltIcon from '../../assets/section-icon/guilt.svg';
-import GratitudeIcon from '../../assets/section-icon/gratitude.svg';
-import FearIcon from '../../assets/section-icon/fear.svg';
-import DreamIcon from '../../assets/section-icon/dream.svg';
+import ComingSoon from '../../assets/section-icon/coming-soon.png';
+
+// import HappinessIcon from '../../assets/section-icon/happiness.svg';
+// import RegretIcon from '../../assets/section-icon/regret.svg';
+// import AnxietyIcon from '../../assets/section-icon/anxiety.svg';
+// import HopeIcon from '../../assets/section-icon/hope.svg';
+// import ConfusionIcon from '../../assets/section-icon/confusion.svg';
+// import GuiltIcon from '../../assets/section-icon/guilt.svg';
+// import GratitudeIcon from '../../assets/section-icon/gratitude.svg';
+// import FearIcon from '../../assets/section-icon/fear.svg';
+// import DreamIcon from '../../assets/section-icon/dream.svg';
 
 function SectionBox(props) {
   // Create a variable to hold the icon image based on the title prop
@@ -30,31 +32,31 @@ function SectionBox(props) {
           iconImage = <img src={AngerIcon} alt="" />;
           break;
         case 'HAPPINESS':
-          iconImage = <img src={HappinessIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'REGRET':
-          iconImage = <img src={RegretIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'ANXIETY':
-          iconImage = <img src={AnxietyIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'HOPE':
-          iconImage = <img src={HopeIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'CONFUSION':
-          iconImage = <img src={ConfusionIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'GUILT':
-          iconImage = <img src={GuiltIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'GRATITUDE':
-          iconImage = <img src={GratitudeIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'FEAR':
-          iconImage = <img src={FearIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         case 'DREAM':
-          iconImage = <img src={DreamIcon} alt="" />;
+          iconImage = <img src={ComingSoon} alt="" />;
           break;
         default:
           iconImage = null;
