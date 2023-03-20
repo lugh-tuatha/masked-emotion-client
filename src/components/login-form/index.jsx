@@ -7,6 +7,8 @@ import * as BsIcons from "react-icons/bs";
 
 import { Link } from "react-router-dom";
 
+import logo from '../../assets/icons/logo.png'
+
 import Swal from 'sweetalert2'
 
 export default class LoginForm extends Component {
@@ -78,8 +80,7 @@ export default class LoginForm extends Component {
     return (
       <div className='login-parent'>
         <div className="form-container text-center login-container">
-          <h2>LOGIN</h2>
-          <img src="https://th.bing.com/th/id/OIG.NUVCQ0M1MzM3NzM3ODc0?pcl=1b1a19&pid=ImgGn" />
+          <img src={logo}/>
 
           <form className="text-white" onSubmit={this.handleSubmit}>
             <div className='mt-4 input-container'>

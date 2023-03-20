@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './create-post.css'
 import * as Ai from "react-icons/ai";
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 import { Navigate } from 'react-router-dom';
+
+import Button from '../button';
 
 function CreatePost() {
   const [show, setShow] = useState(false);
@@ -47,14 +48,14 @@ function CreatePost() {
         <h6>EVER lOVED SOMEONE YOU COULDN'T TELL?</h6>
           <div className='button1'>
               <div className="dropdown">
-                <div className="btn"><Ai.AiFillHeart /> LOVE</div>
+                <Button><Ai.AiFillHeart /> LOVE</Button>
                 <div className="dropdown-content">
                   <a href="#">Sadness</a>
                   <a href="#">Anger</a>
                   <a href="#">Happiness</a>
                 </div>
               </div>
-            <div className='modalBtn' onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div>
+            <Button className='modalBtn' onClick={handleShow} ><Ai.AiOutlinePlus /> CREATE POST</Button>
           </div>
 
           <Modal show={show} onHide={handleClose}>
@@ -71,15 +72,14 @@ function CreatePost() {
                 
                 <div className="modalMssg">
                   <input type="title" placeholder='TITLE :' value={title} onChange={ev => setTitle(ev.target.value)} className="mb-3"/>
-                  <input type="summary" placeholder='SUMMARY' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3"/>
+                  <textarea type="summary" placeholder='CONTENT' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3"/>
                   <input type="file" onChange={ev => setFiles(ev.target.files)} className='mb-3'/>
                 </div>                                                              
 
-                  <button type="submit" value="post" className='modalBtn'><Ai.AiFillCheckCircle/> POST</button>
+                  <Button type="submit" value="post" className='modalBtn'><Ai.AiFillCheckCircle/> POST</Button>
               </form>
 
             </Modal.Body>
-
               
           </Modal>           
       </div>
