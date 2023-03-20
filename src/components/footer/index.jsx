@@ -41,7 +41,7 @@ function Footer() {
                   <a link=''><Bs.BsTwitter/></a>
                 </div>
           </div>
-          <div className="footer-content2">
+          <div className="footer-content2 p-0">
             <h4>HOW WE CAN HELP YOU?</h4>
             <form className='foootertxt'>
             <div className="frmIcn1">

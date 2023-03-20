@@ -1,13 +1,17 @@
 .Content {
-    border: 1px solid rgb(128, 128, 128, 0.8);
-    background: white;
+    border: 2px solid var(--primary);
+    background: var(--light-bg);
     border-radius: 10px;
     text-align: center;
     width: 60%;
     margin: auto;
     margin-bottom: 25px;
     padding: 30px;
-    box-shadow: 0 5px 15px 5px;
+    
+}
+
+.Content Button{
+    margin-left: 1rem;
 }
 
 .Content h6 {
@@ -77,7 +81,7 @@
     width: 100px;
 }
 
-.modalMssg input{
+.modalMssg input, textarea{
     border: 1px rgb(128, 128, 128, 0.5);
     background: rgb(128, 128, 128, 0.5);
     border-radius: 10px;
@@ -93,7 +97,7 @@
     justify-content: center;
 }
 .modalBtn{
-    border: 1px rgb(128, 128, 128, 0.5);
+    border: 1px var(--secondary);
     background: rgb(128, 128, 128, 0.5);
     padding: 10px;
     border-radius: 10px;
@@ -105,4 +109,8 @@
     background: transparent;
     box-shadow: 0 5px 8px 3px;
     cursor: pointer;
+}
+
+textarea[type="summary"]{
+    height: 13rem;
 }

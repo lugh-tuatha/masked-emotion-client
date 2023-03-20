@@ -11,6 +11,7 @@ function Newsletter() {
         <h3>Join Our Newsletter</h3>
         <p>Stay Up-to-Date with EmoWall News and Updates</p>
       </div>
+
       <div className="frm">
         <form>
           <div className="frmIcn">

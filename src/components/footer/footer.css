@@ -57,7 +57,6 @@
     color: palevioletred;
 }
 
-
 .footer-content h4{
     margin: 0;
 }
@@ -72,7 +71,7 @@
 .frmIcn1 {
     display: flex;
     color: white;
-    padding: 25px;
+    padding: 15px 20px;
     border-radius: 25px;
 }
 
@@ -93,5 +92,5 @@
 }
 
 .frmbtn {
-    padding: 25px;
+    padding: 5px 0 15px 20px;
 }
