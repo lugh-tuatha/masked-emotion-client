@@ -48,14 +48,14 @@ function CreatePost() {
         <h6>EVER lOVED SOMEONE YOU COULDN'T TELL?</h6>
           <div className='button1'>
               <div className="dropdown">
-                <Button><Ai.AiFillHeart /> LOVE</Button>
+                <div><Ai.AiFillHeart /> LOVE</div>
                 <div className="dropdown-content">
                   <a href="#">Sadness</a>
                   <a href="#">Anger</a>
                   <a href="#">Happiness</a>
                 </div>
               </div>
-            <Button className='modalBtn' onClick={handleShow} ><Ai.AiOutlinePlus /> CREATE POST</Button>
+            <Button><div onClick={handleShow} ><Ai.AiOutlinePlus /> CREATE POST</div></Button>
           </div>
 
           <Modal show={show} onHide={handleClose}>

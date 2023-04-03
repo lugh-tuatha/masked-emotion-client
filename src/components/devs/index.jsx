@@ -61,25 +61,6 @@ function Devs() {
           </ul>
         </div>
       </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="our-team">
-          <div class="picture">
-            <img class="img-fluid" src="https://i.pinimg.com/originals/6f/8b/eb/6f8beba4eb294361498fcbbea4e30ccf.jpg" />
-          </div>
-          <div class="team-content">
-            <h3 class="name">Cholo </h3>
-            <h4 class="title">Web Developer</h4>
-          </div>
-          <ul class="social">
-          <li><a href=""><Bs.BsFacebook/></a></li>
-            <li><a href=""><Bs.BsInstagram/></a></li>
-            <li><a href=""><Bs.BsTwitter/></a></li>
-            <li><a href=""><Bs.BsLinkedin/></a></li>
-          </ul>
-        </div>
-      </div>
-
     </div>
   )
 }

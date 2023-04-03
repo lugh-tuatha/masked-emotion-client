@@ -82,7 +82,8 @@
 }
 
 .signup-tabs .tabs.active{
-  background-color: var(--secondary);
+  background-color: white;
+  color: black;
 }
 
 /*---------------------------

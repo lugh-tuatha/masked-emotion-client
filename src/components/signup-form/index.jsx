@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 import Swal from 'sweetalert2'
 
+
 import logo from '../../assets/icons/logo.png'
 
 const auth = getAuth(app);
@@ -111,7 +112,7 @@ export default class Signup extends Component {
   }
 
   handleSubmit(e) {
-    if(this.state.userType === "Admin" && this.state.secretKey !== "acelagimayerror"){
+    if(this.state.userType === "Admin" && this.state.secretKey !== "ace"){
       e.preventDefault();
       Swal.fire({
         icon: 'error',
@@ -204,7 +205,7 @@ export default class Signup extends Component {
             <div> 
               <label>SEND OTP</label> <br />
               <input type="text" className="mb-4 phone-number" onChange={(e) => this.setState({ otp: e.target.value })}/>
-              <input type="button" value="OTP" onClick={this.verifyCode} className='verify-btn'/>
+              <input type="button" value="SEND OTP" onClick={this.verifyCode} className='verify-btn'/>
             </div> : null }
 
 
