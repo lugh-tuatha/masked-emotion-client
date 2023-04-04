@@ -44,17 +44,7 @@ function CreateAngerPost() {
     <div>
       <div className="Content">
         <h6>HAVE YOU EVER HAD TO KEEP YOUR TRUE FEELINGS HIDDEN, ONLY TO BE MET WITH FRUSTRATION AND ANGER?</h6>
-          <div className='button1'>
-              <div className="dropdown">
-                <Button className="btn"><Ai.AiFillHeart /> ANGER</Button>
-                <div className="dropdown-content">
-                  <a href="#">Sadness</a>
-                  <a href="#">Anger</a>
-                  <a href="#">Happiness</a>
-                </div>
-              </div>
-            <Button><div onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div></Button>
-          </div>
+          <Button><div onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div></Button>
 
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton className='hdng'> 

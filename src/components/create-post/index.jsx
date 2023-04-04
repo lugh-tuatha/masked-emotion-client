@@ -46,17 +46,7 @@ function CreatePost() {
     <div>
       <div className="Content">
         <h6>EVER lOVED SOMEONE YOU COULDN'T TELL?</h6>
-          <div className='button1'>
-              <div className="dropdown">
-                <div><Ai.AiFillHeart /> LOVE</div>
-                <div className="dropdown-content">
-                  <a href="#">Sadness</a>
-                  <a href="#">Anger</a>
-                  <a href="#">Happiness</a>
-                </div>
-              </div>
-            <Button><div onClick={handleShow} ><Ai.AiOutlinePlus /> CREATE POST</div></Button>
-          </div>
+          <Button><div onClick={handleShow} ><Ai.AiOutlinePlus /> CREATE POST</div></Button>
 
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton className='hdng'> 

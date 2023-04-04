@@ -1,6 +1,6 @@
 .mssgeBox {
   border: 2px solid var(--primary);
-  max-width: 100%;
+  width: 100%;
   background-color: white;
   border-radius: 10px;
 }

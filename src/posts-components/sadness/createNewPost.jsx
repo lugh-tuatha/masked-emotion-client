@@ -45,17 +45,8 @@ function CreateSadPost() {
     <div>
       <div className="Content">
         <h6 className='uppercase'>HAVE YOU EVER HAD TO KEEP A SECRET THAT WEIGHED HEAVILY ON YOUR HEART, UNABLE TO SHARE IT WITH ANYONE</h6>
-          <div className='button1'>
-              <div className="dropdown">
-                <Button className="btn"><Fa.FaHeartBroken />,SADNESS</Button>
-                <div className="dropdown-content">
-                  <a href="#">Sadness</a>
-                  <a href="#">Anger</a>
-                  <a href="#">Happiness</a>
-                </div>
-              </div>
-            <Button><div onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div></Button>
-          </div>
+
+          <Button><div onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div></Button>
 
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton className='hdng'> 
