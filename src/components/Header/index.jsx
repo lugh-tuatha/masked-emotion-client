@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa';
 import Button from '../button';
 import logo from '../../assets/icons/logo.png';
 
-export default class UserDetails extends Component {
+export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {

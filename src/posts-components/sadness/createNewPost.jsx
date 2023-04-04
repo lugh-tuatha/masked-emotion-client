@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import * as Ai from "react-icons/ai";
+import * as Fa from "react-icons/fa";
 import Modal from 'react-bootstrap/Modal';
 
 import { Navigate } from 'react-router-dom';
@@ -53,7 +54,7 @@ function CreateSadPost() {
                   <a href="#">Happiness</a>
                 </div>
               </div>
-            <Button className='modalBtn' onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</Button>
+            <Button><div onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div></Button>
           </div>
 
           <Modal show={show} onHide={handleClose}>

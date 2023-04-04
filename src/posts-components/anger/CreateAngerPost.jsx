@@ -53,7 +53,7 @@ function CreateAngerPost() {
                   <a href="#">Happiness</a>
                 </div>
               </div>
-            <Button className='modalBtn' onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</Button>
+            <Button><div onClick={handleShow}><Ai.AiOutlinePlus /> CREATE POST</div></Button>
           </div>
 
           <Modal show={show} onHide={handleClose}>
