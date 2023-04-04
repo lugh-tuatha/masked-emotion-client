@@ -11,7 +11,7 @@ function Anger() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/angerpost').then(response => {
+    fetch('https://emowall-backend.onrender.com/angerpost').then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });

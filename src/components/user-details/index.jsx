@@ -17,7 +17,7 @@ export default class UserDetails extends Component {
   }
 
   componentDidMount(){
-    fetch("http://localhost:5000/userData",{
+    fetch("https://emowall-backend.onrender.com/userData",{
       method: "POST",
       crossDomain: true,
       headers:{

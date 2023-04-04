@@ -125,7 +125,7 @@ export default class Signup extends Component {
         const{ fname, lname, phone, password, cpassword } = this.state;
         console.log(fname, lname, phone, password, cpassword)
 
-        fetch("http://localhost:5000/register",{
+        fetch("https://emowall-backend.onrender.com/register",{
           method: "POST",
           crossDomain: true,
           headers:{

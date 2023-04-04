@@ -10,7 +10,7 @@ function Posts({ post }) {
   }, [])
 
   const  getAllPosts = () => {
-    fetch("http://localhost:5000/getAllPosts",{
+    fetch("https://emowall-backend.onrender.com/getAllPosts",{
       method: "GET",
     })
       .then((res) => res.json())
@@ -22,7 +22,7 @@ function Posts({ post }) {
 
   const deletePost = (id, codename) => {
     if(window.confirm(`Are you sure you want to delete ${codename}`)){
-      fetch("http://localhost:5000/deletePosts", {
+      fetch("https://emowall-backend.onrender.com/deletePosts", {
         method: "POST",
         crossDomain: true,
         headers: {

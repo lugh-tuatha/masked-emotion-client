@@ -27,7 +27,7 @@ function CreateSadPost() {
     data.set('file', files[0]);
     console.log(files)
     
-    const response = await fetch('http://localhost:5000/sadpost', {
+    const response = await fetch('https://emowall-backend.onrender.com/sadpost', {
       method: 'POST',
       body: data,
     });

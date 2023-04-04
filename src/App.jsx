@@ -8,7 +8,6 @@ import SectionBox from './components/section-box';
 import Button from './components/button';
 import HeroBox from './components/hero-box';
 import History from './components/history';
-import Newsletter from './components/newsletter';
 import Footer from './components/footer';
 
 import Mission from '../src/assets/svg/mission.svg';

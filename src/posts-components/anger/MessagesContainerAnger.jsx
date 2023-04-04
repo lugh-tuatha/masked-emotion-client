@@ -12,7 +12,7 @@ function MessagesContainerAnger(props) {
     <div>
       <div className="mssgeBox mb-3">
         <div className="ttle">
-          <img src={'http://localhost:5000/' + cover2}/>     
+          <img src={'https://emowall-backend.onrender.com/' + cover2}/>     
           <h6>{title2}</h6>
           <ReactTimeAgo date={(createdAt)} locale="en-US"/>
         </div>

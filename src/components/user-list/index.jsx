@@ -11,7 +11,7 @@ function UserList({ userData }) {
   }, [])
 
   const getAllUser = () => {
-    fetch("http://localhost:5000/getAllUser", {
+    fetch("https://emowall-backend.onrender.com/getAllUser", {
       method: "GET",
     })
       .then((res) => res.json())
@@ -23,7 +23,7 @@ function UserList({ userData }) {
 
   const deleteUser = (id,name) => {
     if(window.confirm(`Are you sure you want to delete ${name}`)){
-      fetch("http://localhost:5000/deleteUser", {
+      fetch("https://emowall-backend.onrender.com/deleteUser", {
         method: "POST",
         crossDomain: true,
         headers: {

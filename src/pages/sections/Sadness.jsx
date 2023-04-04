@@ -10,7 +10,7 @@ function Sadness() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/sadpost').then(response => {
+    fetch('https://emowall-backend.onrender.com/sadpost').then(response => {
       response.json().then(posts => {
         setPosts(posts);
       });
