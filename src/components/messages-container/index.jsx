@@ -13,7 +13,7 @@ function MessagesContainer(props) {
     <div>
       <div className="mssgeBox mb-3">
         <div className="ttle">
-          <img src={'https://emowall-backend.onrender.com:5000/' + cover}/>     
+          <img src={'https://emowall-backend.onrender.com/' + cover}/>     
           <h6>{title}</h6>
           <ReactTimeAgo date={(createdAt)} locale="en-US"/>
         </div>
