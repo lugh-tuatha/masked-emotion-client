@@ -1,10 +1,9 @@
 import React from 'react'
 import './sections.css'
 
-import Header from '../../components/header'
+import Header from '../../components/Header'
 import Sidebar from '../../components/sidebar'
 import MessagesContainer from '../../components/messages-container'
-
 
 function Gratitude() {
   return (

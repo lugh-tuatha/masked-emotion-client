@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './sections.css'
 
-import Header from '../../components/header'
+import Header from '../../components/Header'
 import Sidebar from '../../components/sidebar'
 import MessagesContainerSad from '../../posts-components/sadness/MessagesContainerSad'
 import CreateSadPost from '../../posts-components/sadness/createNewPost'

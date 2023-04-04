@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './sections.css'
 
-import Header from '../../components/header'
+import Header from '../../components/Header'
 import Sidebar from '../../components/sidebar'
 import MessagesContainerAnger from '../../posts-components/anger/MessagesContainerAnger'
 import CreateAngerPost from '../../posts-components/anger/CreateAngerPost'
