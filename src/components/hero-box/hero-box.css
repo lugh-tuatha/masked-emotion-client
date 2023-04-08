@@ -1,31 +1,31 @@
 .hero-gal {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
 .hero-box {
-    border: 1px solid #081F4B;
-    background-color:#081F4B;
-    border-radius: 10px;
-    width: 147px;
-    height: 125px;
-    text-align: center;
-    padding: 5px;
-    margin: 35px;
+  border: 1px solid #081F4B;
+  background-color:#081F4B;
+  border-radius: 10px;
+  width: 147px;
+  height: 125px;
+  text-align: center;
+  padding: 5px;
+  margin: 35px;
 }
 
 .hero-box h3 {
-    color: white;
-    padding-top: 10px;
+  color: white;
+  padding-top: 10px;
 }
 
 .hero-box p {
-    color: white;
-    font-size: 14px;
+  color: white;
+  font-size: 14px;
 }
 
 .cpost {
-text-align: center;
+  text-align: center;
 }
