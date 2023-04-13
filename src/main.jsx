@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 
 import Release from './pages/Release';
-import Developers from './pages/Developers'
 import Signup from './pages/auth/Signup';
 import Login from './pages/auth/Login';
 import Posts from './pages/admin/Posts'
@@ -55,10 +54,6 @@ const router = createBrowserRouter([
   {
     path: "/userDetails",
     element: <UserDetails />,
-  },
-  {
-    path: "/developers",
-    element: <Developers />,
   },
   {
     path: "/posts",
