@@ -1,0 +1,40 @@
+.skeleton{
+  animation: skeleton-loading 1s linear infinite alternate;
+  opacity: .7;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+.skeleton-avatar{
+  width: 3rem;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+.skeleton-text{
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+}
+
+.skeleton-content{
+  width: 95%;
+  height: 1.5rem;
+  border-radius: 1rem;
+  margin: .5rem auto 0 auto;
+}
+
+.skeleton-content-2{
+  width: 50%;
+  height: 1.5rem;
+  border-radius: 1rem;
+  margin: .5rem 0 0 .6rem;
+}

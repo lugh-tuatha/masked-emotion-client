@@ -5,14 +5,19 @@ import Header from '../../components/Header';
 import Sidebar from '../../components/sidebar';
 import MessagesContainer from '../../components/messages-container';
 import CreatePost from '../../components/create-post';
+import Preload from '../../components/preload-component'
 
 function Love() {
+  const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    setLoading(true);
+
     fetch('https://emowall-backend.onrender.com/post').then(response => {
       response.json().then(posts => {
         setPosts(posts);
+        setLoading(false);
       });
     });
   }, []);
@@ -38,7 +43,20 @@ function Love() {
               );
             })}
           </div>
+          
 
+          {loading && (
+            <div className="row">
+              <div className="col-md-6 mx-0">
+                <Preload/>
+              </div>
+          
+              <div className="col-md-6 mx-0">
+                <Preload/>
+              </div>
+            </div>
+          )}
+          
         </div>
       </div>
     </div>

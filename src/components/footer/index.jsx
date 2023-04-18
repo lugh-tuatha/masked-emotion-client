@@ -32,8 +32,6 @@ function Footer() {
             <h4>QUICK LINKS</h4>
             <p><Link to="/">HOME</Link></p>
             <p className='mb-4'><Link to="/release">RELEASE</Link></p>
-            <h4>WANT TO HIRE US?</h4>
-            <p className='mb-4'><Link to="/developers"><p>The Developers</p></Link></p>
             <h4>FOLLOW US ON SOCIAL MEDIA</h4>
             <div className="icn">
                   <a link=''><Bs.BsFacebook/></a>
@@ -62,5 +60,6 @@ function Footer() {
     </div>
   )
 }
+
 
 export default Footer

@@ -1,9 +1,9 @@
 import React from 'react';
 import './section-box.css';
 
-import LoveIcon from '../../assets/section-icon/Love.svg';
-import SadnessIcon from '../../assets/section-icon/sadness.svg';
-import AngerIcon from '../../assets/section-icon/anger.svg';
+import LoveIcon from '../../assets/section-icon/Love.gif';
+import SadnessIcon from '../../assets/section-icon/sad.gif';
+import AngerIcon from '../../assets/section-icon/angry.gif';
 import ComingSoon from '../../assets/section-icon/coming-soon.png';
 
 // import HappinessIcon from '../../assets/section-icon/happiness.svg';

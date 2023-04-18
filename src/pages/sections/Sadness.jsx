@@ -5,14 +5,19 @@ import Header from '../../components/Header'
 import Sidebar from '../../components/sidebar'
 import MessagesContainerSad from '../../posts-components/sadness/MessagesContainerSad'
 import CreateSadPost from '../../posts-components/sadness/createNewPost'
+import Preload from '../../components/preload-component'
 
 function Sadness() {
+  const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    setLoading(true);
+
     fetch('https://emowall-backend.onrender.com/sadpost').then(response => {
       response.json().then(posts => {
         setPosts(posts);
+        setLoading(false);
       });
     });
   }, []);
@@ -30,17 +35,27 @@ function Sadness() {
 
           <CreateSadPost />
 
-          <div>
-            <div>
-              {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
-                return(
-                  <div className="col-lg-6">
-                    <MessagesContainerSad {...post} />
-                  </div>
-                );
-              })}
-            </div>
+          <div className='row'>
+            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
+              return(
+                <div className="col-lg-6 mx-0">
+                  <MessagesContainerSad {...post} />
+                </div>
+              );
+            })}
           </div>
+
+          {loading && (
+            <div className="row">
+              <div className="col-md-6 mx-0">
+                <Preload/>
+              </div>
+          
+              <div className="col-md-6 mx-0">
+                <Preload/>
+              </div>
+            </div>
+          )}
 
         </div>
       </div>

@@ -5,15 +5,20 @@ import Header from '../../components/Header'
 import Sidebar from '../../components/sidebar'
 import MessagesContainerAnger from '../../posts-components/anger/MessagesContainerAnger'
 import CreateAngerPost from '../../posts-components/anger/CreateAngerPost'
+import Preload from '../../components/preload-component'
 
 
 function Anger() {
+  const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
+    setLoading(true);
+
     fetch('https://emowall-backend.onrender.com/angerpost').then(response => {
       response.json().then(posts => {
         setPosts(posts);
+        setLoading(false);
       });
     });
   }, []);
@@ -31,20 +36,27 @@ function Anger() {
 
           <CreateAngerPost />
 
-          <div>
-            <div>
-              {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
-                return (
-                  <div className="col-md-6">
-                    <MessagesContainerAnger {...post} />
-                  </div>
-                );
-              })}
-            </div>
+          <div className='row'>
+            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
+              return (
+                <div className="col-md-6 mx-0">
+                  <MessagesContainerAnger {...post} />
+                </div>
+              );
+            })}
           </div>
 
-          <div>
-          </div>
+          {loading && (
+            <div className="row">
+              <div className="col-md-6 mx-0">
+                <Preload/>
+              </div>
+          
+              <div className="col-md-6 mx-0">
+                <Preload/>
+              </div>
+            </div>
+          )}
 
         </div>
       </div>
