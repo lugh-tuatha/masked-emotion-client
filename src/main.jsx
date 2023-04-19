@@ -10,10 +10,6 @@ import {
 } from "react-router-dom";
 
 import Release from './pages/Release';
-import Signup from './pages/auth/Signup';
-import Login from './pages/auth/Login';
-import Posts from './pages/admin/Posts'
-import Dashboard from './pages/Dashboard';
 
 import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'
@@ -28,8 +24,6 @@ import Gratitude from './pages/sections/Gratitude'
 import Fear from './pages/sections/Fear'
 import Dream from './pages/sections/Dream'
 
-import UserDetails from './components/user-details';
-
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
 TimeAgo.addDefaultLocale(en)
@@ -40,28 +34,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/signup",
-    element: <Signup />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
     path: "/release",
     element: <Release />,
-  },
-  {
-    path: "/userDetails",
-    element: <UserDetails />,
-  },
-  {
-    path: "/posts",
-    element: <Posts />,
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
   },
 
   // section routes 
