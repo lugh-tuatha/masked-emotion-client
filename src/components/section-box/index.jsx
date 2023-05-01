@@ -28,34 +28,34 @@ function SectionBox(props) {
       break;
     case 'ICON':
       switch (props.description) {
-        case 'ANGER':
+        case 'Anger':
           iconImage = <img src={AngerIcon}/>;
           break;
-        case 'HAPPINESS':
+        case 'Happiness':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'REGRET':
+        case 'Regret':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'ANXIETY':
+        case 'Anxiety':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'HOPE':
+        case 'Hope':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'CONFUSION':
+        case 'Confusion':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'GUILT':
+        case 'Guilt':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'GRATITUDE':
+        case 'Gratitude':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'FEAR':
+        case 'Fear':
           iconImage = <img src={ComingSoon}/>;
           break;
-        case 'DREAM':
+        case 'Dream':
           iconImage = <img src={ComingSoon}/>;
           break;
         default:

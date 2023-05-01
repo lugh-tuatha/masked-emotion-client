@@ -3,6 +3,7 @@ import './sidebar.css'
 import { Link } from 'react-router-dom';
 
 import sectionBoxData from '../../json/sectionBoxes'
+import logo from '../../assets/icons/logo.png'
 
 import * as Ai from "react-icons/ai";
 import * as Fa from "react-icons/fa";
@@ -12,29 +13,31 @@ import * as Gi from "react-icons/gi";
 import * as Md from "react-icons/md";
 
 const icons = [
-  <Ai.AiFillHeart size={20}/>,
-  <Fa.FaHeartBroken size={20} />,
-  <Bs.BsFire size={20} />,
-  <Md.MdCelebration size={20} />,
-  <Fa.FaSadCry size={20}/>,
-  <Bs.BsFillExclamationOctagonFill size={20} />,
-  <Gi.GiSprout size={20}/>,
-  <Bs.BsFillPatchQuestionFill size={20}/>,
-  <Fa.FaTired size={20}/>,
-  <Fa.FaGrinStars size={20} />,
-  <Gi.GiFalling size={20} />,
-  <Bs.BsRocketTakeoffFill size={20} />,
+  <Ai.AiFillHeart size={16}/>,
+  <Fa.FaHeartBroken size={16} />,
+  <Bs.BsFire size={16} />,
+  <Md.MdCelebration size={16} />,
+  <Fa.FaSadCry size={16}/>,
+  <Bs.BsFillExclamationOctagonFill size={16} />,
+  <Gi.GiSprout size={16}/>,
+  <Bs.BsFillPatchQuestionFill size={16}/>,
+  <Fa.FaTired size={16}/>,
+  <Fa.FaGrinStars size={16} />,
+  <Gi.GiFalling size={16} />,
+  <Bs.BsRocketTakeoffFill size={16} />,
 ];
 
 function Sidebar() {
   const currentPathname = window.location.pathname;
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => {
     const isActive = currentPathname === sectionBox.link;
-    const className = `d-flex align-items-center gap-2 ${isActive ? 'active' : ''}`;
+    const className = `sidenav section-icon flex items-center gap-2 ${isActive ? 'active' : ''}`;
     return (
       <Link to={sectionBox.link} key={index}>
         <ul className={className}>
-          {icons[index]}
+          <div className='icon'>
+            {icons[index]}
+          </div>
           <li className="my-2">{sectionBox.description}</li>
         </ul>
       </Link>
@@ -42,13 +45,10 @@ function Sidebar() {
   });
 
   return (
-    <nav className='sidenav d-block m-0 p-0'>
-      <div className='sidenav-head d-flex align-items-center'>
-        <img src="https://th.bing.com/th/id/OIG.NUVCQ0M1MzM3NzM3ODc0?pcl=1b1a19&pid=ImgGn" className='img-fluid'/>
-      </div>
-      <h2 className='text-center my-4'>Explore Emotions</h2>
+    <div className='sidenav d-block m-0 p-0'>
+      <h2>Explore Emotions</h2>
       {sectionBoxes}
-    </nav>  
+    </div>  
   );
 }
 

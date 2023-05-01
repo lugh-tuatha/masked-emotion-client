@@ -1,26 +1,42 @@
 .sidenav{
-  background-color: #B7B7B7;
-  height: 45rem;
-  border-radius: 1rem;
+  width: 15rem;
 }
 
-.sidenav-head img {
-  width: 3rem;
-  margin: 1rem 0 0 1rem;
+.section-icon .icon{
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: .50rem;
+}
+
+.section-icon .icon svg{
+  color: white;
 }
 
 .sidenav h2{
-  font-weight: 300;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
-.sidenav ul li{
-  font-size: 1.20rem;
+.sidenav ul{
+  font-weight: 700;
+}
+
+.sidenav ul:hover .icon{
+  background-color: var(--primary);
 }
 
 .sidenav ul:hover{
-  background-color: white;
+  color: var(--primary);
 }
 
 .sidenav ul.active {
-  background-color: #939393;
+  color: var(--primary);
+}
+
+.sidenav ul.active .icon{
+  background-color: var(--primary);
 }

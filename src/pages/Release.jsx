@@ -35,7 +35,7 @@ function Release() {
 
         <p className='my-2'>Tell us what's been weighing on your mind?</p>
   
-        <Button>Share your emotions</Button>
+        <Link to="/love"><Button>Share your emotions</Button></Link>
       </div>
 
       <Footer />
