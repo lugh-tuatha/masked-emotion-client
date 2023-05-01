@@ -1,31 +1,38 @@
 .hero-gal {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 10px;
+  gap: 1rem;
+  width: 70%;
 }
 
 .hero-box {
-  border: 1px solid #081F4B;
-  background-color:#081F4B;
+  background-color:var(--primary);
   border-radius: 10px;
-  width: 147px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   text-align: center;
-  padding: 5px;
-  margin: 35px;
 }
 
 .hero-box h3 {
   color: white;
-  padding-top: 10px;
+}
+
+.hero-box img{
+  margin: 1.75rem auto 0 auto;
 }
 
 .hero-box p {
   color: white;
   font-size: 14px;
+  margin: 0 1rem;
 }
 
-.cpost {
-  text-align: center;
+@media screen and (max-width: 420px) {
+  .hero-box{
+    width: 148px;
+    height: 148px;
+  }
+  .hero-gal{
+    width: 100%;
+  }
 }

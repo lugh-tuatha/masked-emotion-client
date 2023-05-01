@@ -12,51 +12,36 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="footer px-0">
-      <div className='row'>
-        <div className="col-lg-4 footer1">
-          <h4>Who ARE WE?</h4>
-          <img src={Logo} alt="" />
-          <p>Our website provides a safe and supportive community for individuals to share their feelings and connect with others who may be going through similar experiences</p>
-          <div className="address">
-            <div className="addressIcon"><Go.GoLocation id='add-icn'/><span>123 Main Street,Anytown, USA 12345</span>
-            </div>
-            <div className="addressIcon"><Go.GoMail id='add-icn'/><span>Email: info@emowall.com</span>
-            </div>
-            <div className="addressIcon"><Ai.AiFillPhone id='add-icn'/><span>Phone: +1 (555) 123-4567</span>
-            </div>
-          </div>
+    <div className="pt-12 py-8 footer mt-20">
+      <div className="border-b-2 footer-child border-b-gray-500 md:flex footer-child w-10/12 xl:w-9/12 mx-auto pb-4">
+        <div className='pr-8 text-justify'>
+          <h1>MASKED EMOTION</h1>
+          <p className='pt-2'>Our website provides a safe and supportive community for individuals to share their feelings and connect with others who may be going through similar experiences</p>
         </div>
-        <div className="col-lg-8 footer2">
-          <div className="footer-content">
-            <h4>QUICK LINKS</h4>
-            <p><Link to="/">HOME</Link></p>
-            <p className='mb-4'><Link to="/release">RELEASE</Link></p>
-            <h4>FOLLOW US ON SOCIAL MEDIA</h4>
-            <div className="icn">
-                  <a link=''><Bs.BsFacebook/></a>
-                  <a link=''><Bs.BsInstagram/></a>
-                  <a link=''><Bs.BsTwitter/></a>
-                </div>
-          </div>
-          <div className="footer-content2 p-0">
-            <h4>HOW WE CAN HELP YOU?</h4>
-            <form className='foootertxt'>
-            <div className="frmIcn1">
-                <Bs.BsPersonCircle className='prfl' size={30}/>
-              <input type="text" placeholder='FULLNAME' required='required'/>
-              </div>
-              <div className="frmIcn1">
-              <Ai.AiFillMail className='prfl' size={30}/>
-              <input type="email" placeholder='EMAIL ADDRESS' required='required'/>
-              </div>
-              <div className="frmbtn">
-                <Button>SEND</Button>
-              </div>
-            </form>
-          </div>
+
+        <div>
+          <h1>QUICK LINKS</h1>
+          <p className='my-2'>Home</p>
+          <p>Release</p>
+        </div>
+
+        <div>
+          <h1>SUPPORT</h1>
+          <p className='my-2'>FAQs</p>
+          <p>Terms of Use</p>
+        </div>
+
+        <div>
+          <h1>SOCIAL</h1>
+
+          <article className='w-full items-center gap-2 flex'>
+            <Bs.BsFacebook size={28}/>
+            <Ai.AiFillTwitterCircle size={32}/>
+            <Ai.AiFillGithub size={32}/>
+          </article>
         </div>
       </div>
+      <p className='text-center mt-2'>Copyright © 2023 EmoWall. All rights reserved.</p>
     </div>
   )
 }

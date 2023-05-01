@@ -1,0 +1,9 @@
+.about .line{
+    width: .18rem;
+    height: 8.5rem;
+    background-color: black;
+}
+
+.about span{
+    color: var(--text-color-gray);
+}

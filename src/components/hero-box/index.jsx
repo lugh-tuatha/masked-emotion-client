@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 
 function heroBox() {
   return (
-    <div>
+    <div className='flex justify-center sm:justify-end'>
       <div className="hero-gal">
         <div className="hero-box">
-          <h3 className='counter'>10K</h3>
+          <h3 className='font-bold text-3xl mt-10 mb-2'>10K</h3>
           <p >Over 10,000 Active Users</p>
         </div>
         <div className="hero-box">
@@ -36,9 +36,6 @@ function heroBox() {
           <img src={Arrow} alt="" />
           <p>Stay anonymous</p>
         </div>
-      </div>
-      <div className="cpost">
-        <Link to="/release"><Button >Create a post</Button></Link>
       </div>
     </div>
   )

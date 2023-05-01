@@ -5,72 +5,67 @@ import * as Bs from "react-icons/bs";
 
 import Header from './components/Header';
 import SectionBox from './components/section-box';
-import Button from './components/button';
 import HeroBox from './components/hero-box';
-import History from './components/history';
+import History from './components/about';
 import Footer from './components/footer';
 
-import Mission from '../src/assets/svg/mission.svg';
-import Hero1 from '../src/assets/svg/hero1.svg'
+import Mission from './assets/svg/mission.svg';
+import Hero1 from './assets/img/hero-img/home-hero.svg'
+import HomeBg from './assets/svg/bg/home-bg.svg'
+import HomeBg2 from './assets/svg/bg/home-bg2.svg'
+import homeHero from './assets/svg/home-hero.svg'
+import emotion from './assets/img/emotion.png'
 
 import sectionBoxData from './json/sectionBoxes'
 
 import { Link } from "react-router-dom";
 
 function App() {
-  const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
-    <div key={index} className="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-      <SectionBox title={sectionBox.title} description={sectionBox.description} />
-    </div>
-  ));
-
   return (
-    <div className='App'>
+    <div className='App home'>
       <Header />
-      <div className="row mx-auto">
-        <div className="col-lg-6 hme d-flex align-items-center">
-          <div>
-            <p>Welcome to our community</p>
-            <h3>Share Your Voice, Anonymously and Without Judgement</h3>
-            <p>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
+
+      <div className="lg:flex items-center w-10/12 xl:w-9/12 mx-auto">
+        <div className='w-full lg:w-2/3'>
+          <div className="w-full lg:w-3/4 text-lg">
+            <p >Welcome to our community</p>
+            <h1 className='text-3xl font-bold mb-2'>Share Your Voice, Anonymously and Without Judgement</h1>
+            <p className='text-justify'>Our website provides a platform for you to share your thoughts, feelings, and experiences without fear of judgement or criticism. Whether you're struggling with love, regret, anxiety, or any other emotions, we invite you to join our community and let your voice be heard.</p>
           </div>
         </div>
-        <div className="col-lg-6 home-image">
-          <img src={Hero1} alt="" />
+
+        <div className="w-full lg:w-1/3 self-end mt-8 lg:mt-0">
+          <img src={homeHero} alt=""/>
         </div>
       </div>
-      <div className="row pt-5 pb-5 mx-auto">
-        <div className="col-lg-6">
-          <div>
-            <h3>Embrace Your Emotions</h3>
-            <h5>Share Your Feelings, Connect with Others</h5>
-            <p>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
-            <p className='mt-3'>Join the Community of Thousands Sharing their Emotions Anonymously </p>
-            <div className="scl">
-              <p>FOLLOW US ON SOCIAL MEDIA</p>
-              <div className="icn">
-                <Bs.BsFacebook size={30}/>
-                <Bs.BsInstagram size={30}/>
-                <Bs.BsTwitter size={30}/>
-              </div>
-            </div>
+
+      <div className='lg:flex items-center w-10/12 xl:w-9/12 mx-auto mt-16'>
+        <div className="w-full lg:w-1/2">
+          <div className='w-full text-lg'>
+            <h1 className='text-3xl font-bold'>Embrace Your Emotions</h1>
+            <h2 className='text-2xl font-thin mb-2'>Share Your Feelings, Connect with Others</h2>
+            <p className='text-justify mb-12'>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
+            <p className='text-sm'>Join the Community of Thousands Sharing their Emotions Anonymously </p>
+            <p className='text-sm'>FOLLOW US ON SOCIAL MEDIA</p>
           </div>
         </div>
-        <div className="col-lg-6">
+
+        <div className='w-full lg:w-1/2 mt-8 lg:mt-0'>
           <HeroBox />
         </div>
       </div>
-      <div className="row mx-auto history-content">
-        <div className="col-lg-6 px-0">
-          <img src={Mission} alt="" id='mssn' className='w-100 h-100'/>
+
+      <div className="lg:flex items-center w-10/12 xl:w-9/12 mx-auto mt-12">
+        <div className='w-full lg:w-1/2 mt-8 lg:mt-0 '>
+          <img src={emotion} alt="" />
         </div>
-        <div className="col-lg-6">
-        <History />
+        
+        <div className="w-full lg:w-1/2">
+          <History />
         </div>
       </div>
-      <div className='row footer mx-auto '>
-        <Footer />
-      </div>
+
+      <Footer />
     </div>
   );
 }

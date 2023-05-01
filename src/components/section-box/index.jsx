@@ -21,42 +21,42 @@ function SectionBox(props) {
   let iconImage;
   switch (props.title) {
     case 'Love':
-      iconImage = <img src={LoveIcon} alt="" />;
+      iconImage = <img src={LoveIcon}/>;
       break;
     case 'Sadness':
-      iconImage = <img src={SadnessIcon} alt="" />;
+      iconImage = <img src={SadnessIcon}/>;
       break;
     case 'ICON':
       switch (props.description) {
         case 'ANGER':
-          iconImage = <img src={AngerIcon} alt="" />;
+          iconImage = <img src={AngerIcon}/>;
           break;
         case 'HAPPINESS':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'REGRET':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'ANXIETY':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'HOPE':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'CONFUSION':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'GUILT':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'GRATITUDE':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'FEAR':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         case 'DREAM':
-          iconImage = <img src={ComingSoon} alt="" />;
+          iconImage = <img src={ComingSoon}/>;
           break;
         default:
           iconImage = null;
@@ -66,7 +66,7 @@ function SectionBox(props) {
       iconImage = null;
   }
   return (
-    <div className="emo-box d-flex align-items-center justify-content-center">
+    <div className="emo-box flex items-center justify-center">
       <div>
         {iconImage}
         <p>{props.description}</p>

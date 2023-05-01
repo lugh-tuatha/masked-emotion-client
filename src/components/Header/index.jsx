@@ -35,7 +35,7 @@ export default class Header extends Component {
 
     return (
       <div>
-        <nav className='home-nav'>
+        <nav className='home-nav w-10/12 xl:w-9/12'>
           <NavLink to="/">
             <img src={logo} alt="brand logo" />
           </NavLink>

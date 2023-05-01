@@ -1,59 +1,8 @@
-/* bootrap reset styles */
-
-.App .row{
-  width: 90%;
+.home h1,
+.home h2{
+  color: var(--bg-gray);
 }
 
-.home-section {
-  text-align: center;
-}
-
-.home-image img{
-  width: 100%;
-  min-width: 350px;
-}
-
-.hme {
-  font-size: larger;
-  padding-bottom: 90px;
-}
-
-.hme h3 {
-  padding-bottom: 20px;
-  color: black;
-}
-
-.hme p {
-  color: black;
-}
-
-.scl {
-  margin-top: 50px;
-}
-
-.icn {
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-  gap: 1rem;
-  margin-top: .5rem;
-}
-
-#mssn {
-  max-width: 103%;
-}
-
-.history-content {
-  background: #081F4B;
-}
-
-.nws {
-  padding-bottom: 30px;
-}
-
-/* responsiveness */
-@media screen and (max-width: 720px) {
-  .App .row {
-    width: 100%;
-  }
+.home p{
+  color: var(--text-color-gray);
 }
