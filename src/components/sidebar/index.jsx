@@ -29,7 +29,7 @@ const icons = [
 
 function Sidebar() {
   const currentPathname = window.location.pathname;
-  const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => {
+  const sectionBoxes = sectionBoxData.sectionBoxes.slice(0, 3).map((sectionBox, index) => {
     const isActive = currentPathname === sectionBox.link;
     const className = `sidenav section-icon flex items-center gap-2 ${isActive ? 'active' : ''}`;
     return (

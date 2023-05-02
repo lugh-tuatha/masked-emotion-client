@@ -41,7 +41,7 @@ function Footer() {
           </article>
         </div>
       </div>
-      <p className='text-center mt-2'>Copyright © 2023 EmoWall. All rights reserved.</p>
+      <p className='text-center mt-2'>Copyright © 2023 MaskedEmotion. All rights reserved.</p>
     </div>
   )
 }

@@ -42,11 +42,11 @@
   justify-content: center;
   display: flex;
   background-color: var(--primary);
+  gap: .5rem;
 }
 
 .btn2 {
   background-color: var(--light-bg);
-  margin-right: 10px;
   font-size: 12px;
   padding: 10px;
   border-radius: 10px;

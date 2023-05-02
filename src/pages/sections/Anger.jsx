@@ -6,6 +6,8 @@ import Sidebar from '../../components/sidebar'
 import MessagesContainerAnger from '../../posts-components/anger/MessagesContainerAnger'
 import CreateAngerPost from '../../posts-components/anger/CreateAngerPost'
 import Preload from '../../components/preload-component'
+import Footer from '../../components/footer'
+
 
 
 function Anger() {
@@ -26,40 +28,36 @@ function Anger() {
   return (
     <div>
       <Header />
-      <div className="row w-90 mx-auto mt-4">
-        <div className="col-lg-3 m-0 p-0">
+      <div className="w-10/12 lg:w-9/12 mx-auto lg:flex lg:mt-8 lg:pb-24">
+        <div className="mb-4 mr-10 xl:mr-0 lg:mb-0 w-1/5">
           <Sidebar />
         </div>
 
-        <div className="col-lg-9 p-0">
-          <h1>Anger</h1>
-
+        <div className="xl:w-4/5">
+          <h1 className='font-bold text-2xl hidden xl:block'>Anger</h1>
           <CreateAngerPost />
 
-          <div className='row'>
+          <div className="grid lg:grid-cols-2 gap-4">
             {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
               return (
-                <div className="col-md-6 mx-0">
+                <div>
                   <MessagesContainerAnger {...post} />
                 </div>
               );
             })}
           </div>
+          
 
           {loading && (
-            <div className="row">
-              <div className="col-md-6 mx-0">
-                <Preload/>
-              </div>
-          
-              <div className="col-md-6 mx-0">
-                <Preload/>
-              </div>
+            <div className="grid lg:grid-cols-2 gap-4">
+              <Preload/>
+              <Preload/>
             </div>
           )}
-
+          
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

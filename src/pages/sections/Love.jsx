@@ -6,6 +6,7 @@ import Sidebar from '../../components/sidebar';
 import MessagesContainer from '../../components/messages-container';
 import CreatePost from '../../components/create-post';
 import Preload from '../../components/preload-component'
+import Footer from '../../components/footer'
 
 function Love() {
   const [loading, setLoading] = useState(true);
@@ -25,16 +26,16 @@ function Love() {
   return (
     <div>
       <Header />
-      <div className="w-10/12 lg:w-9/12 mx-auto flex mt-8">
-        <div className="w-1/5">
+      <div className="w-10/12 lg:w-9/12 mx-auto lg:flex lg:mt-8 lg:pb-24">
+        <div className="mb-4 mr-10 xl:mr-0 lg:mb-0 w-1/5">
           <Sidebar />
         </div>
 
-        <div className="w-4/5">
-          <h1 className='font-bold text-2xl'>Love</h1>
+        <div className="xl:w-4/5">
+          <h1 className='font-bold text-2xl hidden xl:block'>Love</h1>
           <CreatePost />
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid lg:grid-cols-2 gap-4">
             {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
               return (
                 <div>
@@ -46,17 +47,15 @@ function Love() {
           
 
           {loading && (
-            <div className="col-md-6 mx-0">
+            <div className="grid lg:grid-cols-2 gap-4">
               <Preload/>
-          
-              <div className="col-md-6 mx-0">
-                <Preload/>
-              </div>
+              <Preload/>
             </div>
           )}
           
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
