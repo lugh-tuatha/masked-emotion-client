@@ -10,25 +10,14 @@ nav.home-nav img{
   height: 80px;
 }
 
-.home-nav img {
-  height: 40px;
-  width: auto;
-}
-
 .home-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 2rem;
   display: flex;
 }
 
-.home-nav li {
-  margin-right: 15px;
-}
-
-.home-nav li:last-child {
-  margin-right: 0;
-}
 
 .home-nav a {
   text-decoration: none;
@@ -42,49 +31,16 @@ nav.home-nav img{
   color: #666;
 }
 
-.home-nav .button-container {
-  margin-left: auto;
+.home-nav a.active{
+  color: var(--primary);
 }
 
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.mobile-menu ul{
-  position: absolute;
-  top: 70px;
-  right: 0px;
-  background-color: gray;
-  opacity: .7;
-  padding: .5rem;
-}
-
-@media only screen and (max-width: 768px) {
-  .home-nav {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .home-nav img {
-    margin-bottom: 20px;
-  }
-
-  .home-nav .button-container {
-    margin-top: 20px;
-  }
-
-  .home-nav ul {
-    flex-direction: column;
-  }
-
-  .home-nav li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  .home-nav li:last-child {
-    margin-bottom: 0;
-  }
+.home-nav a.active::after{
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary);
+  margin: 0 auto;
+  border-radius: 100%;
 }

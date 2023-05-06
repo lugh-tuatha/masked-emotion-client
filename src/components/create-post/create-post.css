@@ -12,6 +12,12 @@
   margin-left: 1rem;
 }
 
+.Content Button .create-post{
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
 .Content h6 {
   color: gray;
   padding-bottom: 10px;
@@ -34,10 +40,6 @@
   border: 1px solid gray;
   background: whitesmoke;
   border-bottom: 0 5px 5px 5px;
-}
-
-.hdng {
-  padding-left: 120px;
 }
 
 .modalBody input::placeholder{

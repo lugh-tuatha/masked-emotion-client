@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './create-post.css'
 import * as Ai from "react-icons/ai";
-import Modal from 'react-bootstrap/Modal';
 
 import { Navigate } from 'react-router-dom';
 
@@ -46,7 +45,7 @@ function CreatePost() {
     <div>
       <div className="Content">
         <h6>EVER lOVED SOMEONE YOU COULDN'T TELL?</h6>
-          <Button><div onClick={handleShow} ><Ai.AiOutlinePlus /> CREATE POST</div></Button>
+          <Button><div onClick={handleShow} className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div></Button>
 
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton className='hdng'> 
@@ -55,7 +54,7 @@ function CreatePost() {
             <Modal.Body className='modalBody'>
 
               <form onSubmit={createNewPost}>
-                <div className="d-flex justify-content-between mb-3">
+                <div className="flex justify-between mb-3">
                   <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
                   <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename} onChange={ev => setCodename(ev.target.value)}/>
                 </div>
