@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
+import * as Bs from "react-icons/bs";
 import * as Ai from "react-icons/ai";
+
+import '../../components/modal/modal.css'
 
 import { Navigate } from 'react-router-dom';
 import Button from '../../components/button';
@@ -37,29 +40,35 @@ function ModalAnger({open, onClose }) {
     return  <Navigate to={'/'} />
   }
   return (
-    <div className='border-2 border-red-500 modalContainer w-1/3 fixed left-1/3 top-1/4 bg-red-300'>
-      <div className='flex justify-end'>
-        <Ai.AiOutlineClose onClick={onClose}/>
-      </div>
-      <h1 >CREATING A POST</h1> 
-      <div className='modalBody'>
-
-        <form onSubmit={createNewPost}>
-          <div className="flex justify-between mb-3">
-            <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
-            <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename2} onChange={ev => setCodename2(ev.target.value)}/>
+    <div className='relative'>
+      <div onClick={(e) => { e.stopPropagation() }} className='modal absolute top-1/2 left-1/2'>
+        <div className='mx-8 my-6'>
+          <div className='flex items-center justify-between mb-4 pb-2 modal-header'>
+            <h1 className='text-xl font-semibold'>CREATING A POST</h1> 
+            <Ai.AiOutlineClose onClick={onClose} size={30}/>
           </div>
-          
-          <div className="modalMssg">
-            <input type="title" placeholder='TITLE :' value={title2} onChange={ev => setTitle2(ev.target.value)} className="mb-3"/>
-            <textarea type="summary" placeholder='SUMMARY' value={summary2} onChange={ev => setSummary2(ev.target.value)} className="mb-3"/>
-            <input type="file" onChange={ev => setFiles(ev.target.files)} className='mb-3'/>
-          </div>                                                              
 
-          <Button type="submit" value="post" className='modalBtn'><Ai.AiFillCheckCircle/> POST</Button>
-        </form>
+          <div className='modal-body'>
+            <form onSubmit={createNewPost}>
+              <div className="flex justify-between px-6">
+                <div className="flex items-center justify-center gap-2 w-1/3 h-12 modal-category"><Bs.BsEmojiAngry /> ANGER</div>
+                <input className='w-1/3 h-12' type="codename" placeholder='INPUT CODENAME HERE' value={codename2} onChange={ev => setCodename2(ev.target.value)}/>
+              </div>
+              
+              <div className='flex flex-col py-4 px-6 gap-4'>
+                <input type="title" placeholder='TITLE :' value={title2} onChange={ev => setTitle2(ev.target.value)}/>
+                <textarea type="summary" placeholder='SUMMARY' value={summary2} onChange={ev => setSummary2(ev.target.value)}/>
+                <input type="file" onChange={ev => setFiles(ev.target.files)}/>
+              </div>                                                              
+              <div className='w-28 mx-auto'>
+                <Button type="submit" value="post" ><div className='flex items-center gap-2'><Ai.AiFillCheckCircle/> POST</div></Button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
+
   )
 }
 

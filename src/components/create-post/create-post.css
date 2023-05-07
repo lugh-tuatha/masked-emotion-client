@@ -42,55 +42,6 @@
   border-bottom: 0 5px 5px 5px;
 }
 
-.modalBody input::placeholder{
-  color: white;
-}
-
-#cdenme{
-  padding: 10px;
-  border-radius: 10px;
-  background: rgb(128, 128, 128, 0.5);
-}
-
-#modalHrt{
-  width: 100px;
-}
-
-.modalMssg input, textarea{
-  border: 1px rgb(128, 128, 128, 0.5);
-  background: rgb(128, 128, 128, 0.5);
-  border-radius: 10px;
-  width: 100%;
-  padding: .5rem;
-}
-
-#modaltxt {
-  height: 250px;
-}
-
-.modalFtr {
-  justify-content: center;
-}
-
-.modalBtn{
-  border: 1px var(--secondary);
-  background: rgb(128, 128, 128, 0.5);
-  padding: 10px;
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-}
-
-.modalBtn:hover {
-  background: transparent;
-  box-shadow: 0 5px 8px 3px;
-  cursor: pointer;
-}
-
-textarea[type="summary"]{
-  height: 13rem;
-}
-
 @media screen and (max-width: 750px) {
   .Content{
     width: 100%;

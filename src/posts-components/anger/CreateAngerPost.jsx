@@ -8,7 +8,7 @@ function CreateAngerPost() {
   const [openModal, setOpenModal] = useState(false)
 
   return (
-    <div>
+    <div >
       <div className="Content">
         <h6>HAVE YOU EVER HAD TO KEEP YOUR TRUE FEELINGS HIDDEN, ONLY TO BE MET WITH FRUSTRATION AND ANGER?</h6>
         <div onClick={() => setOpenModal(true)} >

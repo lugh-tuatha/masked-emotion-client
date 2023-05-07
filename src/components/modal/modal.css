@@ -1,3 +1,23 @@
-.modalContainer{
+.modal {
+  background-color: var(--pink);
   width: 50rem;
+  border: 2px solid var(--secondary);
+  transform: translate(-50%, -50%);
+}
+
+.modal textarea[type="summary"] {
+  height: 13rem;
+  outline: none;
+}
+
+.modal .modal-category,
+.modal .modal-body input,
+.modal .modal-body textarea{
+  background-color: red;
+  border-radius: .75rem;
+  padding: .75rem;
+}
+
+.modal .modal-header{
+  border-bottom: 1px solid blueviolet;
 }

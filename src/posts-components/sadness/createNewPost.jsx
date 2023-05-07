@@ -47,12 +47,12 @@ function CreateSadPost() {
 
           <Button><div onClick={handleShow} className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div></Button>
 
-          <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton className='hdng'> 
-              <Modal.Title >CREATING A POST</Modal.Title>
-            </Modal.Header>
-            <Modal.Body className='modalBody'>
-
+          <div show={show} onHide={handleClose}>
+            
+            <div closeButton className='hdng'> 
+              <div >CREATING A POST</div>
+            </div>
+            <div className='modalBody'>
               <form onSubmit={createNewPost}>
                 <div className="flex justify-between mb-3">
                   <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
@@ -67,11 +67,9 @@ function CreateSadPost() {
 
                   <Button type="submit" value="post" className='modalBtn'><Ai.AiFillCheckCircle/> POST</Button>
               </form>
-
-            </Modal.Body>
-
+            </div>
               
-          </Modal>           
+          </div>           
       </div>
     </div>
   )
