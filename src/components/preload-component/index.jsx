@@ -12,14 +12,13 @@ function Preload(props) {
       <div className="mssgeBox mb-3 ">
         <div className="ttle">
           <div className='skeleton skeleton-avatar'></div>     
-          <h6 className='d-none'>{title}</h6>
           <h6 className='skeleton skeleton-text'></h6>
           <h6 className='skeleton skeleton-text'></h6>
         </div>
         
         <h6 className='skeleton skeleton-content'></h6>
         <h6 className='skeleton skeleton-content-2'></h6>
-        <div className="d-flex justify-content-end pb-1 pe-2">
+        <div className="flex justify-end pb-1 pr-2">
           <h6 className='skeleton skeleton-text '></h6>
         </div>
 

@@ -41,7 +41,7 @@ function ModalAnger({open, onClose }) {
   }
   return (
     <div className='relative'>
-      <div onClick={(e) => { e.stopPropagation() }} className='modal absolute top-1/2 left-1/2'>
+      <div onClick={(e) => { e.stopPropagation() }} className='modal absolute top-1/2 left-1/2 z-30'>
         <div className='mx-8 my-6'>
           <div className='flex items-center justify-between mb-4 pb-2 modal-header'>
             <h1 className='text-xl font-semibold'>CREATING A POST</h1> 
@@ -68,7 +68,6 @@ function ModalAnger({open, onClose }) {
         </div>
       </div>
     </div>
-
   )
 }
 

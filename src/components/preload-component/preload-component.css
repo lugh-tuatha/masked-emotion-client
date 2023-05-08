@@ -23,6 +23,7 @@
   width: 4rem;
   height: 1.5rem;
   border-radius: 1rem;
+  margin-right: .3rem;
 }
 
 .skeleton-content{
@@ -36,5 +37,5 @@
   width: 50%;
   height: 1.5rem;
   border-radius: 1rem;
-  margin: .5rem 0 0 .6rem;
+  margin: .5rem 0 0 1rem;
 }
