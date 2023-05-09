@@ -51,7 +51,7 @@ function ModalAnger({open, onClose }) {
           <div className='modal-body'>
             <form onSubmit={createNewPost}>
               <div className="flex justify-between px-6">
-                <div className="flex items-center justify-center gap-2 w-1/3 h-12 modal-category"><Bs.BsEmojiAngry /> ANGER</div>
+                <div className="flex items-center justify-center gap-2 w-1/3 h-12 modal-category"><Bs.BsEmojiAngry size={24}/> ANGER</div>
                 <input className='w-1/3 h-12' type="codename" placeholder='INPUT CODENAME HERE' value={codename2} onChange={ev => setCodename2(ev.target.value)}/>
               </div>
               

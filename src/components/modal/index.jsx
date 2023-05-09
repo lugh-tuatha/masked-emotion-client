@@ -53,8 +53,8 @@ function Modal({open, onClose}) {
 
           <div className='modal-body'>
             <form onSubmit={createNewPost}>
-              <div className="flex justify-between mb-3">
-                <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
+              <div className="flex justify-between px-6">
+                <div className="flex items-center justify-center gap-2 w-1/3 h-12 modal-category" id='modalHrt'><Ai.AiOutlineHeart size={24}/> LOVE</div>
                 <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename} onChange={ev => setCodename(ev.target.value)}/>
               </div>
               

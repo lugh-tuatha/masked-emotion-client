@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import * as Bs from "react-icons/bs";
+import * as Tb from "react-icons/tb";
 import * as Ai from "react-icons/ai";
 
 import '../../components/modal/modal.css'
@@ -56,7 +56,7 @@ function ModalSadness({open, onClose }) {
           <div className='modal-body'>
             <form onSubmit={createNewPost}>
               <div className="flex justify-between px-6">
-                <div className="modalBtn" id='modalHrt'><Ai.AiFillHeart /> LOVE</div>
+                <div className="flex items-center justify-center gap-2 w-1/3 h-12 modal-category" id='modalHrt'><Tb.TbHeartBroken size={24}/> LOVE</div>
                 <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename1} onChange={ev => setCodename1(ev.target.value)}/>
               </div>
               

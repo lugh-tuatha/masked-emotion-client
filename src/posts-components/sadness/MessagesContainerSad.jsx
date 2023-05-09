@@ -1,7 +1,7 @@
 import React from 'react';
 
 import * as Ai from "react-icons/ai";
-import * as Bs from "react-icons/bs";
+import * as Ri from "react-icons/ri";
 import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
@@ -20,10 +20,10 @@ function MessagesContainerSad(props) {
       <p className='text-end codename'> - {codename1}</p>
 
       <div className="btnMssge">
-        <div className='btn2'><Ai.AiOutlinePlus /> Add Comment</div>
-        <div className='btn2'><Ai.AiOutlineHeart /> Care</div>
-        <div className='btn2'><Bs.BsArrow90DegRight /> SHARE</div>
-        <div className='btn2'><Md.MdOutlineReportProblem /> Report</div>
+        <div className='btn2'><Ai.AiOutlineHeart size={18}/> </div>
+        <div className='btn2'><Ai.AiOutlineComment size={18}/> </div>
+        <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>
+        <div className='btn2'><Md.MdOutlineReportProblem size={18}/> </div>
       </div>
     </div>
   );

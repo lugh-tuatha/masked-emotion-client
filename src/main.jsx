@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import Release from './pages/Release';
+import Faqs from './pages/Faqs';
 
 import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/release",
     element: <Release />,
+  },
+  {
+    path: "/faqs",
+    element: <Faqs />,
   },
 
   // section routes 
