@@ -13,9 +13,9 @@ function CreateSadPost() {
     <div >
       <div className="Content">
         <h6>HAVE YOU EVER HAD TO KEEP YOUR TRUE FEELINGS HIDDEN, ONLY TO BE MET WITH FRUSTRATION AND ANGER?</h6>
-        <div onClick={() => setOpenModal(true)} >
+        <span onClick={() => setOpenModal(true)} >
           <Button><div className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div></Button>
-        </div>
+        </span>
       </div>
 
       <ModalSadness open={openModal} onClose={() => setOpenModal(false)}/>

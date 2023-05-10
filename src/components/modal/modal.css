@@ -1,7 +1,8 @@
 .modal {
-  background-color: var(--pink);
+  background-color: var(--light-bg);
   width: 50rem;
-  border: 2px solid var(--secondary);
+  max-width: 100%;
+  border: 2px solid #232B40;
   transform: translate(-50%, -50%);
 }
 
@@ -13,11 +14,12 @@
 .modal .modal-category,
 .modal .modal-body input,
 .modal .modal-body textarea{
-  background-color: red;
+  background-color: var(--primary);
   border-radius: .75rem;
   padding: .75rem;
+  color: white;
 }
 
 .modal .modal-header{
-  border-bottom: 1px solid blueviolet;
+  border-bottom: 2px solid var(--primary);
 }

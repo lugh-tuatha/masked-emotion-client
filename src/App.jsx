@@ -1,24 +1,15 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
-import * as Bs from "react-icons/bs";
+import * as Ai from "react-icons/ai";
 
 import Header from './components/Header';
-import SectionBox from './components/section-box';
 import HeroBox from './components/hero-box';
 import History from './components/about';
 import Footer from './components/footer';
 
-import Mission from './assets/svg/mission.svg';
-import Hero1 from './assets/img/hero-img/home-hero.svg'
-import HomeBg from './assets/svg/bg/home-bg.svg'
-import HomeBg2 from './assets/svg/bg/home-bg2.svg'
 import homeHero from './assets/svg/home-hero.svg'
 import emotion from './assets/img/emotion.png'
-
-import sectionBoxData from './json/sectionBoxes'
-
-import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -47,6 +38,11 @@ function App() {
             <p className='text-justify mb-12'>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
             <p className='text-sm'>Join the Community of Thousands Sharing their Emotions Anonymously </p>
             <p className='text-sm'>FOLLOW US ON SOCIAL MEDIA</p>
+            <div className='flex mt-2 gap-2'>
+              <Ai.AiOutlineFacebook size={32}/>
+              <Ai.AiOutlineInstagram size={32}/>
+              <Ai.AiOutlineTwitter size={32}/>
+            </div>
           </div>
         </div>
 
