@@ -2,3 +2,13 @@
 .release p{
     color: var(--bg-gray);
 }
+
+.submit-faq{
+    border: 2px solid var(--primary);
+    border-radius: 1rem;
+    outline: none;
+}
+
+.faq p.sub{
+    color: var(--primary);
+}
