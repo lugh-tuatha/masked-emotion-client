@@ -4,6 +4,8 @@ Our website is a safe and private place where people can share their deepest fee
 
 <img src="./src/assets/img/project-banner.png" alt="">
 
+Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEmotion-Backend)
+
 ## Roadmap
 
 - [ ] Make user friendliness
@@ -14,11 +16,12 @@ Our website is a safe and private place where people can share their deepest fee
 
 ## Release History
 
-* 1.0.0
+* 2
+.0.0
     * Removed log-in and sign-up features
     * Redesigned user interface
     * Changed the CSS framework from Bootstrap to Tailwind
-* 0.1.1
+* 1.1.1
     * The first proper release
 * 0.1.0
     * Work in progress
