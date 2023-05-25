@@ -13,7 +13,7 @@ function CreatePost() {
   return (
     <div >
       <div className="Content">
-        <h6>HAVE YOU EVER HAD TO KEEP YOUR TRUE FEELINGS HIDDEN, ONLY TO BE MET WITH FRUSTRATION AND ANGER?</h6>
+        <h6>EVER LOVED SOMEONE YOU COULDN'T TELL?</h6>
         <span onClick={() => setOpenModal(true)} >
           <Button><div className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div></Button>
         </span>

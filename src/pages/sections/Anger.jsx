@@ -52,6 +52,8 @@ function Anger() {
             <div className="grid lg:grid-cols-2 gap-4">
               <Preload/>
               <Preload/>
+              <Preload/>
+              <Preload/>
             </div>
           )}
           
