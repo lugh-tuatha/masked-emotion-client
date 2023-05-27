@@ -5,8 +5,6 @@ import Fruits from '../../assets/icons/fruits.svg'
 import Chat from '../../assets/icons/chat.svg'
 import Box from '../../assets/icons/box.svg'
 import Arrow from '../../assets/icons/arrow.svg'
-import Button from '../button'
-import { Link } from "react-router-dom";
 
 function heroBox() {
   return (

@@ -6,7 +6,7 @@ import logo from '../../assets/icons/logo.png';
 
 function index() {
   return (
-    <div className='w-10/12 xl:w-9/12 mx-auto'>
+    <div className='container-width'>
       <nav className=' home-nav'>
         <Link to="/"><img src={logo} /></Link>
 

@@ -16,7 +16,7 @@ function App() {
     <div className='App home'>
       <Header />
 
-      <div className="lg:flex items-center w-10/12 xl:w-9/12 mx-auto">
+      <div className="lg:flex items-center container-width">
         <div className='w-full lg:w-2/3'>
           <div className="w-full lg:w-3/4 text-lg">
             <p >Welcome to our community</p>
@@ -30,7 +30,7 @@ function App() {
         </div>
       </div>
 
-      <div className='lg:flex items-center w-10/12 xl:w-9/12 mx-auto mt-16'>
+      <div className='lg:flex items-center container-width mt-16'>
         <div className="w-full lg:w-1/2">
           <div className='w-full text-lg'>
             <h1 className='text-3xl font-bold'>Embrace Your Emotions</h1>
@@ -51,7 +51,7 @@ function App() {
         </div>
       </div>
 
-      <div className="lg:flex items-center w-10/12 xl:w-9/12 mx-auto mt-12">
+      <div className="lg:flex items-center container-width mt-12">
         <div className='w-full lg:w-1/2 mt-8 lg:mt-0 '>
           <img src={emotion} alt="" />
         </div>

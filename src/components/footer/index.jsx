@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div className="pt-12 py-8 footer mt-20">
-      <div className="border-b-2 footer-child border-b-gray-500 md:flex footer-child w-10/12 xl:w-9/12 mx-auto pb-4">
+      <div className="border-b-2 footer-child border-b-gray-500 md:flex footer-child container-width pb-4">
         <div className='pr-8 text-justify'>
           <h1>MASKED EMOTION</h1>
           <p className='pt-2'>Our website provides a safe and supportive community for individuals to share their feelings and connect with others who may be going through similar experiences</p>

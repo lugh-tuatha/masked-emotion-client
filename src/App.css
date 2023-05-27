@@ -6,3 +6,10 @@
 .home p{
   color: var(--text-color-gray);
 }
+
+/*---------------
+Tailwind apply
+---------------*/
+.container-width {
+  @apply w-10/12 xl:w-9/12 mx-auto;
+}
