@@ -7,6 +7,8 @@ import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
 
+import { FacebookShareButton } from "react-share"
+
 function MessagesContainer(props) {
   const { title, summary, codename, createdAt, cover } = props;
   return (
@@ -23,7 +25,9 @@ function MessagesContainer(props) {
       <div className="btnMssge">
         <div className='btn2'><Ai.AiOutlineHeart size={18}/> </div>
         <div className='btn2'><Ai.AiOutlineComment size={18}/> </div>
-        <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>
+        <FacebookShareButton url='https://masked-emotion.vercel.app/' quote='I just share my feelings in this website masked emotion try now' hashtag="#MaskedEmotion" >
+          <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>
+        </FacebookShareButton>
         <div className='btn2'><Md.MdOutlineReportProblem size={18}/> </div>
       </div>
     </div>
