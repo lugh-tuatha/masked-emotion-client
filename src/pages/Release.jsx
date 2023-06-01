@@ -29,7 +29,7 @@ function Release() {
           <p>Unburden your heart in a safe and supportive space. Share your emotions anonymously, without fear of judgment. Join our community of honest individuals who are discovering that they are not alone in their feelings.</p>
         </div>
 
-        <div className='flex flex-wrap gap-6 lg:w-10/12 mx-auto mt-16 justify-center'>
+        <div className='flex flex-wrap gap-6 lg:w-10/12 mx-auto my-8 justify-center'>
           {sectionBoxes}
         </div>
 
