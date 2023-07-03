@@ -25,7 +25,7 @@ function Faqs() {
   return (
     <div>
       <Header />
-    <div className="w-10/12 lg:w-9/12 mx-auto faq">
+    <div className="container-width faq">
 
       <div>
         <img src={empty} className='mx-auto mb-4' />

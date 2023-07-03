@@ -8,8 +8,6 @@ import CreateAngerPost from '../../posts-components/anger/CreateAngerPost'
 import Preload from '../../components/preload-component'
 import Footer from '../../components/footer'
 
-
-
 function Anger() {
   const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
@@ -28,12 +26,12 @@ function Anger() {
   return (
     <div>
       <Header />
-      <div className="w-10/12 lg:w-9/12 mx-auto lg:flex lg:mt-8 lg:pb-24">
+      <div className="container-width lg:flex lg:mt-8 lg:pb-24">
         <div className="mb-4 mr-10 xl:mr-0 lg:mb-0 w-1/5">
           <Sidebar />
         </div>
 
-        <div className="xl:w-4/5">
+        <div className="w-full xl:w-4/5">
           <h1 className='font-bold text-2xl hidden xl:block'>Anger</h1>
           <CreateAngerPost />
 

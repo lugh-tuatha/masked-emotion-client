@@ -11,8 +11,8 @@ import Footer from '../components/footer'
 
 function Release() {
   const sectionBoxes = sectionBoxData.sectionBoxes.map((sectionBox, index) => (
-    <div key={index} className="col-xl-2 col-md-3 col-sm-4 col-6 d-flex justify-content-center">
-      <Link to={sectionBox.link}>
+    <div key={index} className="bg-red">
+      <Link to={sectionBox.link} >
         <SectionBox title={sectionBox.title} description={sectionBox.description} />
       </Link>
     </div>
@@ -21,7 +21,7 @@ function Release() {
   return (
     <div>
       <Header />
-      <div className='all-body w-10/12 lg:w-9/12 mx-auto text-center release'>
+      <div className='container-width text-center release'>
 
         <div className='lg:w-10/12 mx-auto text-xl'>
           <p>EmoWall Confessions</p>
@@ -29,7 +29,7 @@ function Release() {
           <p>Unburden your heart in a safe and supportive space. Share your emotions anonymously, without fear of judgment. Join our community of honest individuals who are discovering that they are not alone in their feelings.</p>
         </div>
 
-        <div className='flex flex-wrap gap-6 lg:w-10/12 mx-auto my-8 justify-center'>
+        <div className='grid grid-cols-6 gap-2 lg:w-10/12 mx-auto my-8 justify-between'>
           {sectionBoxes}
         </div>
 
