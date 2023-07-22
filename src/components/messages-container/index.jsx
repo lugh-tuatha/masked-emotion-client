@@ -6,11 +6,31 @@ import * as Ri from "react-icons/ri";
 import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
+import swal from 'sweetalert';
 
 import { FacebookShareButton } from "react-share"
 
 function MessagesContainer(props) {
   const { title, summary, codename, createdAt, cover } = props;
+
+  const showAlert = () => {
+    Swal.fire({
+      title: 'Report Inappropriate Content',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+          'Reported!',
+          'Your report will be handled confidentially',
+          'success'
+        )
+      }
+    })
+  }
   return (
     <div className="mssgeBox mb-3">
       <div className="ttle">
@@ -28,7 +48,7 @@ function MessagesContainer(props) {
         <FacebookShareButton url='https://masked-emotion.vercel.app/' quote='I just share my feelings in this website masked emotion try now' hashtag="#MaskedEmotion" >
           <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>
         </FacebookShareButton>
-        <div className='btn2'><Md.MdOutlineReportProblem size={18}/> </div>
+        <div className='btn2' onClick={showAlert}><Md.MdOutlineReportProblem size={18}/> </div>
       </div>
     </div>
   );

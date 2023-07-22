@@ -15,6 +15,10 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
     - [ ] Ensure that "react," "comment," "share," and "report" features work properly.
 - [ ] feature
     - [ ] Add darkmode function
+- [ ] pages
+    - [ ] Add faqs
+    - [ ] Anonymous message similar with ngl
+    - [ ] Our team page
 
 ## Release History
 
