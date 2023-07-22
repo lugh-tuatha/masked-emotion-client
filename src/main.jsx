@@ -35,15 +35,15 @@ const router = createBrowserRouter([
 
   // section routes 
   {
-    path: "/love",
+    path: "/release/love",
     element: <Love />,
   },
   {
-    path: "/sadness",
+    path: "/release/sadness",
     element: <Sadness />,
   },
   {
-    path: "/anger",
+    path: "/release/anger",
     element: <Anger />,
   },
 ]);

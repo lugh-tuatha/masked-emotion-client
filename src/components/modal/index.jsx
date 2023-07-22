@@ -47,7 +47,7 @@ function Modal({open, onClose}) {
       <div onClick={(e) => { e.stopPropagation() }} className='modal absolute top-1/2 left-1/2 z-30'>
         <div className='mx-8 my-6'>
           <div className='flex items-center justify-between mb-4 pb-2 modal-header'>
-            <h1 className='text-xl font-semibold'>CREATING A POST</h1> 
+            <h1 className='text-xl font-semibold'>CREATE A POST</h1> 
             <Ai.AiOutlineClose onClick={onClose} size={30}/>
           </div>
 
@@ -59,8 +59,8 @@ function Modal({open, onClose}) {
               </div>
               
               <div className="flex flex-col py-4 px-0 sm:px-6">
-                <input type="title" placeholder='TITLE :' value={title} onChange={ev => setTitle(ev.target.value)} className="mb-3"/>
-                <textarea type="summary" placeholder='CONTENT' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3"/>
+                <input type="title" placeholder='TITLE' value={title} onChange={ev => setTitle(ev.target.value)} className="mb-3"/>
+                <textarea type="summary" placeholder='CONTENT' value={summary} onChange={ev => setSummary(ev.target.value)} className="mb-3 placeholder:text-white"/>
                 <input type="file" onChange={ev => setFiles(ev.target.files)} className='mb-3'/>
               </div>
               

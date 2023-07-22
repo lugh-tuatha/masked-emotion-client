@@ -1,9 +1,13 @@
 import React from 'react'
 import './header.css';
 import { NavLink, Link} from "react-router-dom";
-import { FaBars } from 'react-icons/fa';
 
-import { HiOutlineBars3 } from 'react-icons/hi2'
+import Button from '../button';
+
+import { HiOutlineBars3 } from 'react-icons/hi2';
+import { IoMdClose } from 'react-icons/io';
+import { MdDarkMode } from 'react-icons/md';
+
 import logo from '../../assets/icons/logo.png';
 import { useState } from 'react';
 
@@ -15,21 +19,29 @@ function index() {
         <div className='flex justify-between items-center w-full'>
           <img src={logo} alt="" />
 
-          <ul className='md:flex gap-8 font-bold hidden '>
+          <ul className='md:flex gap-4 font-bold hidden items-center'>
             <li><Link to='/'>Home</Link></li>
-            <li><Link to='/release'>Release</Link></li>
             <li><Link to='/faqs'>Faqs</Link></li>
+
+            <MdDarkMode size={24} className='cursor-pointer'/>
+            <Link to='/release'>
+              <Button>Release</Button>
+            </Link>
           </ul>
 
-          <HiOutlineBars3 className='cursor-pointer md:hidden' onClick={() => setOpenMenu(!openMenu)} size={36}/>
+          <div className='cursor-pointer md:hidden flex gap-2'>
+            {openMenu ? 
+              <HiOutlineBars3 onClick={() => setOpenMenu(!openMenu)} size={36}/>
+            : <IoMdClose onClick={() => setOpenMenu(!openMenu)} size={36}/> }
+          </div>
         </div>
       </nav>
 
       <nav className={`md:hidden w-full h-screen absolute bg-lightBg text-center text-xl font-bold z-50 duration-300 ${openMenu ? '-left-full' : 'left-0'}`}>
         <ul className='mx-auto flex flex-col gap-2'>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/release'>Release</Link></li>
-          <li><Link to='/faqs'>Faqs</Link></li>
+          <li onClick={() => setOpenMenu(!openMenu)}><Link to='/'>Home</Link></li>
+          <li onClick={() => setOpenMenu(!openMenu)}><Link to='/release'>Release</Link></li>
+          <li onClick={() => setOpenMenu(!openMenu)}><Link to='/faqs'>Faqs</Link></li>
         </ul>
       </nav>
     </div>

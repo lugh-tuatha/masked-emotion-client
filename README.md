@@ -13,11 +13,12 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
     - [ ] Provide clearer instructions
 - [ ] Enhance Functionality
     - [ ] Ensure that "react," "comment," "share," and "report" features work properly.
+- [ ] feature
+    - [ ] Add darkmode function
 
 ## Release History
 
-* 2
-.0.0
+* 2 .0.0
     * Removed log-in and sign-up features
     * Redesigned user interface
     * Changed the CSS framework from Bootstrap to Tailwind
