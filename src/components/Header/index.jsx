@@ -5,8 +5,10 @@ import { FaBars } from 'react-icons/fa';
 
 import { HiOutlineBars3 } from 'react-icons/hi2'
 import logo from '../../assets/icons/logo.png';
+import { useState } from 'react';
 
 function index() {
+  const [openMenu, setOpenMenu] = useState(true);
   return (
     <div className='container-width'>
       <nav className='home-nav'>
@@ -19,16 +21,16 @@ function index() {
             <li><Link to='/faqs'>Faqs</Link></li>
           </ul>
 
-          <div className='md:hidden'>
-            <HiOutlineBars3 size={36}/>
-
-            <ul className='w-full bg-white absolute left-0 top-0 h-screen'>
-              <li className='font-2xl'><Link to='/'>Home</Link></li>
-              <li className='font-2xl'><Link to='/release'>Release</Link></li>
-              <li className='font-2xl'><Link to='/faqs'>Faqs</Link></li>
-            </ul>
-          </div>
+          <HiOutlineBars3 className='cursor-pointer md:hidden' onClick={() => setOpenMenu(!openMenu)} size={36}/>
         </div>
+      </nav>
+
+      <nav className={`md:hidden w-full h-screen absolute bg-lightBg text-center text-xl font-bold z-50 duration-300 ${openMenu ? '-left-full' : 'left-0'}`}>
+        <ul className='mx-auto flex flex-col gap-2'>
+          <li><Link to='/'>Home</Link></li>
+          <li><Link to='/release'>Release</Link></li>
+          <li><Link to='/faqs'>Faqs</Link></li>
+        </ul>
       </nav>
     </div>
   )

@@ -40,10 +40,6 @@ p{
 
 nav{
   height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: .5rem auto;
 }
 
 input{
