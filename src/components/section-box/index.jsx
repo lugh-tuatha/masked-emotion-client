@@ -2,7 +2,7 @@ import React from 'react'
 
 import Love from '../../assets/section-icon/Love.gif'
 
-import { SectionBoxes } from '../../json/SectionBoxes'
+import { SectionBoxes } from '../../data/SectionBoxes'
 
 function SectionBox() {
   return (
