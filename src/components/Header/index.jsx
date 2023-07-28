@@ -7,6 +7,7 @@ import Button from '../button';
 import { HiOutlineBars3 } from 'react-icons/hi2';
 import { IoMdClose } from 'react-icons/io';
 import { MdDarkMode } from 'react-icons/md';
+import { FaUser } from 'react-icons/fa';
 
 import logo from '../../assets/icons/logo.png';
 import { useState } from 'react';
@@ -17,13 +18,16 @@ function index() {
     <div className='container-width'>
       <nav className='home-nav'>
         <div className='flex justify-between items-center w-full'>
-          <img src={logo} alt="" />
+          <Link to='/'>
+            <img src={logo} alt="" />
+          </Link>
 
           <ul className='md:flex gap-4 font-bold hidden items-center'>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/faqs'>Faqs</Link></li>
 
             <MdDarkMode size={24} className='cursor-pointer'/>
+            <FaUser size={19} className='cursor-pointer'/>
             <Link to='/release'>
               <Button>Release</Button>
             </Link>
