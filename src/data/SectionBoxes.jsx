@@ -26,6 +26,6 @@ export const SectionBoxes = [
     title: "Anger",
     icon: <LiaAngrySolid size={23}/>,
     image: Anger,
-    link: "/release/love",
+    link: "/release/anger",
   },
 ]

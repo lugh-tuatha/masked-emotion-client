@@ -13,7 +13,7 @@ function Release() {
   return (
     <div>
       <Header />
-      <div className='container-width text-center release md:mb-80'>
+      <div className='container-width text-center release md:mt-12 md:mb-72'>
 
         <div className='lg:w-10/12 mx-auto text-xl'>
           <p>EmoWall Confessions</p>

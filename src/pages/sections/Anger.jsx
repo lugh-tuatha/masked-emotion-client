@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import './sections.css'
 
 import Header from '../../components/Header'
 import Sidebar from '../../components/sidebar'
@@ -27,7 +26,7 @@ function Anger() {
     <div>
       <Header />
       <div className="container-width lg:flex lg:mt-8 lg:pb-24">
-        <div className="mb-4 mr-10 xl:mr-0 lg:mb-0 w-1/5">
+        <div className="mb-4 mr-10 xl:mr-0 lg:mb-0 w-full lg:w-1/5">
           <Sidebar />
         </div>
 
@@ -36,9 +35,9 @@ function Anger() {
           <CreateAngerPost />
 
           <div className="grid lg:grid-cols-2 gap-4">
-            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map(post => {
+            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => {
               return (
-                <div>
+                <div key={index}>
                   <MessagesContainerAnger {...post} />
                 </div>
               );
