@@ -23,10 +23,10 @@ function Preload(props) {
         </div>
 
         <div className="btnMssge">
-          <div className='btn2'><Ai.AiOutlineHeart size={18}/> </div>
-          <div className='btn2'><Ai.AiOutlineComment size={18}/> </div>
-          <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>
-          <div className='btn2'><Md.MdOutlineReportProblem size={18}/> </div>
+            <div className='preloader-box skeleton'></div>
+            <div className='preloader-box skeleton'></div>
+            <div className='preloader-box skeleton'></div>
+            <div className='preloader-box skeleton'></div>
         </div>
       </div>
       

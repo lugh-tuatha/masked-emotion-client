@@ -10,8 +10,8 @@ function Sidebar() {
       <h1 className='font-bold text-xl'>Explore Emotions</h1>
       <ul className='mt-2'>
         {SectionBoxes.map((section_box) => (
-          <NavLink to={section_box.link}>
-            <li key={section_box.id} className='text-lg flex items-center gap-2 hover:underline'>
+          <NavLink key={section_box.id} to={section_box.link}>
+            <li className='text-lg flex items-center gap-2 hover:underline'>
               {section_box.icon}
               {section_box.title}
             </li>

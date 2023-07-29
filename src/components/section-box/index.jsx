@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function SectionBox() {
   return (
-    <div className='flex justify-center flex-wrap my-4 boxes gap-4'>
+    <div className='flex justify-center flex-wrap my-6 boxes gap-4'>
       {SectionBoxes.map((section_box) => (
         <Link to={section_box.link}>
           <div key={section_box.id} className="border-2 w-36 h-36 rounded-xl bg-white border-black p-4">

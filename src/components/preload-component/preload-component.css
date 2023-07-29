@@ -39,3 +39,9 @@
   border-radius: 1rem;
   margin: .5rem 0 0 1rem;
 }
+
+.preloader-box{
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: .5rem;
+}
