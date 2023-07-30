@@ -5,20 +5,18 @@ import './App.css';
 import * as Ai from "react-icons/ai";
 import { LiaTwitterSquare } from "react-icons/lia";
 
-import Header from './components/Header';
 import HeroBox from './components/hero-box';
 import History from './components/about';
-import Footer from './components/footer';
 import Button from './components/button';
 
 import homeHero from './assets/svg/home-hero.svg'
 import emotion from './assets/img/emotion.png'
 
+import MainLayout from './layout/MainLayout';
+
 function App() {
   return (
-    <div className='App home'>
-      <Header />
-
+    <MainLayout>
       <div className="lg:flex items-center container-width">
         <div className='w-full lg:w-2/3'>
           <div className="w-full lg:w-3/4 text-lg">
@@ -66,9 +64,7 @@ function App() {
           <History />
         </div>
       </div>
-
-      <Footer />
-    </div>
+    </MainLayout>
   );
 }
 

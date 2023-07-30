@@ -19,6 +19,13 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
     - [ ] Add faqs
     - [ ] Anonymous message similar with ngl
     - [ ] Our team page
+- [ ] host a cloud that can upload image
+
+## 3.0 Roadmap
+- [ ] Feature
+    - [ ] Can share anonymous link similar to ngl
+    - [ ] Will be having user signup / login
+- [ ] New pages for profile
 
 ## Release History
 

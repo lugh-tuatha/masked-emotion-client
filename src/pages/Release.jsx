@@ -4,15 +4,12 @@ import './pages.css'
 
 import SectionBox from '../components/section-box'
 
-import Header from '../components/Header'
 import Button from '../components/button'
-import Footer from '../components/footer'
+import MainLayout from '../layout/MainLayout'
 
 function Release() {
-
   return (
-    <div>
-      <Header />
+    <MainLayout>
       <div className='container-width text-center release md:mt-12 md:mb-72'>
 
         <div className='lg:w-10/12 mx-auto text-xl'>
@@ -21,15 +18,13 @@ function Release() {
           <p>Unburden your heart in a safe and supportive space. Share your emotions anonymously, without fear of judgment. Join our community of honest individuals who are discovering that they are not alone in their feelings.</p>
         </div>
 
-        <SectionBox/>
+        <SectionBox />
 
         <p className='my-2'>Tell us what's been weighing on your mind?</p>
-  
+
         <Link to="/release/love"><Button>Share your emotions</Button></Link>
       </div>
-
-      <Footer />
-    </div>
+    </MainLayout>
   )
 }
 

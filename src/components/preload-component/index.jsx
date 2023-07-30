@@ -11,7 +11,7 @@ function Preload(props) {
     <div>
       <div className="mssgeBox mb-3 ">
         <div className="ttle">
-          <div className='skeleton skeleton-avatar'></div>     
+          <div className='s44keleton skeleton-avatar'></div>     
           <h6 className='skeleton skeleton-text'></h6>
           <h6 className='skeleton skeleton-text'></h6>
         </div>

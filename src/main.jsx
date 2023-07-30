@@ -17,6 +17,7 @@ import Anger from './pages/sections/Anger'
 
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
+import Login from './pages/login';
 TimeAgo.addDefaultLocale(en)
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/faqs",
     element: <Faqs />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 
   // section routes 

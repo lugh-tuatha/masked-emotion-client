@@ -2,12 +2,10 @@ import React, { useState } from 'react'
 import './pages.css'
 import axios from 'axios'
 
-
-import Footer from '../components/footer'
 import Button from '../components/button'
-import Header from '../components/Header'
 
 import empty from '../assets/img/empty.png'
+import MainLayout from '../layout/MainLayout'
 
 function Faqs() {
   const [question, setQuestion]=useState('');
@@ -23,8 +21,7 @@ function Faqs() {
     })
   }
   return (
-    <div>
-      <Header />
+    <MainLayout>
       <div className="container-width faq">
 
         <div>
@@ -41,8 +38,7 @@ function Faqs() {
           <button type='submit'><Button>Submit</Button></button>
         </form>
       </div>
-      <Footer />
-    </div>
+    </MainLayout>
   )
 }
 

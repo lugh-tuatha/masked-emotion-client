@@ -45,7 +45,7 @@ function ModalAnger({open, onClose }) {
         <div className='mx-8 my-6'>
           <div className='flex items-center justify-between mb-4 pb-2 modal-header'>
             <h1 className='text-xl font-semibold'>CREATING A POST</h1> 
-            <Ai.AiOutlineClose onClick={onClose} size={30}/>
+            <Ai.AiOutlineClose onClick={onClose} size={30} className='cursor-pointer'/>
           </div>
 
           <div className='modal-body'>
