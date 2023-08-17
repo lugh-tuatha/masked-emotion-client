@@ -1,14 +1,18 @@
 .release h1,
-.release p{
+.release p {
     color: var(--bg-gray);
 }
 
-.submit-faq{
+.submit-faq {
     border: 2px solid var(--primary);
     border-radius: 1rem;
     outline: none;
 }
 
-.faq p.sub{
+.faq p.sub {
     color: var(--primary);
+}
+
+.ReactCollapse--collapse {
+    transition: height 300ms;
 }

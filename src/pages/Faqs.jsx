@@ -1,45 +1,44 @@
-import React, { useState } from 'react'
-import './pages.css'
-import axios from 'axios'
+import React, { useState } from 'react';
+import './pages.css';
 
-import Button from '../components/button'
+import MainLayout from '../layout/MainLayout';
+import { Collapse } from 'react-collapse';
 
-import empty from '../assets/img/empty.png'
-import MainLayout from '../layout/MainLayout'
+import * as Ai from 'react-icons/ai';
+
+import { FaqsData } from '../data/faqsData';
 
 function Faqs() {
-  const [question, setQuestion]=useState('');
+  const [faqsData, setFaqsData] = useState(FaqsData);
 
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-    const data={
-      Question:question
-    }
-    axios.post('https://sheet.best/api/sheets/e052446c-1611-4579-add4-22d1ed58e624', data).then((response)=>{
-      console.log(response);
-      setQuestion('')
-    })
-  }
+  const toggleCollapse = (index) => {
+    const updatedFaqsData = [...faqsData];
+    updatedFaqsData[index].isOpened = !updatedFaqsData[index].isOpened;
+    setFaqsData(updatedFaqsData);
+  };
+
   return (
     <MainLayout>
-      <div className="container-width faq">
+      <div className="container-width mt-6">
+        <h1 className='text-3xl font-bold'>Some common questions often asked</h1>
 
-        <div>
-          <img src={empty} className='mx-auto mb-4' />
-
-          <p className=' text-center text-2xl font-semibold text-red-500'>There are no questions in the FAQ yet. Please submit a question to the developers.</p>
+        <div className='mt-4'>
+          {faqsData.map((faqs, index) => (
+            <div key={index} className={`duration-200 mb-2 ${faqs.isOpened ? 'bg-red-200' : 'bg-gray-200'}`}>
+              <div className='px-4 py-3 cursor-pointer flex items-center justify-between gap-2'
+                onClick={() => toggleCollapse(index)}>
+                <p>{faqs.question}</p>
+                {faqs.isOpened ? <Ai.AiOutlineMinus size={24} /> : <Ai.AiOutlinePlus size={24} />}
+              </div>
+              <Collapse isOpened={faqs.isOpened}>
+                <div className='px-4 py-2'>{faqs.answer}</div>
+              </Collapse>
+            </div>
+          ))}
         </div>
-
-        <form className='text-center mt-4' onSubmit={handleSubmit}>
-          <p className='text-xl mb-2 uppercase sub'>Submit your question here</p>
-          <textarea rows="10" className='p-4 bg-transparent submit-faq w-full md:w-1/2' placeholder='Question.' onChange={(e)=>setQuestion(e.target.value)} value={question} /><br />
-          
-
-          <button type='submit'><Button>Submit</Button></button>
-        </form>
       </div>
     </MainLayout>
-  )
+  );
 }
 
-export default Faqs
+export default Faqs;
