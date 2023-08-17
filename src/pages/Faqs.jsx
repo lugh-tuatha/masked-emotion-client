@@ -6,7 +6,7 @@ import { Collapse } from 'react-collapse';
 
 import * as Ai from 'react-icons/ai';
 
-import { FaqsData } from '../data/faqsData';
+import { FaqsData } from '../data/FaqsData';
 
 function Faqs() {
   const [faqsData, setFaqsData] = useState(FaqsData);

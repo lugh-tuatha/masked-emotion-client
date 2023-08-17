@@ -16,7 +16,7 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
 - [ ] feature
     - [ ] Add darkmode function
 - [ ] pages
-    - [ ] Add faqs
+    - [x] Add faqs
     - [ ] Anonymous message similar with ngl
     - [ ] Our team page
 - [ ] host a cloud that can upload image
@@ -54,3 +54,4 @@ I want to acknowledge the valuable contributions of these resources in the devel
 * [react-icons](https://react-icons.github.io/react-icons)
 * [axios](https://www.npmjs.com/package/axios)
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+* [react-collapse](https://www.npmjs.com/package/react-collapse)
