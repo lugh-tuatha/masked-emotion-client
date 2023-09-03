@@ -50,14 +50,14 @@ function ModalAnger({open, onClose }) {
 
           <div className='modal-body'>
             <form onSubmit={createNewPost}>
-              <div className="flex justify-between px-6">
-                <div className="flex items-center justify-center gap-2 w-1/3 h-12 modal-category"><Bs.BsEmojiAngry size={24}/> ANGER</div>
-                <input className='w-1/3 h-12' type="codename" placeholder='INPUT CODENAME HERE' value={codename2} onChange={ev => setCodename2(ev.target.value)}/>
+              <div className="sm:flex justify-between px-0 sm:px-6">
+                <div className="flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category"><Bs.BsEmojiAngry size={24}/> ANGER</div>
+                <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='CODENAME' value={codename2} onChange={ev => setCodename2(ev.target.value)}/>
               </div>
               
-              <div className='flex flex-col py-4 px-6 gap-4'>
-                <input type="title" placeholder='TITLE :' value={title2} onChange={ev => setTitle2(ev.target.value)}/>
-                <textarea type="summary" placeholder='SUMMARY' value={summary2} onChange={ev => setSummary2(ev.target.value)}/>
+              <div className='flex flex-col py-4 px-0 sm:px-6 gap-3'>
+                <input type="title" placeholder='TITLE :' value={title2} onChange={ev => setTitle2(ev.target.value)} />
+                <textarea type="summary" placeholder='SUMMARY' value={summary2} onChange={ev => setSummary2(ev.target.value)} className="placeholder:text-white" />
                 <input type="file" onChange={ev => setFiles(ev.target.files)}/>
               </div>                                                              
               <div className='w-28 mx-auto'>

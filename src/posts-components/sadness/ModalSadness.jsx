@@ -55,15 +55,15 @@ function ModalSadness({open, onClose }) {
 
           <div className='modal-body'>
             <form onSubmit={createNewPost}>
-              <div className="flex justify-between px-6">
-                <div className="flex items-center justify-center gap-2 w-1/3 h-12 modal-category" id='modalHrt'><Tb.TbHeartBroken size={24}/> SADNESS</div>
-                <input type="codename" placeholder='INPUT CODENAME HERE' id='cdenme' value={codename1} onChange={ev => setCodename1(ev.target.value)}/>
+              <div className="sm:flex justify-between px-0 sm:px-6">
+                <div className="flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category" ><Tb.TbHeartBroken size={24}/> SADNESS</div>
+                <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='INPUT CODENAME HERE' value={codename1} onChange={ev => setCodename1(ev.target.value)}/>
               </div>
               
-              <div className='flex flex-col py-4 px-6 gap-4'>
-                <input type="title" placeholder='TITLE :' value={title1} onChange={ev => setTitle1(ev.target.value)} className="mb-3"/>
-                <textarea type="summary" placeholder='SUMMARY' value={summary1} onChange={ev => setSummary1(ev.target.value)} className="mb-3"/>
-                <input type="file" onChange={ev => setFiles(ev.target.files)} className='mb-3'/>
+              <div className='flex flex-col py-4 px-0 sm:px-6 gap-3'>
+                <input type="title" placeholder='TITLE :' value={title1} onChange={ev => setTitle1(ev.target.value)}/>
+                <textarea type="summary" placeholder='SUMMARY' value={summary1} onChange={ev => setSummary1(ev.target.value)} className="placeholder:text-white" />
+                <input type="file" onChange={ev => setFiles(ev.target.files)}/>
               </div>                                                              
               <div className='w-28 mx-auto'>
                 <Button type="submit" value="post" ><div className='flex items-center gap-2'><Ai.AiFillCheckCircle/> POST</div></Button>

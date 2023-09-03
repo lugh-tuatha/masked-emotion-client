@@ -39,9 +39,9 @@ function Faqs() {
 
         <h1 className="text-3xl font-bold mt-4">Do you have a question you'd like to ask us?</h1>
 
-        <div className="mt-4 bg-[#FF6882] rounded-lg px-20 py-5">
-          <div className='flex justify-center gap-2'>
-            <p>Our dm's is open kindly send your question at </p>
+        <div className="mt-4 bg-[#FF6882] rounded-lg px-5 lg:px-20 py-5">
+          <div className='lg:flex justify-center gap-2 text-center'>
+            <p className='mb-2 lg:mb-0'>Our dm's is open kindly send your question & suggestion at </p>
             <span className='inline-flex items-center gap-1'>
               <Ai.AiOutlineMail size={20}/> 
               <p className='inline-block font-bold'>acegabriel0710@gmail.com</p>

@@ -1,24 +1,21 @@
-.hero-gal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  width: 70%;
-}
-
 .hero-box {
-  background-color:var(--primary);
+  background-color: var(--primary);
   border-radius: 10px;
-  width: 150px;
-  height: 150px;
   text-align: center;
+  height: 9rem;
+  aspect-ratio: 1/1;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-box h3 {
   color: white;
 }
 
-.hero-box img{
-  margin: 1.75rem auto 0 auto;
+.hero-box img {
+  margin: 0 auto;
 }
 
 .hero-box p {
@@ -28,11 +25,12 @@
 }
 
 @media screen and (max-width: 420px) {
-  .hero-box{
+  .hero-box {
     width: 148px;
     height: 148px;
   }
-  .hero-gal{
+
+  .hero-gal {
     width: 100%;
   }
 }
