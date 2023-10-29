@@ -1,0 +1,32 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/"
+    },
+    {
+      "src": "/release",
+      "dest": "/"
+    },
+    {
+      "src": "/faqs",
+      "dest": "/"
+    },
+    {
+      "src": "/login",
+      "dest": "/"
+    },
+    {
+      "src": "/release/love",
+      "dest": "/"
+    },
+    {
+      "src": "/release/sadness",
+      "dest": "/"
+    },
+    {
+      "src": "/release/anger",
+      "dest": "/"
+    }
+  ]
+}

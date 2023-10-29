@@ -6,6 +6,7 @@ import MessagesContainer from '../../components/messages-container';
 import CreatePost from '../../components/create-post';
 import Preload from '../../components/preload-component'
 import Footer from '../../components/footer'
+import config from '../../../config/config.json'
 
 function Love() {
   const [loading, setLoading] = useState(true);
@@ -13,8 +14,7 @@ function Love() {
 
   useEffect(() => {
     setLoading(true);
-
-    fetch('https://emowall-backend.onrender.com/post').then(response => {
+    fetch(`${config.baseUrl}post`).then(response => {
       response.json().then(posts => {
         setPosts(posts);
         setLoading(false);
@@ -46,13 +46,12 @@ function Love() {
 
           {loading && (
             <div className="grid lg:grid-cols-2 gap-4">
-              <Preload/>
-              <Preload/>
-              <Preload/>
-              <Preload/>
+              <Preload />
+              <Preload />
+              <Preload />
+              <Preload />
             </div>
           )}
-          
         </div>
       </div>
       <Footer />

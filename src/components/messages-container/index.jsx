@@ -6,7 +6,7 @@ import * as Ri from "react-icons/ri";
 import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
-import swal from 'sweetalert';
+import config from '../../../config/config.json'
 
 import { FacebookShareButton } from "react-share"
 
@@ -30,11 +30,11 @@ function MessagesContainer(props) {
         )
       }
     })
-  }
+  };;
   return (
     <div className="mssgeBox mb-3">
       <div className="ttle">
-        <img src={'https://emowall-backend.onrender.com/' + cover}/>     
+        <img src={`${config.baseUrl}` + cover}/>     
         <h6>{title}</h6>
         <ReactTimeAgo date={(createdAt)} iocale="en-US"/>
       </div>

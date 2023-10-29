@@ -6,6 +6,7 @@ import MessagesContainerAnger from '../../posts-components/anger/MessagesContain
 import CreateAngerPost from '../../posts-components/anger/CreateAngerPost'
 import Preload from '../../components/preload-component'
 import Footer from '../../components/footer'
+import config from '../../../config/config.json'
 
 function Anger() {
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ function Anger() {
   useEffect(() => {
     setLoading(true);
 
-    fetch('https://emowall-backend.onrender.com/angerpost').then(response => {
+    fetch(`${config.baseUrl}angerpost`).then(response => {
       response.json().then(posts => {
         setPosts(posts);
         setLoading(false);

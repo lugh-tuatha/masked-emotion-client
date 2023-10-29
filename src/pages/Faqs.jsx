@@ -37,7 +37,7 @@ function Faqs() {
           ))}
         </div>
 
-        <h1 className="text-3xl font-bold mt-4">Do you have a question you'd like to ask us?</h1>
+        <h1 className="text-3xl font-bold mt-4">Do you have a question you'd like to ask us?</h1> 
 
         <div className="mt-4 bg-[#FF6882] rounded-lg px-5 lg:px-20 py-5">
           <div className='lg:flex justify-center gap-2 text-center'>

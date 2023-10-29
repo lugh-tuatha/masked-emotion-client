@@ -6,12 +6,14 @@ import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
 
+import config from '../../../config/config.json'
+
 function MessagesContainerSad(props) {
   const { title1, summary1, codename1, createdAt, cover1 } = props;
   return (
     <div className="mssgeBox mb-3">
       <div className="ttle">
-        <img src={'https://emowall-backend.onrender.com/' + cover1}/>     
+        <img src={`${config.baseUrl}` + cover1}/>     
         <h6>{title1}</h6>
         <ReactTimeAgo date={(createdAt)} locale="en-US"/>
       </div>

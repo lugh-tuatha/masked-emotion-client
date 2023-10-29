@@ -1,17 +1,12 @@
 import React, { useState } from 'react'
-import * as Bs from "react-icons/bs";
 import * as Ai from "react-icons/ai";
 import { Navigate } from 'react-router-dom';
+import config from '../../../config/config.json'
 
 import Button from '../button';
 
 function Modal({open, onClose}) {
   if(!open) return null;
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   const [codename, setCodename] = useState('');   
   const [title, setTitle] = useState('');
@@ -27,9 +22,8 @@ function Modal({open, onClose}) {
     data.set('summary', summary);
     data.set('codename', codename);
     data.set('file', files[0]);
-    console.log(files)
     
-    const response = await fetch('https://emowall-backend.onrender.com/post', {
+    const response = await fetch(`${config.baseUrl}post`, {
       method: 'POST',
       body: data,
     });

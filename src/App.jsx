@@ -34,9 +34,9 @@ function App() {
         </div>
       </div>
 
-      <div className='lg:flex items-center container-width mt-16'>
-        <div className="w-full lg:w-1/2 xl:w-2/3">
-          <div className='w-full lg:w-3/4 text-lg'>
+      <div className='lg:flex items-center gap-10 container-width mt-16'>
+        <div className="w-full lg:w-1/3 xl:w-2/3">
+          <div className='w-full text-lg'>
             <h1 className='text-3xl font-bold'>Embrace Your Emotions</h1>
             <h2 className='text-2xl font-thin mb-2'>Share Your Feelings, Connect with Others</h2>
             <p className='text-justify mb-12'>Connect with others who share similar experiences, gain new perspectives, and feel heard without the fear of judgment. </p>
@@ -50,7 +50,7 @@ function App() {
           </div>
         </div>
 
-        <div className='w-full lg:w-1/2 mt-8 lg:mt-0'>
+        <div className='w-full lg:w-2/3 xl:w-2/3 mt-8 lg:mt-0'>
           <HeroBox />
         </div>
       </div>

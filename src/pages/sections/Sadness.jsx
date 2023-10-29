@@ -6,6 +6,7 @@ import MessagesContainerSad from '../../posts-components/sadness/MessagesContain
 import CreateSadPost from '../../posts-components/sadness/createNewPost'
 import Preload from '../../components/preload-component'
 import Footer from '../../components/footer'
+import config from '../../../config/config.json'
 
 function Sadness() {
   const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ function Sadness() {
   useEffect(() => {
     setLoading(true);
 
-    fetch('https://emowall-backend.onrender.com/sadpost').then(response => {
+    fetch(`${config.baseUrl}sadpost`).then(response => {
       response.json().then(posts => {
         setPosts(posts);
         setLoading(false);

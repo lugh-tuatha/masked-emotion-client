@@ -7,6 +7,8 @@ import '../../components/modal/modal.css'
 import { Navigate } from 'react-router-dom';
 import Button from '../../components/button';
 
+import config from '../../../config/config.json'
+
 function ModalAnger({open, onClose }) {
   if(!open) return null;
 
@@ -26,7 +28,7 @@ function ModalAnger({open, onClose }) {
     data.set('file', files[0]);
     console.log(files)
     
-    const response = await fetch('https://emowall-backend.onrender.com/angerpost', {
+    const response = await fetch(`${config.baseUrl}angerpost`, {
       method: 'POST',
       body: data,
     });
