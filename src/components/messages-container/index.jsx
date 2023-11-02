@@ -34,7 +34,7 @@ function MessagesContainer(props) {
   return (
     <div className="mssgeBox mb-3">
       <div className="ttle">
-        <img src={`${config.baseUrl}` + cover}/>     
+        <img src={cover}/>     
         <h6>{title}</h6>
         <ReactTimeAgo date={(createdAt)} iocale="en-US"/>
       </div>

@@ -13,7 +13,7 @@ function MessagesContainerSad(props) {
   return (
     <div className="mssgeBox mb-3">
       <div className="ttle">
-        <img src={`${config.baseUrl}` + cover1}/>     
+        <img src={cover1}/>     
         <h6>{title1}</h6>
         <ReactTimeAgo date={(createdAt)} locale="en-US"/>
       </div>

@@ -1,0 +1,6 @@
+{
+  "baseUrl": {
+    "production": "https://emowall-backend.onrender.com/",
+    "development": "http://localhost:5000/"
+  }
+}

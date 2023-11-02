@@ -23,3 +23,8 @@
 .modal .modal-header{
   border-bottom: 2px solid var(--primary);
 }
+
+img.image-preview{
+  width: 120px;
+  aspect-ratio: 1/1;  
+}
