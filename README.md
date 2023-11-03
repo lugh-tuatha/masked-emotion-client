@@ -30,7 +30,7 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
 ## Release History
 * 2.0.1
     * Avatar will go directly to cloudinary
-    * 
+    * Add faqs page
 * 2.0.0
     * Removed log-in and sign-up features
     * Redesigned user interface

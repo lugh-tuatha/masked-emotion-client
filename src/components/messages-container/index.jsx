@@ -36,7 +36,7 @@ function MessagesContainer(props) {
       <div className="ttle">
         <img src={cover}/>     
         <h6>{title}</h6>
-        <ReactTimeAgo date={(createdAt)} iocale="en-US"/>
+        <ReactTimeAgo date={Date.parse((createdAt))} iocale="en-US"/>
       </div>
       
       <p>{summary}</p>

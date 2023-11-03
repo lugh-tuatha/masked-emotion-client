@@ -16,7 +16,7 @@ function MessagesContainerAnger(props) {
         <div className="ttle">
           <img src={cover2}/>     
           <h6>{title2}</h6>
-          <ReactTimeAgo date={(createdAt)} locale="en-US"/>
+          <ReactTimeAgo date={Date.parse((createdAt))} locale="en-US"/>
         </div>
         
         <p>{summary2}</p>

@@ -15,7 +15,7 @@ function MessagesContainerSad(props) {
       <div className="ttle">
         <img src={cover1}/>     
         <h6>{title1}</h6>
-        <ReactTimeAgo date={(createdAt)} locale="en-US"/>
+        <ReactTimeAgo date={Date.parse((createdAt))} locale="en-US"/>
       </div>
       
       <p>{summary1}</p>

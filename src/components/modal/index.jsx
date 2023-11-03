@@ -32,10 +32,13 @@ function Modal({open, onClose}) {
 
   const previewFile = (file) => {
     const reader = new FileReader()
-    reader.readAsDataURL(file)
-
-    reader.onloadend = () => {
-      setImage(reader.result)
+    if(file){
+      reader.readAsDataURL(file)
+      reader.onloadend = () => {
+        setImage(reader.result)
+      }
+    } else{
+      setImage("")
     }
   }
 
