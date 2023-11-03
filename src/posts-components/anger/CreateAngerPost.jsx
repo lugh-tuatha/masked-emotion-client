@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import * as Ai from "react-icons/ai";
 
-import ModalAnger from './ModalAnger'
 import Button from '../../components/button';
+import Modal from '../../components/modal'
 
 function CreateAngerPost() {
   const [openModal, setOpenModal] = useState(false)
@@ -16,7 +16,7 @@ function CreateAngerPost() {
         </span>
       </div>
 
-      <ModalAnger open={openModal} onClose={() => setOpenModal(false)}/>
+      <Modal open={openModal} onClose={() => setOpenModal(false)}/>
     </div>
   )
 }

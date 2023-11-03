@@ -1,19 +1,34 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as Ai from "react-icons/ai";
 import { Navigate } from 'react-router-dom';
 import config from '../../../config/config.json'
 import axios from 'axios';
 import Button from '../button';
+import { useLocation } from 'react-router-dom';
+import './modal.css'
 
 function Modal({open, onClose}) {
   if(!open) return null;
+  const location = useLocation();
 
   const [codename, setCodename] = useState('');   
   const [title, setTitle] = useState('');
   const [summary, setSummary] = useState('');
   const [files, setFiles] = useState('');
-  const [image, setImage] = useState('')
+  const [image, setImage] = useState('');
+  const [category, setCategory] = useState('');
   const [redirect, setRedirect] = useState(false);
+
+  useEffect(() => {
+    const pathToCategoryMap = {
+      '/release/love': 'post',
+      '/release/sadness': 'sadpost',
+      '/release/anger': 'angerpost',
+    };
+
+    const newPath = pathToCategoryMap[location.pathname] || '';
+    setCategory(newPath);
+  }, [location.pathname]);
 
   const previewFile = (file) => {
     const reader = new FileReader()
@@ -33,7 +48,7 @@ function Modal({open, onClose}) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post("http://localhost:5000/post", {
+      const result = await axios.post(`${config.baseUrl}${category}`, {
         image: image,
         codename: codename,
         title: title,

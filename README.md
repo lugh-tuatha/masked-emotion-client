@@ -19,7 +19,7 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
     - [x] Add faqs
     - [ ] Anonymous message similar with ngl
     - [ ] Our team page
-- [ ] host a cloud that can upload image
+- [x] host a cloud that can upload image
 
 ## 3.0 Roadmap
 - [ ] Feature
@@ -28,12 +28,14 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
 - [ ] New pages for profile
 
 ## Release History
-
-* 2 .0.0
+* 2.0.1
+    * Avatar will go directly to cloudinary
+    * 
+* 2.0.0
     * Removed log-in and sign-up features
     * Redesigned user interface
     * Changed the CSS framework from Bootstrap to Tailwind
-* 1.1.1
+* 1.0.0
     * The first proper release
 * 0.1.0
     * Work in progress
