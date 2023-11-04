@@ -1,44 +1,42 @@
-import React, { useState, useEffect } from 'react';
-import './create-post.css'
+import React, { useState } from 'react';
+import './create-post.css';
 import * as Ai from "react-icons/ai";
-
-import { Navigate } from 'react-router-dom';
 import Modal from '../modal';
-
 import Button from '../button';
 import Alert from '../alert';
 
 function CreatePost() {
-  const [openModal, setOpenModal] = useState(false)
-  const [showAlert, setShowAlert] = useState(false)
-
-  useEffect(() => {
-    const closeAlert = setTimeout(() => {
-      setShowAlert(false)
-    }, 4000)
-    return () => clearTimeout(closeAlert)
-  })
+  const [openModal, setOpenModal] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+  const [alertDisplayed, setAlertDisplayed] = useState(false);
 
   const showAlertAndClose = () => {
-    setShowAlert(true)
-    setOpenModal(false)
-  }
+    if (!alertDisplayed) {
+      setShowAlert(true);
+      setOpenModal(false);
+
+      setTimeout(() => {
+        setShowAlert(false);
+        setAlertDisplayed(true);
+      }, 4000);
+    }
+  };
 
   return (
-    <div >
+    <div>
       <div className="Content">
         <h6>EVER LOVED SOMEONE YOU COULDN'T TELL?</h6>
-        <span onClick={() => setOpenModal(true)} >
-          <Button><div className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div></Button>
+        <span onClick={() => setOpenModal(true)}>
+          <Button>
+            <div className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div>
+          </Button>
         </span>
       </div>
 
       <Modal open={openModal} onClose={() => setOpenModal(false)} success={showAlertAndClose} />
-      {showAlert &&
-        <Alert />
-      }
+      {showAlert && !alertDisplayed && <Alert />}
     </div>
-  )
+  );
 }
 
-export default CreatePost
+export default CreatePost;

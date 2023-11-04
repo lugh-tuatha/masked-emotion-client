@@ -67,10 +67,6 @@ function Modal({ open, onClose, success }) {
     }
   }
 
-  if (redirect) {
-    success()
-  }
-
   const backdrop = {
     visible : { opacity : 1 },
     hidden : { opacity : 0 }
@@ -82,12 +78,16 @@ function Modal({ open, onClose, success }) {
       opacity: 0
     },
     visible:{
-      y: '450px',
+      y: '325px',
       opacity: 1,
       transition: {
         delay: 0.5,
       }
     }
+  }
+
+  if (redirect) {
+    success()
   }
 
   if (!open) return null;

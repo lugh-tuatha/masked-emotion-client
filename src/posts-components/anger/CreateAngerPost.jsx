@@ -8,18 +8,19 @@ import Alert from '../../components/alert';
 function CreateAngerPost() {
   const [openModal, setOpenModal] = useState(false)
   const [showAlert, setShowAlert] = useState(false)
-
-  useEffect(() => {
-    const closeAlert = setTimeout(() => {
-      setShowAlert(false)
-    }, 4000)
-    return () => clearTimeout(closeAlert)
-  })
+  const [alertDisplayed, setAlertDisplayed] = useState(false);
 
   const showAlertAndClose = () => {
-    setShowAlert(true)
-    setOpenModal(false)
-  }
+    if (!alertDisplayed) {
+      setShowAlert(true);
+      setOpenModal(false);
+
+      setTimeout(() => {
+        setShowAlert(false);
+        setAlertDisplayed(true);
+      }, 4000);
+    }
+  };
 
   return (
     <div >

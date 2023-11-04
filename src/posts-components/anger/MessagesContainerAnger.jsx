@@ -6,8 +6,6 @@ import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
 
-import config from '../../../config/config.json'
-
 function MessagesContainerAnger(props) {
   const { title2, summary2, codename2, createdAt, cover2 } = props;
   return (
