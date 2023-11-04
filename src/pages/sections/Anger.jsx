@@ -32,17 +32,15 @@ function Anger() {
         </div>
 
         <div className="w-full xl:w-4/5">
-          <h1 className='font-bold text-2xl hidden xl:block'>Anger</h1>
+          <h1 className='font-bold text-2xl hidden xl:block mb-2'>Anger</h1>
           <CreateAngerPost />
 
           <div className="grid lg:grid-cols-2 gap-4">
-            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => {
-              return (
-                <div key={index}>
-                  <MessagesContainerAnger {...post} />
-                </div>
-              );
-            })}
+            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => (
+              <div key={index}>
+                <MessagesContainerAnger {...post} />
+              </div>
+            ))}
           </div>
           
 

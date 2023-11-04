@@ -32,17 +32,15 @@ function Sadness() {
         </div>
 
         <div className="w-full xl:w-4/5">
-          <h1 className='font-bold text-2xl hidden xl:block'>Sadness</h1>
+          <h1 className='font-bold text-2xl hidden xl:block mb-2'>Sadness</h1>
           <CreateSadPost />
 
           <div className="grid lg:grid-cols-2 gap-4">
-            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => {
-              return (
-                <div key={index}>
-                  <MessagesContainerSad {...post} />
-                </div>
-              );
-            })}
+            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => (
+              <div key={index}>
+                <MessagesContainerSad {...post} />
+              </div>
+            ))}
           </div>
           
 

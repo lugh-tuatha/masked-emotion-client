@@ -1,13 +1,13 @@
 import React from 'react'
 import './sidebar.css'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import { SectionBoxes } from '../../data/SectionBoxes'
 
 function Sidebar() {
   return (
     <div className='sidebar'>
-      <h1 className='font-bold text-xl'>Explore Emotions</h1>
+      <h1 className='font-bold text-2xl'>Explore Emotions</h1>
       <ul className='mt-2'>
         {SectionBoxes.map((section_box) => (
           <NavLink key={section_box.id} to={section_box.link}>

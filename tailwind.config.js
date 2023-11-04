@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       colors: {
         lightBg: "#EFFDFF",
+        success: "#4BB36E",
+        successLight: "#C9EAD4",
       }
     },
   },
