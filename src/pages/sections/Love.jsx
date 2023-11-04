@@ -8,19 +8,10 @@ import Preload from '../../components/preload-component'
 import Footer from '../../components/footer'
 import config from '../../../config/config.json'
 
-function Love() {
-  const [loading, setLoading] = useState(true);
-  const [posts, setPosts] = useState([]);
+import useFetch from '../../hooks/useFetch'
 
-  useEffect(() => {
-    setLoading(true);
-    fetch(`${config.baseUrl}post`).then(response => {
-      response.json().then(posts => {
-        setPosts(posts);
-        setLoading(false);
-      });
-    });
-  }, []);
+function Love() {
+  const { data, loading } = useFetch(`${config.baseUrl}post`)
 
   return (
     <div>
@@ -35,7 +26,7 @@ function Love() {
           <CreatePost />
 
           <div className="grid lg:grid-cols-2 gap-4">
-            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => (
+            {data.length > 0 && data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => (
               <div key={index} >
                 <MessagesContainer {...post} />
               </div>

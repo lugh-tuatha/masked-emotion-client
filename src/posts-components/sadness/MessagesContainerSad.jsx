@@ -17,9 +17,11 @@ function MessagesContainerSad(props) {
         <h6>{title1}</h6>
         <ReactTimeAgo date={Date.parse((createdAt))} locale="en-US"/>
       </div>
-      
-      <p>{summary1}</p>
-      <p className='text-end codename'> - {codename1}</p>
+
+      <div className='h-full flex flex-col justify-between'>
+        <p>{summary1}</p>
+        <p className='text-end codename'> - {codename1}</p>
+      </div>
 
       <div className="btnMssge">
         <div className='btn2'><Ai.AiOutlineHeart size={18}/> </div>

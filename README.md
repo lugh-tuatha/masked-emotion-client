@@ -31,6 +31,7 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
 * 2.0.1
     * Avatar will go directly to cloudinary
     * Add faqs page
+    * Add ntification if the user post successfull
 * 2.0.0
     * Removed log-in and sign-up features
     * Redesigned user interface

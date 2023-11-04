@@ -8,20 +8,10 @@ import Preload from '../../components/preload-component'
 import Footer from '../../components/footer'
 import config from '../../../config/config.json'
 
+import useFetch from '../../hooks/useFetch'
+
 function Sadness() {
-  const [loading, setLoading] = useState(true);
-  const [posts, setPosts] = useState([]);
-
-  useEffect(() => {
-    setLoading(true);
-
-    fetch(`${config.baseUrl}sadpost`).then(response => {
-      response.json().then(posts => {
-        setPosts(posts);
-        setLoading(false);
-      });
-    });
-  }, []);
+  const { data, loading } = useFetch(`${config.baseUrl}sadpost`)
   
   return (
     <div>
@@ -36,7 +26,7 @@ function Sadness() {
           <CreateSadPost />
 
           <div className="grid lg:grid-cols-2 gap-4">
-            {posts.length > 0 && posts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => (
+            {data.length > 0 && data.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)).map((post, index) => (
               <div key={index}>
                 <MessagesContainerSad {...post} />
               </div>

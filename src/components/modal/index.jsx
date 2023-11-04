@@ -9,7 +9,6 @@ import './modal.css'
 import Alert from '../alert';
 
 function Modal({ open, onClose, success }) {
-  if (!open) return null;
   const location = useLocation();
 
   const [codename, setCodename] = useState('');
@@ -70,6 +69,7 @@ function Modal({ open, onClose, success }) {
   if (redirect) {
     success()
   }
+  if (!open) return null;
   return (
     <div className='relative'>
       <div onClick={(e) => { e.stopPropagation() }} className='modal absolute top-1/2 left-1/2 z-30'>

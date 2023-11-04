@@ -38,9 +38,11 @@ function MessagesContainer(props) {
         <h6>{title}</h6>
         <ReactTimeAgo date={Date.parse((createdAt))} iocale="en-US"/>
       </div>
-      
-      <p>{summary}</p>
-      <p className='text-end codename'> - {codename}</p>
+
+      <div className='h-full flex flex-col justify-between'>
+        <p>{summary}</p>
+        <p className='text-end codename'> - {codename}</p>
+      </div>
 
       <div className="btnMssge">
         <div className='btn2'><Ai.AiOutlineHeart size={18}/> </div>

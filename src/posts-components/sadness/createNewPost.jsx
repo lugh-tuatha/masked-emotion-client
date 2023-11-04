@@ -5,8 +5,6 @@ import Button from '../../components/button'
 import Modal from '../../components/modal';
 import Alert from '../../components/alert';
 
-import { Navigate } from 'react-router-dom';
-
 function CreateSadPost() {
   const [openModal, setOpenModal] = useState(false)
   const [showAlert, setShowAlert] = useState(false)
