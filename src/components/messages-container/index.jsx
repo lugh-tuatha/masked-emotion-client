@@ -6,9 +6,10 @@ import * as Ri from "react-icons/ri";
 import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
-import config from '../../../config/config.json'
 
 import { FacebookShareButton } from "react-share"
+
+import Swal from 'sweetalert2';
 
 function MessagesContainer(props) {
   const { title, summary, codename, createdAt, cover } = props;
