@@ -6,8 +6,15 @@ import * as Md from "react-icons/md";
 
 import ReactTimeAgo from 'react-time-ago'
 
+import { showReport } from '../../utils/reportUtils';
+
 function MessagesContainerAnger(props) {
   const { title2, summary2, codename2, createdAt, cover2 } = props;
+
+  const report = () => {
+    showReport()
+  }
+
   return (
     <div>
       <div className="mssgeBox mb-3">
@@ -26,7 +33,7 @@ function MessagesContainerAnger(props) {
           <div className='btn2'><Ai.AiOutlineHeart size={18}/> </div>
           <div className='btn2'><Ai.AiOutlineComment size={18}/> </div>
           <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>
-          <div className='btn2'><Md.MdOutlineReportProblem size={18}/> </div>
+          <div className='btn2' onClick={report}><Md.MdOutlineReportProblem size={18}/> </div>
         </div>
       </div>
     </div>

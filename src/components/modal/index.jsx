@@ -74,14 +74,13 @@ function Modal({ open, onClose, success }) {
 
   const modal = {
     hidden: {
-      y: '-100vh',
-      opacity: 0
+      scale: 0,
     },
     visible:{
-      y: '325px',
-      opacity: 1,
+      y: '330px',
+      scale: 1,
       transition: {
-        delay: 0.5,
+        delay: 0.2,
       }
     }
   }
@@ -114,13 +113,13 @@ function Modal({ open, onClose, success }) {
                 <form onSubmit={handleSubmit}>
                   <div className="sm:flex justify-between px-0 sm:px-6">
                     <div className="flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category"><Ai.AiOutlineHeart size={24} /> LOVE</div>
-                    <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='CODENAME' value={codename} onChange={ev => setCodename(ev.target.value)} />
+                    <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='CODENAME' required value={codename} onChange={ev => setCodename(ev.target.value)} />
                   </div>
 
                   <div className="flex flex-col py-4 px-0 sm:px-6 gap-3">
-                    <input type="title" placeholder='TITLE' value={title} onChange={ev => setTitle(ev.target.value)} />
-                    <textarea type="summary" placeholder='CONTENT' value={summary} onChange={ev => setSummary(ev.target.value)} className="placeholder:text-white" />
-                    <input type="file" onChange={e => handleChange(e)} />
+                    <input type="title" placeholder='TITLE' value={title} required onChange={ev => setTitle(ev.target.value)} />
+                    <textarea type="summary" placeholder='CONTENT' value={summary} required onChange={ev => setSummary(ev.target.value)} className="placeholder:text-white" />
+                    <input type="file" onChange={e => handleChange(e)} required/>
                     {image ? (
                       <img className='image-preview' src={image} alt="preview image" />
                     ) : (

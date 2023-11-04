@@ -29,10 +29,6 @@ a{
   text-decoration: none;
 }
 
-a:hover{
-  color: var(--text-color);
-}
-
 ul,
 p{
   margin-bottom: 0;

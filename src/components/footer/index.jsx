@@ -1,14 +1,10 @@
 import React from 'react'
 import './footer.css'
 
-import * as Go from 'react-icons/go'
 import * as Ai from 'react-icons/ai'
 import * as Bs from "react-icons/bs";
 
-import Logo from '../../assets/icons/logo.png'
-
-import Button from '../button';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -21,13 +17,19 @@ function Footer() {
 
         <div>
           <h1>QUICK LINKS</h1>
-          <p className='my-2'>Home</p>
-          <p>Release</p>
+          <Link to="/">
+            <p className='my-1'>Home</p>
+          </Link>
+          <Link to="/release">
+            <p>Release</p>
+          </Link>
         </div>
 
         <div>
           <h1>SUPPORT</h1>
-          <p className='my-2'>FAQs</p>
+          <Link to="/faqs">
+            <p className='my-1'>FAQs</p>
+          </Link>
           <p>Terms of Use</p>
         </div>
 

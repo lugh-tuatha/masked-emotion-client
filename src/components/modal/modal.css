@@ -1,13 +1,13 @@
 .modal {
   background-color: var(--light-bg);
   width: 50rem;
-  max-width: 100%;
+  max-width: 85%;
   border: 2px solid #232B40;
   transform: translate(-50%, -50%);
 }
 
 .modal textarea[type="summary"] {
-  height: 13rem;
+  height: 10rem;
   outline: none;
 }
 
