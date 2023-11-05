@@ -2,16 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root{
+    --primary: #081F4B;
+    --secondary: #3F1673;
+    --pink: #FF6882;
+    --light-bg: #EFFDFF;
 
-:root{
-  --primary: #081F4B;
-  --secondary: #3F1673;
-  --pink: #FF6882;
-  --light-bg: #EFFDFF;
+    --text-color-gray: #565D59;
+    --bg-gray: #252826;
+    --bg-black: #0D0D0D;
+  }
+}
 
-  --text-color-gray: #565D59;
-  --bg-gray: #252826;
-  --bg-black: #0D0D0D;
+html.dark{
+  --light-bg: #252826;
 }
 
 #root{

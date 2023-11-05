@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './header.css';
 import { NavLink, Link} from "react-router-dom";
 
@@ -6,14 +6,26 @@ import Button from '../button';
 
 import { HiOutlineBars3 } from 'react-icons/hi2';
 import { IoMdClose } from 'react-icons/io';
-import { MdDarkMode } from 'react-icons/md';
+import * as Md from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
 
 import logo from '../../assets/icons/logo.png';
-import { useState } from 'react';
 
 function index() {
   const [openMenu, setOpenMenu] = useState(true);
+  const [isDark, setIsDark] = useState(false)
+
+  useEffect(() => {
+    if(isDark === true){
+      document.documentElement.classList.add("dark");
+    }else{
+      document.documentElement.classList.remove("dark");
+    }
+  }, [isDark])
+
+  const toggleTheme = () => {
+    setIsDark(!isDark)
+  }
   return (
     <div className='container-width'>
       <nav className='home-nav'>
@@ -25,8 +37,10 @@ function index() {
           <ul className='md:flex gap-4 font-bold hidden items-center'>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/faqs'>Faqs</Link></li>
-
-            <MdDarkMode size={24} className='cursor-pointer'/>
+            {isDark ? 
+              ( <Md.MdSunny onClick={toggleTheme} size={24} className='cursor-pointer' /> ) :
+              (<Md.MdDarkMode onClick={toggleTheme} size={24} className='cursor-pointer' />)}
+            
             <FaUser size={19} className='cursor-pointer'/>
             <Link to='/release'>
               <Button>Release</Button>
