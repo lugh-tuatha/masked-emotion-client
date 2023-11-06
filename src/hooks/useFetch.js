@@ -9,7 +9,7 @@ const useFetch = (url) => {
     fetch(url).then(response => {
       response.json().then(data => {
         setData(data);
-        setLoading(false);
+        setLoading(true);
       });
     });
   }, [url]);

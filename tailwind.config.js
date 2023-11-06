@@ -6,6 +6,7 @@ module.exports = {
         lightBg: "#EFFDFF",
         success: "#4BB36E",
         successLight: "#C9EAD4",
+        primary: "#081F4B",
       }
     },
   },

@@ -16,7 +16,7 @@ function MessagesContainerSad(props) {
   }
 
   return (
-    <div className="mssgeBox mb-3">
+    <div className="mssgeBox">
       <div className="ttle">
         <img src={cover1}/>     
         <h6>{title1}</h6>

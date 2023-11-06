@@ -1,16 +1,32 @@
 import React, { useState, useEffect } from 'react'
-
 import Header from '../../components/Header'
 import MessagesContainerSad from '../../posts-components/sadness/MessagesContainerSad'
 import CreateSadPost from '../../posts-components/sadness/createNewPost'
 import Preload from '../../components/preload-component'
 import config from '../../../config/config.json'
 import Section from '../../layout/Section'
+import HeadsUp from '../../components/modal/headsUp';
 
 import useFetch from '../../hooks/useFetch'
 
 function Sadness() {
   const { data, loading } = useFetch(`${config.baseUrl}sadpost`)
+  const [ showHeadsUp, setShowheadsUp ] = useState(false)
+
+  const showHeadsUpModal = () => {
+    if(loading){
+      setTimeout(() => {
+        if (loading) {
+          setShowheadsUp(true)
+          console.log("Loading is still true after 10 seconds");
+        }
+      }, 7500);
+    }
+  }
+
+  useEffect(() => {
+    showHeadsUpModal()
+  }, [loading])
   
   return (
     <Section>
@@ -33,6 +49,14 @@ function Sadness() {
             <Preload/>
             <Preload/>
             <Preload/>
+
+            {showHeadsUp && (
+              <div className="absolute w-screen h-screen top-0 left-0 flex items-center justify-center">
+                <div className='heads-up h-2/5 '>
+                  <HeadsUp />
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>

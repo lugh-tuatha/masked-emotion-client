@@ -16,3 +16,8 @@
 .ReactCollapse--collapse {
     transition: height 300ms;
 }
+
+.heads-up{
+    max-width: 85%;
+    aspect-ratio: 16/9;
+}

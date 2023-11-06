@@ -18,7 +18,7 @@ function MessagesContainer(props) {
     showReport()
   }
   return (
-    <div className="mssgeBox mb-3">
+    <div className="mssgeBox">
       <div className="ttle">
         <img src={cover}/>     
         <h6>{title}</h6>
