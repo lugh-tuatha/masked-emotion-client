@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css';
-import { NavLink, Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 import Button from '../button';
 

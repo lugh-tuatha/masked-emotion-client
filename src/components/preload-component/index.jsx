@@ -1,12 +1,7 @@
 import React from 'react'
 import './preload-component.css'
 
-import * as Ai from "react-icons/ai";
-import * as Ri from "react-icons/ri";
-import * as Md from "react-icons/md";
-
-function Preload(props) {
-  const { title} = props;
+function Preload() {
   return (
     <div>
       <div className="mssgeBox justify-between">

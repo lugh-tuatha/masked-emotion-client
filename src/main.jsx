@@ -15,6 +15,8 @@ import Love from './pages/sections/Love'
 import Sadness from './pages/sections/Sadness'
 import Anger from './pages/sections/Anger'
 
+import CommentSection from './pages/CommentSection'
+
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
 import Login from './pages/login';
@@ -50,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/release/anger",
     element: <Anger />,
+  },
+  {
+    path: "/release/love/1",
+    element: <CommentSection />,
   },
 ]);
 

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Header from '../../components/Header'
 import MessagesContainerSad from '../../posts-components/sadness/MessagesContainerSad'
 import CreateSadPost from '../../posts-components/sadness/createNewPost'
 import Preload from '../../components/preload-component'
 import config from '../../../config/config.json'
 import Section from '../../layout/Section'
-import HeadsUp from '../../components/modal/headsUp';
+import HeadsUp from '../../components/modal/HeadsUp';
 
 import useFetch from '../../hooks/useFetch'
 
@@ -18,7 +17,6 @@ function Sadness() {
       setTimeout(() => {
         if (loading) {
           setShowheadsUp(true)
-          console.log("Loading is still true after 10 seconds");
         }
       }, 7500);
     }

@@ -5,7 +5,7 @@ import CreatePost from '../../components/create-post';
 import Preload from '../../components/preload-component'
 import config from '../../../config/config.json'
 import Section from '../../layout/Section'
-import HeadsUp from '../../components/modal/headsUp';
+import HeadsUp from '../../components/modal/HeadsUp';
 
 import useFetch from '../../hooks/useFetch'
 
@@ -18,7 +18,6 @@ function Love() {
       setTimeout(() => {
         if (loading) {
           setShowheadsUp(true)
-          console.log("Loading is still true after 10 seconds");
         }
       }, 7500);
     }
