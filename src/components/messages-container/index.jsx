@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './messages-container.css';
 
 import * as Ai from "react-icons/ai";
@@ -13,9 +13,14 @@ import { showReport } from '../../utils/reportUtils';
 
 function MessagesContainer(props) {
   const { title, summary, codename, createdAt, cover } = props;
+  const [ isHeart, setIsHeart ] = useState(false)
 
   const report = () => {
     showReport()
+  }
+
+  const toggleReaction = () => {
+    setIsHeart(!isHeart)  
   }
   return (
     <div className="mssgeBox">
@@ -31,7 +36,13 @@ function MessagesContainer(props) {
       </div>
 
       <div className="btnMssge">
-        <div className='btn2'><Ai.AiOutlineHeart size={18}/> </div>
+        <div className='btn2' onClick={toggleReaction}>
+          {isHeart ? (
+            <Ai.AiFillHeart color="red" size={18} />
+          ) : (
+            <Ai.AiOutlineHeart size={18} /> 
+          )}
+        </div>
         <div className='btn2'><Ai.AiOutlineComment size={18}/> </div>
         <FacebookShareButton url='https://masked-emotion.vercel.app/' quote='I just share my feelings in this website masked emotion try now' hashtag="#MaskedEmotion" >
           <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>

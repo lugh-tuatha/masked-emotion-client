@@ -27,7 +27,7 @@ function CreateAngerPost() {
       <div className="Content">
         <h6>DO YOU HAVE FRUSTRATION AND ANGER YOU COULDN'T RELEASE?</h6>
         <span onClick={() => setOpenModal(true)} >
-          <Button><div className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div></Button>
+          <Button><div className='create-post'><Ai.AiOutlinePlus />CREATE POST</div></Button>
         </span>
       </div>
 
