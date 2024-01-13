@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import BeatLoader from "react-spinners/BeatLoader";
 import config from '../../../config/config.json'
 import './modal.css'
 
@@ -19,6 +20,7 @@ function Modal({ open, onClose, success }) {
   const [image, setImage] = useState('');
   const [category, setCategory] = useState('');
   const [redirect, setRedirect] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const pathToCategoryMap = {
@@ -52,6 +54,7 @@ function Modal({ open, onClose, success }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true)
       const result = await axios.post(`${config.baseUrl}${category}`, {
         image: image,
         codename: codename,
@@ -61,6 +64,7 @@ function Modal({ open, onClose, success }) {
 
       if (result.status === 200) {
         setRedirect(true)
+        setLoading(false)
       }
     } catch (error) {
       console.log(error)
@@ -112,7 +116,9 @@ function Modal({ open, onClose, success }) {
               <div className='modal-body'>
                 <form onSubmit={handleSubmit}>
                   <div className="sm:flex justify-between px-0 sm:px-6">
-                    <div className="flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category"><Ai.AiOutlineHeart size={24} /> LOVE</div>
+                    <div className="flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category uppercase"><Ai.AiOutlineHeart size={24} /> 
+                      {location.pathname.replace("/release/", "")}
+                    </div>
                     <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='CODENAME' required value={codename} onChange={ev => setCodename(ev.target.value)} />
                   </div>
 
@@ -128,7 +134,17 @@ function Modal({ open, onClose, success }) {
                   </div>
 
                   <div className='w-28 mx-auto'>
-                    <Button type="submit" value="post" ><div className='flex items-center gap-2'><Ai.AiFillCheckCircle /> POST</div></Button>
+                    <Button type="submit" value="post" disabled={loading}>
+                      <div className='flex items-center gap-2'>
+                        <Ai.AiFillCheckCircle /> 
+                        <span>POST</span>
+                        <BeatLoader 
+                          color="#36d7b7" 
+                          loading={loading}
+                          size={10}
+                        />
+                      </div>
+                    </Button>
                   </div>
                 </form>
               </div>
