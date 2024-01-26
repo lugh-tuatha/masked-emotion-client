@@ -17,15 +17,7 @@
       "dest": "/"
     },
     {
-      "src": "/release/love",
-      "dest": "/"
-    },
-    {
-      "src": "/release/sadness",
-      "dest": "/"
-    },
-    {
-      "src": "/release/anger",
+      "src": "/release/emotions",
       "dest": "/"
     }
   ]

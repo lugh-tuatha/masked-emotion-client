@@ -1,5 +1,6 @@
 import { LiaKissWinkHeartSolid } from 'react-icons/lia';
 import { LiaSadCrySolid } from 'react-icons/lia';
+import { RxShadowNone } from "react-icons/rx";
 import { LiaAngrySolid } from 'react-icons/lia';
 
 import Love from '../assets/section-icon/Love.gif';
@@ -12,20 +13,27 @@ export const SectionBoxes = [
     title: "Love",
     icon: <LiaKissWinkHeartSolid size={23}/>,
     image: Love,
-    link: "/release/love",
+    category: "love",
   },
   {
     id: 2,
     title: "Sadness",
     icon: <LiaSadCrySolid size={23}/>,
     image: Sadness,
-    link: "/release/sadness",
+    category: "sadness",
   },
   {
     id: 3,
     title: "Anger",
     icon: <LiaAngrySolid size={23}/>,
     image: Anger,
-    link: "/release/anger",
+    category: "anger",
+  },
+  {
+    id: 4,
+    title: "Uncategorize",
+    icon: <RxShadowNone size={20}/>,
+    image: Anger,
+    category: "uncategorize",
   },
 ]

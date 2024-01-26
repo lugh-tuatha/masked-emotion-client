@@ -12,7 +12,7 @@ import { FacebookShareButton } from "react-share"
 import { showReport } from '../../utils/reportUtils';
 
 function MessagesContainer(props) {
-  const { title, summary, codename, createdAt, cover } = props;
+  const { title, summary, codename, createdAt, cover, _id } = props;
   const [ isHeart, setIsHeart ] = useState(false)
 
   const report = () => {
@@ -43,7 +43,7 @@ function MessagesContainer(props) {
             <Ai.AiOutlineHeart size={18} /> 
           )}
         </div>
-        <div className='btn2'><Ai.AiOutlineComment size={18}/> </div>
+        <div className='btn2' onClick={() => console.log(_id)}><Ai.AiOutlineComment size={18}/> </div>
         <FacebookShareButton url='https://masked-emotion.vercel.app/' quote='I just share my feelings in this website masked emotion try now' hashtag="#MaskedEmotion" >
           <div className='btn2'><Ri.RiShareForwardLine size={18}/> </div>
         </FacebookShareButton>

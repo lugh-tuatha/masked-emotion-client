@@ -7,7 +7,7 @@ function SectionBox() {
   return (
     <div className='flex justify-center flex-wrap my-6 boxes gap-4'>
       {SectionBoxes.map((section_box) => (
-        <Link key={section_box.id} to={section_box.link}>
+        <Link key={section_box.id} to="/release/emotions">
           <div className="border-2 w-36 h-36 rounded-xl bg-white border-black p-4">
             <img src={section_box.image} className='h-20 mx-auto'/>
             <h1 className='font-bold text-lg my-2'>{section_box.title}</h1>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import config from '../../../config/config.json'
 import './modal.css'
 
-import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 import * as Ai from "react-icons/ai";
 import { motion, AnimatePresence } from 'framer-motion';
@@ -10,26 +9,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../button';
 
 function Modal({ open, onClose, success }) {
-  const location = useLocation();
 
   const [codename, setCodename] = useState('');
   const [title, setTitle] = useState('');
   const [summary, setSummary] = useState('');
   const [files, setFiles] = useState('');
   const [image, setImage] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('uncategorize');
   const [redirect, setRedirect] = useState(false);
-
-  useEffect(() => {
-    const pathToCategoryMap = {
-      '/release/love': 'post',
-      '/release/sadness': 'sadpost',
-      '/release/anger': 'angerpost',
-    };
-
-    const newPath = pathToCategoryMap[location.pathname] || '';
-    setCategory(newPath);
-  }, [location.pathname]);
 
   const previewFile = (file) => {
     const reader = new FileReader()
@@ -52,10 +39,11 @@ function Modal({ open, onClose, success }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const result = await axios.post(`${config.baseUrl}${category}`, {
+      const result = await axios.post(`${config.baseUrl}`, {
         image: image,
         codename: codename,
         title: title,
+        category: category,
         summary: summary,
       })
 
@@ -102,7 +90,8 @@ function Modal({ open, onClose, success }) {
         <motion.div
           variants={modal}
         >
-          <div onClick={(e) => { e.stopPropagation() }} className='modal absolute top-1/2 left-1/2 z-30'>
+  
+          <div onClick={(e) => { e.stopPropagation()  }} className='modal absolute top-1/2 left-1/2 z-30'>
             <div className='mx-8 my-6'>
               <div className='flex items-center justify-between mb-4 pb-2 modal-header'>
                 <h1 className='text-xl font-semibold'>CREATE A POST</h1>
@@ -112,7 +101,12 @@ function Modal({ open, onClose, success }) {
               <div className='modal-body'>
                 <form onSubmit={handleSubmit}>
                   <div className="sm:flex justify-between px-0 sm:px-6">
-                    <div className="flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category"><Ai.AiOutlineHeart size={24} /> LOVE</div>
+                    <select onChange={ev => setCategory(ev.target.value) }  className='flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category'>
+                      <option value="love">Love</option>
+                      <option value="sadness">Sadness</option>
+                      <option value="anger">Anger</option>
+                      <option value="uncategorize">Uncategorize</option>
+                    </select>
                     <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='CODENAME' required value={codename} onChange={ev => setCodename(ev.target.value)} />
                   </div>
 

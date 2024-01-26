@@ -11,15 +11,12 @@ import {
 import Release from './pages/Release';
 import Faqs from './pages/Faqs';
 
-import Love from './pages/sections/Love'
-import Sadness from './pages/sections/Sadness'
-import Anger from './pages/sections/Anger'
-
 import CommentSection from './pages/CommentSection'
 
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
 import Login from './pages/login';
+import Emotions from './pages/Emotions';
 TimeAgo.addDefaultLocale(en)
 
 const router = createBrowserRouter([
@@ -40,19 +37,12 @@ const router = createBrowserRouter([
     element: <Login />,
   },
 
+  {
+    path: "/release/emotions",
+    element: <Emotions />,
+  },
+
   // section routes 
-  {
-    path: "/release/love",
-    element: <Love />,
-  },
-  {
-    path: "/release/sadness",
-    element: <Sadness />,
-  },
-  {
-    path: "/release/anger",
-    element: <Anger />,
-  },
   {
     path: "/release/love/1",
     element: <CommentSection />,

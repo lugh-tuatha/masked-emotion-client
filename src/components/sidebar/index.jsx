@@ -1,21 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './sidebar.css'
-import { NavLink } from 'react-router-dom'
 
 import { SectionBoxes } from '../../data/SectionBoxes'
 
-function Sidebar() {
+function Sidebar({ categoryData }) {
+
+  const handleCategoryChange = (data) => {
+    categoryData(data);
+  };
   return (
     <div className='sidebar'>
       <h1 className='font-bold text-2xl'>Explore Emotions</h1>
       <ul className='mt-2'>
         {SectionBoxes.map((section_box) => (
-          <NavLink key={section_box.id} to={section_box.link}>
+          <div key={section_box.id} onClick={() => handleCategoryChange(`${section_box.category}`)}>
             <li className='text-lg flex items-center gap-2 hover:underline'>
               {section_box.icon}
               {section_box.title}
             </li>
-          </NavLink>
+          </div>
         ))}
       </ul>
     </div>
