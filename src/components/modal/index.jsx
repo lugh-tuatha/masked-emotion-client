@@ -18,6 +18,7 @@ function Modal({ open, onClose, success }) {
   const [image, setImage] = useState('');
   const [category, setCategory] = useState('uncategorize');
   const [redirect, setRedirect] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const previewFile = (file) => {
     const reader = new FileReader()
@@ -40,6 +41,7 @@ function Modal({ open, onClose, success }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      setLoading(true)
       const result = await axios.post(`${config.baseUrl}${category}`, {
         image: image,
         codename: codename,
@@ -120,15 +122,19 @@ function Modal({ open, onClose, success }) {
 
                   <div className='w-28 mx-auto'>
                     <Button type="submit" value="post" disabled={loading}>
-                      <div className='flex items-center gap-2'>
-                        <Ai.AiFillCheckCircle /> 
-                        <span>POST</span>
-                        <BeatLoader 
+                      {!loading ? (
+                        <div  className='flex items-center gap-2'>
+                          <Ai.AiFillCheckCircle /> 
+                          <span>POST</span>     
+                        </div>
+                      ) : (
+                        <div className='px-1'>
+                          <BeatLoader 
                           color="#36d7b7" 
                           loading={loading}
-                          size={10}
-                        />
-                      </div>
+                          size={10} />
+                        </div>
+                      )}
                     </Button>
                   </div>
                 </form>

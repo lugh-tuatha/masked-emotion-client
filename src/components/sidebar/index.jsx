@@ -14,7 +14,7 @@ function Sidebar({ categoryData }) {
       <ul className='mt-2'>
         {SectionBoxes.map((section_box) => (
           <div key={section_box.id} onClick={() => handleCategoryChange(`${section_box.category}`)}>
-            <li className='text-lg flex items-center gap-2 hover:underline'>
+            <li className='text-lg flex items-center gap-2 hover:underline cursor-pointer'>
               {section_box.icon}
               {section_box.title}
             </li>

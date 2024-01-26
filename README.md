@@ -28,7 +28,7 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
 - [ ] New pages for profile
 
 ## Release History
-* 2.0.1
+* 2.0.2
     * Add heads up modal when loading is too long
 * 2.0.1
     * Avatar will go directly to cloudinary
