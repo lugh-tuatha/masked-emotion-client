@@ -42,7 +42,7 @@ function Modal({ open, onClose, success }) {
     e.preventDefault();
     try {
       setLoading(true)
-      const result = await axios.post(`${config.baseUrl}${category}`, {
+      const result = await axios.post(`${config.baseUrl}`, {
         image: image,
         codename: codename,
         title: title,
@@ -105,7 +105,14 @@ function Modal({ open, onClose, success }) {
               <div className='modal-body'>
                 <form onSubmit={handleSubmit}>
                   <div className="sm:flex justify-between px-0 sm:px-6">
-                    <div className="flex items-center justify-center gap-2 w-full mb-3 sm:w-1/3 h-12 modal-category"><Ai.AiOutlineHeart size={24} /> LOVE</div>
+                    <select
+                    onChange={ev => setCategory(ev.target.value) }  
+                    className='classic h-12'>
+                      <option value="uncategorize">Uncategorize</option>
+                      <option value="love">Love</option>
+                      <option value="sadness">Sadness</option>
+                      <option value="anger">Anger</option>
+                    </select>
                     <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='CODENAME' required value={codename} onChange={ev => setCodename(ev.target.value)} />
                   </div>
 
