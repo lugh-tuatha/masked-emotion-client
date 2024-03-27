@@ -1,6 +1,6 @@
 {
   "baseUrl": {
-    "production": "https://emowall-backend.onrender.com/",
-    "development": "http://localhost:5000/"
+    "production": "https://emowall-backend.onrender.com/api/v2/release/emotions",
+    "development": "http://localhost:5000/api/v2/release/emotions"
   }
 }

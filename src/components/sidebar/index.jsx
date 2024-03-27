@@ -8,6 +8,7 @@ function Sidebar({ categoryData }) {
   const handleCategoryChange = (data) => {
     categoryData(data);
   };
+  
   return (
     <div className='sidebar'>
       <h1 className='font-bold text-2xl'>Explore Emotions</h1>

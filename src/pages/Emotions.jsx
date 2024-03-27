@@ -33,7 +33,6 @@ function Love() {
   const handleCategoryData = (data) => {
     setCategory(data);
   };
-  console.log(category) 
   return (
     <MainLayout>
       <div className="container-width lg:flex lg:mt-8 lg:pb-24">
