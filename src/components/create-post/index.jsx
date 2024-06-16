@@ -25,7 +25,7 @@ function CreatePost() {
   return (
     <div>
       <div className="Content">
-        <h6>EVER LOVED SOMEONE YOU COULDN'T TELL?</h6>
+        <h6 className='uppercase'>All your emotions are valid.</h6>
         <span onClick={() => setOpenModal(true)}>
           <Button>
             <div className='create-post'><Ai.AiOutlinePlus /> CREATE POST</div>

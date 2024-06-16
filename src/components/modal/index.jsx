@@ -107,13 +107,13 @@ function Modal({ open, onClose, success }) {
                   <div className="sm:flex justify-between px-0 sm:px-6">
                     <select
                     onChange={ev => setCategory(ev.target.value) }  
-                    className='classic h-12'>
+                    className='classic h-12 w-full mb-3 sm:mb-0 sm:w-auto'>
                       <option value="uncategorize">Uncategorize</option>
                       <option value="love">Love</option>
                       <option value="sadness">Sadness</option>
                       <option value="anger">Anger</option>
                     </select>
-                    <input className='sm:mb-3 w-full sm:w-auto' type="codename" placeholder='CODENAME' required value={codename} onChange={ev => setCodename(ev.target.value)} />
+                    <input className='w-full sm:w-auto' type="codename" placeholder='CODENAME' required value={codename} onChange={ev => setCodename(ev.target.value)} />
                   </div>
 
                   <div className="flex flex-col py-4 px-0 sm:px-6 gap-3">
