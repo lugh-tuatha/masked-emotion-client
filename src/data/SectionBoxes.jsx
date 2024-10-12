@@ -15,6 +15,7 @@ export const SectionBoxes = [
     icon: <LiaKissWinkHeartSolid size={23}/>,
     image: Love,
     category: "love",
+    description: "",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export const SectionBoxes = [
     icon: <LiaSadCrySolid size={23}/>,
     image: Sadness,
     category: "sadness",
+    description: "",
   },
   {
     id: 3,
@@ -29,6 +31,7 @@ export const SectionBoxes = [
     icon: <LiaAngrySolid size={23}/>,
     image: Anger,
     category: "anger",
+    description: "",
   },
   {
     id: 4,
@@ -36,5 +39,6 @@ export const SectionBoxes = [
     icon: <RxShadowNone size={20}/>,
     image: Uncategorize,
     category: "uncategorize",
+    description: "",
   },
 ]

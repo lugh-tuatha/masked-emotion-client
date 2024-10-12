@@ -1,28 +1,33 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import './index.css'
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ReactDOM from 'react-dom/client'
 
-import Release from './pages/Release';
-import Faqs from './pages/Faqs';
-
-import CommentSection from './pages/CommentSection'
+import App from './App'
+import Release from './pages/release';
+import Faqs from './pages/faqs';
+import Login from './pages/login';
+import Category from './pages/category';
+import NotFound from './pages/not-found'
+import CommentSection from './pages/comment-section'
 
 import TimeAgo from 'javascript-time-ago'
 import en from 'javascript-time-ago/locale/en.json'
-import Login from './pages/login';
-import Emotions from './pages/Emotions';
 TimeAgo.addDefaultLocale(en)
+
+const queryClient = new QueryClient()
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <NotFound />
   },
   {
     path: "/release",
@@ -36,12 +41,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
-
   {
-    path: "/release/emotions",
-    element: <Emotions />,
+    path: "/release/:category",
+    element: <Category />,
   },
-
   // section routes 
   {
     path: "/release/love/1",
@@ -51,6 +54,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={queryClient}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>,
 )

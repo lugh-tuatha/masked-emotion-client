@@ -1,3 +1,4 @@
 {
-  "baseUrl": "https://emowall-backend.onrender.com/api/v2/release/emotions"
+  "baseUrl": "https://emowall-backend.onrender.com/api/v2/release/emotions",
+  "devBaseUrl": "http://localhost:5000/api/v2/release/emotions"
 }

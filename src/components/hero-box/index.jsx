@@ -12,8 +12,8 @@ function heroBox() {
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         <div className="hero-box">
           <div>
-            <h3 className='font-bold text-3xl mb-2'>10K</h3>
-            <p >Over 10,000 Active Users</p>
+            <h3 className='font-bold text-3xl mb-2'>3</h3>
+            <p >Over 3 Active Users</p>
           </div>
         </div>
         <div className="hero-box">

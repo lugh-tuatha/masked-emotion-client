@@ -1,4 +1,4 @@
-# EmoWall
+# Masked-Emotion
 
 Our website is a safe and private place where people can share their deepest feelings and thoughts anonymously. We have different sections like love, sadness, anger and more, where users can express themselves and find comfort. Our platform also lets people support each other by liking and commenting on their confessions, making them feel like they're not alone.
 
@@ -7,7 +7,6 @@ Our website is a safe and private place where people can share their deepest fee
 Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEmotion-Backend)
 
 ## Roadmap
-
 - [ ] Make user friendliness
     - [ ] Add more validation
     - [ ] Provide clearer instructions
@@ -28,20 +27,24 @@ Check out the backend of [MaskedEmotion](https://github.com/lugh-tuatha/MaskedEm
 - [ ] New pages for profile
 
 ## Release History
+* 2.1.0
+    * Posting is now possible without requiring an avatar.
+    * Created dynamic routes for emotions and.
+    * Refactored code & Improved UX.
 * 2.0.2
-    * Add heads up modal when loading is too long
+    * Add heads up modal when loading is too long.
 * 2.0.1
-    * Avatar will go directly to cloudinary
-    * Add faqs page
-    * Add notification if the user post successfull
+    * Avatar will go directly to cloudinary.
+    * Add faqs page.
+    * Add notification if the user post successfull.
 * 2.0.0
-    * Removed log-in and sign-up features
-    * Redesigned user interface
-    * Changed the CSS framework from Bootstrap to Tailwind
+    * Removed log-in and sign-up features.
+    * Redesigned user interface.
+    * Changed the CSS framework from Bootstrap to Tailwind.
 * 1.0.0
-    * The first proper release
+    * The first proper release.
 * 0.1.0
-    * Work in progress
+    * Work in progress.
 
 ## Built With
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)<br>
@@ -60,3 +63,4 @@ I want to acknowledge the valuable contributions of these resources in the devel
 * [axios](https://www.npmjs.com/package/axios)
 * [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
 * [react-collapse](https://www.npmjs.com/package/react-collapse)
+* [tanstack-query](https://tanstack.com)

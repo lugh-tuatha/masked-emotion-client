@@ -7,12 +7,11 @@ import { LiaTwitterSquare } from "react-icons/lia";
 
 import HeroBox from './components/hero-box';
 import History from './components/about';
-import Button from './components/button';
+import Button from './components/shared/button';
+import MainLayout from './layout/MainLayout';
 
 import homeHero from './assets/svg/home-hero.svg'
 import emotion from './assets/img/emotion.png'
-
-import MainLayout from './layout/MainLayout';
 
 function App() {
   return (

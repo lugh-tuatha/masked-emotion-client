@@ -1,0 +1,42 @@
+.modal {
+  background-color: var(--light-bg);
+  width: 50rem;
+  max-width: 85%;
+  border: 2px solid #232B40;
+  transform: translate(-50%, -50%);
+}
+
+.modal textarea[type="summary"] {
+  height: 7rem;
+  outline: none;
+}
+
+.modal .modal-category,
+.modal .modal-body input,
+.modal .modal-body textarea{
+  background-color: var(--primary);
+  border-radius: 4px;
+  padding: .75rem;
+  color: white;
+}
+
+.modal .modal-header{
+  border-bottom: 2px solid var(--primary);
+}
+
+img.image-preview{
+  width: 120px;
+  aspect-ratio: 1/1;  
+}
+
+select {
+  border-radius: 4px;
+  color: white;
+  padding: 0.5em 4em 0.5em 1em;
+  margin: 0;      
+  appearance: none;
+  outline: none;
+  background:url("../../assets/img/dropdown.png") no-repeat right  var(--primary);
+  background-size: contain;
+  box-sizing: border-box;
+}
