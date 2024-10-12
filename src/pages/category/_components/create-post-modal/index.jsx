@@ -69,7 +69,7 @@ function CreatePostModal({ open, onClose, onSuccess }) {
       scale: 0,
     },
     visible:{
-      y: '350px',
+      y: '325px',
       scale: 1,
       transition: {
         delay: 0.2,
@@ -127,7 +127,7 @@ function CreatePostModal({ open, onClose, onSuccess }) {
                       ) : (
                         <img className='image-preview' src='/image/default-avatar.png' alt='preview image' />
                       )}
-                      <p>This is the default avatar if no choice is made.</p>
+                      <p>This is the default avatar.</p>
                     </div>
                   </div>
 
