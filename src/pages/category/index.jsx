@@ -20,7 +20,7 @@ function Category() {
     queryFn: () => 
       axios.get(`${config.baseUrl}/category/${params.category}`)
         .then((response) => response.data )
-        .catch((error) => console.log(error) )
+        .catch((error) => console.log(error))
   })
 
   console.log(data)

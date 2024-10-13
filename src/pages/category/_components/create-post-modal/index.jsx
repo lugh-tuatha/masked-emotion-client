@@ -3,6 +3,8 @@ import BeatLoader from "react-spinners/BeatLoader";
 import config from '../../../../../config/config.json'
 import './create-post-modal.css'
 
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+
 import axios from 'axios';
 import * as Ai from "react-icons/ai";
 import { motion, AnimatePresence } from 'framer-motion';
@@ -10,6 +12,20 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Button from '../../../../components/shared/button';
 
 function CreatePostModal({ open, onClose, onSuccess }) {
+  const queryCLiet = useQueryClient()
+
+  const { mutate, isPending } = useMutation({
+    mutationFn: (post) => {
+      return axios.post(`${config.baseUrl}`, post )
+    },
+    onSuccess: (post) => {
+      queryCLiet.invalidateQueries({queryKey: ["posts"]})
+      onSuccess()
+    },
+    onError: (error) => {
+      console.log('Error:', error)
+    }
+  })
 
   const [codename, setCodename] = useState('');
   const [title, setTitle] = useState('');
@@ -18,7 +34,6 @@ function CreatePostModal({ open, onClose, onSuccess }) {
   const [image, setImage] = useState('');
   const [category, setCategory] = useState('uncategorize');
   const [redirect, setRedirect] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const previewFile = (file) => {
     const reader = new FileReader()
@@ -40,23 +55,14 @@ function CreatePostModal({ open, onClose, onSuccess }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      setLoading(true)
-      const result = await axios.post(`${config.baseUrl}`, {
-        image: image,
-        codename: codename,
-        title: title,
-        category: category,
-        summary: summary,
-      })
-
-      if (result.status === 200) {
-        setRedirect(true)
-        setLoading(false)
-      }
-    } catch (error) {
-      console.log(error)
-    }
+    mutate({
+      image: image,
+      codename: codename,
+      title: title,
+      category: category,
+      summary: summary,
+    })
+    console.log(isPending)
   }
 
   const backdrop = {
@@ -75,10 +81,6 @@ function CreatePostModal({ open, onClose, onSuccess }) {
         delay: 0.2,
       }
     }
-  }
-
-  if (redirect) {
-    onSuccess()
   }
 
   if (!open) return null;
@@ -132,8 +134,8 @@ function CreatePostModal({ open, onClose, onSuccess }) {
                   </div>
 
                   <div className='w-28 mx-auto'>
-                    <Button type="submit" value="post" disabled={loading}>
-                      {!loading ? (
+                    <Button type="submit" value="post" disabled={isPending}>
+                      {!isPending ? (
                         <div  className='flex items-center gap-2'>
                           <Ai.AiFillCheckCircle /> 
                           <span>POST</span>     
@@ -142,7 +144,7 @@ function CreatePostModal({ open, onClose, onSuccess }) {
                         <div className='px-1'>
                           <BeatLoader 
                           color="#36d7b7" 
-                          loading={loading}
+                          loading={isPending}
                           size={10} />
                         </div>
                       )}
